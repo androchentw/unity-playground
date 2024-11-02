@@ -16,6 +16,12 @@
   - For Trace code: Unity > Regenerate project File > *.csproj
 - Settings | Editor | Editor tabs --> Mark modified tabs with asterisk
 - [Shortcut for changing tabs->spaces->tabs in IntelliJ IDEA](https://stackoverflow.com/questions/41532061/shortcut-for-changing-tabs-spaces-tabs-in-intellij-idea)
+- 字體: Editor > Color Scheme > Color Scheme Font
+  - Font: Hack Nerd Font
+  - Fallback font: Microsoft JhengHei UI 
+  - 不要勾選"show only monospaced fonts", 不然會選不到字體
+  - [Ref](https://youtrack.jetbrains.com/issue/RIDER-89585/IDE-font-is-not-consistent-with-custom-font-settings-under-Chinese):
+  - 注意: 跟 Editor > Font > Font 設定不同
 
 ## Plugins
 
@@ -42,7 +48,7 @@
   - Search Everywhere: ctrl+T=> Ctrl+Shift+A
   - Recently Viewed/Changed Files: Ctrl+E
   - Navigate > Back: ctrl+shift+left, Forward: ctrl+shift+right
-  - Close Active Tab Ctrl+F4=> ctrl+W, New Tab => ctrl+T, Reopen closed Tab => Crtl+shift+T
+  - Close Active Tab Ctrl+F4=> ctrl+W, New Tab => ctrl+T, Reopen closed Tab => Ctrl+shift+T
     Select next tab: alt+left, select previous tab: alt+right
   - shrink selection: ctrl+alt+left
   - 折疊 fold selection: cmd+.
