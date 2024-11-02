@@ -133,3 +133,4 @@
    - SceneManager.LoadSceneAsync()：載入場景
    - AssetBundle.LoadAssetAsync()：載入 AssetBundle
    - Resources.LoadAsync()：從 Resources 目錄載入各種資源
+- `yield async await`
