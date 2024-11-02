@@ -1,12 +1,19 @@
 # Unity JetBrains Rider
 
+<!-- TOC -->
+* [Unity JetBrains Rider](#unity-jetbrains-rider)
+  * [Settings](#settings)
+  * [Plugins](#plugins)
+  * [Keymap](#keymap)
+  * [Tutorial](#tutorial)
+<!-- TOC -->
+
+## Settings
+
 - [.gitignore for JetBrains + Rider + Unity](https://www.toptal.com/developers/gitignore/api/jetbrains+all,rider,unity)
 - [Jetbrains Rider Editor](https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/using-the-jetbrains-rider-editor-package.html)
   - Edit > Preferences > External Tools > External Script Editor > Rider
   - For Trace code: Unity > Regenerate project File > *.csproj
-
-## Settings
-
 - Settings | Editor | Editor tabs --> Mark modified tabs with asterisk
 - [Shortcut for changing tabs->spaces->tabs in IntelliJ IDEA](https://stackoverflow.com/questions/41532061/shortcut-for-changing-tabs-spaces-tabs-in-intellij-idea)
 
@@ -38,9 +45,10 @@
   - Close Active Tab Ctrl+F4=> ctrl+W, New Tab => ctrl+T, Reopen closed Tab => Crtl+shift+T
     Select next tab: alt+left, select previous tab: alt+right
   - shrink selection: ctrl+alt+left
+  - 折疊 fold selection: cmd+.
 - Code
   - Reformat Code Ctrl+Alt+L -> Ctrl+Alt+F
-  - rename: ctrl+R, rename in file: ctrl+shift+R, Refractor: =>ctrl+alt+shift+R
+  - rename: ctrl+R, rename in file: ctrl+shift+R, Refactor: =>ctrl+alt+shift+R
   - Optimize Imports Ctrl+Alt+O
   - Quick/External Documentation Ctrl+Q
   - context action: alt+enter; +Ctrl+Shift+D

@@ -5,7 +5,7 @@
 - [Script template](https://www.youtube.com/watch?v=uh9bDTX9T5E)
   - UnityInstallPath/Editor/Data/Resources/ScriptTemplates/*.txt
   - Assets > ScriptTemplates
-- [UI Toolkit基礎教程 Part 1 | 如何使用UI Toolkit | UI工具包 | JRPG教程項目前置](https://www.youtube.com/watch?v=CfQL0cI-zPc)
+- [UI Toolkit基礎教程 Part 1 | 如何使用UI Toolkit | UI工具包 | JRPG 教程項目前置](https://www.youtube.com/watch?v=CfQL0cI-zPc)
   - UI Toolkit > UGUI: [各有擅場](https://docs.unity3d.com/2022.2/Documentation/Manual/UIElements.html)
   - UGUI: GameObject based, prefab workflow
   - Window > UIToolkit > UI Builder or Assets > Data > UIDocuments > UXML(Content), USS(Style), Behavior(C#)

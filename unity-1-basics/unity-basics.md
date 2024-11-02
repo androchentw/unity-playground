@@ -13,7 +13,7 @@
 ## Basic Components
 
 - [Unity Playground: 入門教程](https://learn.unity.com/project/unity-playground)
-- 非電玩人學Unity3D
+- 非電玩人學 Unity3D
   - [(1) 從原子開始](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-%E5%BE%9E%E5%8E%9F%E5%AD%90%E9%96%8B%E5%A7%8B-adc92f13da0)
   - [(2) 認透 GameObject 與 Component](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-2-%E8%AA%8D%E9%80%8F-gameobject-%E8%88%87-component-ba95a5502bce)
   - [(3) 探索腳本生命周期](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-3-%E6%8E%A2%E7%B4%A2%E8%85%B3%E6%9C%AC%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F-9366d449ff92)
