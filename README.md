@@ -37,6 +37,8 @@ unity-playground/
 │   └── unity-web-request.md
 ```
 
+- <a href="https://docs.unity3d.com/Manual/execution-order.html" target="_blank" rel="noreferrer noopener"><img width="600px" alt="Script lifecycle flowchart" src="https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg"></a>
+
 ## Codebase Ref
 
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design patterns explained

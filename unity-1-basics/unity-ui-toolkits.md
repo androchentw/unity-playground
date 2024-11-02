@@ -1,6 +1,34 @@
 # Unity UI Toolkits
 
-## 阿嚴系列
+<!-- TOC -->
+* [Unity UI Toolkits](#unity-ui-toolkits)
+  * [阿嚴 YouTube 教學](#阿嚴-youtube-教學)
+    * [新功能](#新功能)
+    * [UI Toolkit基礎教程](#ui-toolkit基礎教程)
+    * [數據驅動基礎教程](#數據驅動基礎教程)
+  * [其他](#其他)
+<!-- TOC -->
+
+## 阿嚴 YouTube 教學
+
+### 新功能
+
+- [Unity UI 工具包 新功能教程](https://ryanxudev.github.io/#tutorials)
+  - [第一部分](https://www.youtube.com/watch?v=cbQJq_O3ZEo) - 在 UI 构建器里绑定数据 (推薦 綁定 SO)
+    - Inspector > Data Source > ScriptableObject > Add Binding > Data Source Path
+  - [第二部分](https://www.youtube.com/watch?v=eBda493MQHo) - 另外两种数据绑定方式
+    - `[CreateProperty] string CharacterLevelString => $"Level: {characterLevel}";`; `[DontCreateProperty]` 減少錯誤標示
+    - BindingMode
+    - TwoWay: 洗點. UI data 互相影響
+    - ToSource: UI 改 data. 如 音量滑動條
+    - ToTarget: 最常用. 當 data 有變動時, 單向改變 UI 顯示
+    - ToTargetOnce: UI 只更新一次. 如成就 UI
+    - 第二種方法: 直接改 UXML (效果同 Unity 操作)
+    - 第三種方法: 用 C# 寫 data bindind. 比較複雜/靈活需要彈性時. runtime 才會顯示
+  - [第三部分](https://www.youtube.com/watch?v=Z9AVTt4zZck) - 更简便地创建自定义控件
+    - 自訂血條
+
+### UI Toolkit基礎教程
 
 - [Script template](https://www.youtube.com/watch?v=uh9bDTX9T5E)
   - UnityInstallPath/Editor/Data/Resources/ScriptTemplates/*.txt
@@ -17,6 +45,9 @@
   - Panel: sort order, scale mode, reference resolution; source assest => UXML
   - Data binding: `getComponent<UIDocument>().rootVisualElement`
   - 高性能, 高適用性
+
+### 數據驅動基礎教程
+
 - [UI Toolkit - UQuery | 如何查找UI元素 | 數據驅動基礎教程 Part 1](https://www.youtube.com/watch?v=DOn8P5Fg0gg)
   - 找所有: `rootVisualElement.Query<Label>("").ForEach(object => object.text = "name")`
   - 找第一個: `rootVisualElement.Q<Label>("").ForEach(object => object.text = "name")`
@@ -25,19 +56,8 @@
 - [UI Toolkit - Data Binding | 数据驱动基础教程 Part 3](https://www.youtube.com/watch?v=SRqwuwc_o0E)
 - [使用Excel等製表工具簡化數據輸入 | 數據驅動基礎教程 Part 4](https://www.youtube.com/watch?v=b90awFcUJ60)
 - [數據輸出 | UI Toolkit Manipulator & Events System | 數據驅動基礎教程 Part 5](https://www.youtube.com/watch?v=11zqHk6kbhE)
-- [Unity UI 工具包 新功能教程](https://ryanxudev.github.io/#tutorials)
-  - [第一部分](https://www.youtube.com/watch?v=cbQJq_O3ZEo) - 在 UI 构建器里绑定数据 (推薦 綁定 SO)
-    - Inspector > Data Source > ScriptableObject > Add Binding > Data Source Path
-  - [第二部分](https://www.youtube.com/watch?v=eBda493MQHo) - 另外两种数据绑定方式
-    - `[CreateProperty] string CharacterLevelString => $"Level: {characterLevel}";`; `[DontCreateProperty]` 減少錯誤標示
-    - BindingMode
-    - TwoWay: 洗點. UI data 互相影響
-    - ToSource: UI 改 data. 如 音量滑動條
-    - ToTarget: 最常用. 當 data 有變動時, 單向改變 UI 顯示
-    - ToTargetOnce: UI 只更新一次. 如成就 UI
-    - 第二種方法: 直接改 UXML (效果同 Unity 操作)
-    - 第三種方法: 用 C# 寫 data bindind. 比較複雜/靈活需要彈性時. runtime 才會顯示
-  - [第三部分](https://www.youtube.com/watch?v=Z9AVTt4zZck) - 更简便地创建自定义控件
-    - 自訂血條
+
+## 其他
+
 - [使用Rule Tiles（规则瓦片）快速创建游戏场景](https://www.youtube.com/watch?v=LWTjXPBJ1Us)
 

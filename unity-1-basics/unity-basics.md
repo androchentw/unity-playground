@@ -2,58 +2,70 @@
 
 <!-- TOC -->
 * [Unity Basics](#unity-basics)
-  * [Basic Components](#basic-components)
+  * [Basic Concepts](#basic-concepts)
+  * [unity-essentials: Unity Learn 官方教程實作](#unity-essentials-unity-learn-官方教程實作)
   * [Unity 2D 基礎 UI 元件](#unity-2d-基礎-ui-元件)
-  * [MonoBehaviour: GameObject 事件](#monobehaviour-gameobject-事件)
+  * [MonoBehaviour](#monobehaviour)
   * [Prefabs: 預製品](#prefabs-預製品)
   * [Time 時間控制](#time-時間控制)
   * [Coroutine 協程](#coroutine-協程)
 <!-- TOC -->
 
-## Basic Components
+## Basic Concepts
 
-- [Unity Playground: 入門教程](https://learn.unity.com/project/unity-playground)
 - 非電玩人學 Unity3D
   - [(1) 從原子開始](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-%E5%BE%9E%E5%8E%9F%E5%AD%90%E9%96%8B%E5%A7%8B-adc92f13da0)
+    - `MonoBehaviour` 具備動畫、影格、時間軸的概念. 與人互動, 與系統互動
   - [(2) 認透 GameObject 與 Component](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-2-%E8%AA%8D%E9%80%8F-gameobject-%E8%88%87-component-ba95a5502bce)
+    - `GameObject` 對應到的 C# Script 為 `MonoBehaviour`
   - [(3) 探索腳本生命周期](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-3-%E6%8E%A2%E7%B4%A2%E8%85%B3%E6%9C%AC%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F-9366d449ff92)
+    - `Update`
   - [(4) 輸入控制](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-4-%E8%BC%B8%E5%85%A5%E6%8E%A7%E5%88%B6-c141363247f9)
+    - `GetKey`
+    - `[SerializeField] `
   - [(5) Sprite](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-5-sprite-6e4fab762775)
+    - 整合圖像
+    - Sprites-Sheet
+    - <img width="400px" alt="" src="https://miro.medium.com/v2/resize:fit:1280/format:webp/1*EcsRdUHAQafyj6eEsRHcFQ.png">
   - [(6) 從塗料到材質](https://medium.com/@wuufone/%E9%9D%9E%E9%9B%BB%E7%8E%A9%E4%BA%BA%E5%AD%B8unity3d-6-%E5%BE%9E%E5%A1%97%E6%96%99%E5%88%B0%E6%9D%90%E8%B3%AA-ef2207328078)
+
+## unity-essentials: Unity Learn 官方教程實作
+
+- [Unity Playground: 入門教程](https://learn.unity.com/project/unity-playground)
 - [unity-essentials](https://github.com/androchentw/unity-essentials)
-  - Project > Assets > _Unity Essentials > Scenes
-  - 介面: Hierarchy > `GameObjects`
-    - Hierarchy window displays all the GameObjects in the current scene
-    - Inspector: property
-  - 操控
-    - Play Mode: WASD
-    - Flythrough mode: Right click + WASD
-    - 旋轉
-      - The red X-axis
-      - The green Y-axis
-      - The blue Z-axis
-      - Global, Local (selected object)
-    - 視角: Perspective / Isometric mode
-  - Audio Listener: Audio Resource
-    - 3D spatialize. `Spatial Blend` from 0 (fully 2D) to 1 (fully 3D).
-  - Background Music
-    - _Unity Essentials > Audio > Music
-    - Play on Awake
-    - Component: Play Sound at Random Intervals
-  - Programming
-    - Add a movement script
-      - Create `MonoBehaviour` Script: Player Controller > Attached to Object
-      - Main Camera
-      - collectible GameObject
-    - Create a rotating object
-      - `public float rotationSpeed = 0.5f;`
-    - Collect the collectible
-      - `void OnTriggerEnter(Collider other) { Destroy(gameObject); }`
-    - Visual Effects (VFX)
-    - Programming Essentials: More things to try
-      - Jump
-      - Door Opener: Box Collider
-      - Expert: Use generative AI to simulate sunrise and sunset
+- Project > Assets > _Unity Essentials > Scenes
+- 介面: Hierarchy > `GameObjects`
+  - Hierarchy window displays all the GameObjects in the current scene
+  - Inspector: property
+- 操控
+  - Play Mode: WASD
+  - Flythrough mode: Right click + WASD
+  - 旋轉
+    - The red X-axis
+    - The green Y-axis
+    - The blue Z-axis
+    - Global, Local (selected object)
+  - 視角: Perspective / Isometric mode
+- Audio Listener: Audio Resource
+  - 3D spatialize. `Spatial Blend` from 0 (fully 2D) to 1 (fully 3D).
+- Background Music
+  - _Unity Essentials > Audio > Music
+  - Play on Awake
+  - Component: Play Sound at Random Intervals
+- Programming
+  - Add a movement script
+    - Create `MonoBehaviour` Script: Player Controller > Attached to Object
+    - Main Camera
+    - collectible GameObject
+  - Create a rotating object
+    - `public float rotationSpeed = 0.5f;`
+  - Collect the collectible
+    - `void OnTriggerEnter(Collider other) { Destroy(gameObject); }`
+  - Visual Effects (VFX)
+  - Programming Essentials: More things to try
+    - Jump
+    - Door Opener: Box Collider
+    - Expert: Use generative AI to simulate sunrise and sunset
 
 ## Unity 2D 基礎 UI 元件
 
@@ -81,10 +93,10 @@
 - Loading: UI.Image.Sprite. transform.Rotate
   - Error, Reload
 
-## MonoBehaviour: GameObject 事件
+## MonoBehaviour
 
 - [Unity MonoBehaviour 事件函式的生命週期](https://xunyi-huang.com/2020/09/04/unity-monobehaviour-%E4%BA%8B%E4%BB%B6%E5%87%BD%E5%BC%8F%E7%9A%84%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F/)
-  - <img width="600px" alt="" src="https://xunyi-huang.com/wp-content/uploads/2020/09/auxfk-ahl1q.png?w=1124">
+  - <a href="https://docs.unity3d.com/Manual/execution-order.html" target="_blank" rel="noreferrer noopener"><img width="600px" alt="Script lifecycle flowchart" src="https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg"></a>
 - [资源工作流程](https://docs.unity3d.com/cn/2023.2/Manual/AssetWorkflow.html)
   - <img width="600px" alt="" src="https://docs.unity3d.com/cn/2023.2/uploads/Main/AssetWorkflowOverview.svg">
 - [遊戲程式設計與Unity3D引擎初步認識(四)](https://home.gamer.com.tw/creationDetail.php?sn=2491667)

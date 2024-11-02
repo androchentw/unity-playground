@@ -3,6 +3,7 @@
 <!-- TOC -->
 * [Unity Data Management](#unity-data-management)
   * [ScriptableObject: 資料容器](#scriptableobject-資料容器)
+    * [ScriptableObject（可编程对象）为团队和代码带来的六个好处](#scriptableobject可编程对象为团队和代码带来的六个好处)
   * [JSON](#json)
   * [Comparison](#comparison)
   * [enum const json](#enum-const-json-)
@@ -18,22 +19,25 @@
   - `MonoBehaviour` 在依附在 `GameObject` 後，拉到 Assets Folder 成為 `Prefab`, 而 `ScriptableObject` 透過 CreateAssetMenu 成為 Assets 中的資源;
   - 道具界面 `ItemView` 是用 `MonoBehaviour` 寫成的 Script, 有一個屬性 `"Data"` 來讓設計者定義 item 數據；
   - 道具界面 `ItemView` 在 `Start` 的時候，會根據綁定了的 `ItemData` 來更改界面;
+
+### ScriptableObject（可编程对象）为团队和代码带来的六个好处
+
 - [ScriptableObject（可编程对象）为团队和代码带来的六个好处](https://unity.com/cn/blog/engine-platform/6-ways-scriptableobjects-can-benefit-your-team-and-your-code)
-  - https://github.com/UnityTechnologies/PaddleGameSO
-  - 數據容器
-  - https://unity.com/blog/games/systems-that-create-ecosystems-emergent-game-design
-  - https://unity.com/blog/games/unpredictably-fun-the-value-of-randomization-in-game-design
-  - https://unity.com/resources/game-designer-playbook
-  - https://www.gameprogrammingpatterns.com/flyweight.html
-  - `ScriptableObject` 长于储存静态数据，是配置物品或NPC面板数据、角色对话等等静态数值的便利手段。它们会被储存为资产，脱离于游戏本身持续存在，其中的静态配置在加载后可于运行时动态地变化。
-  - 尽管 `ScriptableObject` 数据的更改的确可在编辑器内长期存在，但它们并不适合用于保存游戏数据。倘若游戏性能非常关键，类似JSON、XML或二进制文件等序列化系统会是更好的选择。
-  - `ScriptableObject` 可以减少内存痕迹，抛弃 GameObject 和 Transform，将数据储存为项目文件，方便从多个场景访问相同的数据。将数据储存为项目文件，方便从多个场景访问相同的数据。
-  - Enum 类
-  - 委托对象
-  - https://www.youtube.com/watch?v=cHUXh5biQMg
-  - 事件频道
-  - https://unity.com/how-to/create-modular-and-maintainable-code-observer-pattern
-  - Runtime Set（运行时设置）
+- https://github.com/UnityTechnologies/PaddleGameSO
+- 數據容器
+- https://unity.com/blog/games/systems-that-create-ecosystems-emergent-game-design
+- https://unity.com/blog/games/unpredictably-fun-the-value-of-randomization-in-game-design
+- https://unity.com/resources/game-designer-playbook
+- https://www.gameprogrammingpatterns.com/flyweight.html
+- `ScriptableObject` 长于储存静态数据，是配置物品或NPC面板数据、角色对话等等静态数值的便利手段。它们会被储存为资产，脱离于游戏本身持续存在，其中的静态配置在加载后可于运行时动态地变化。
+- 尽管 `ScriptableObject` 数据的更改的确可在编辑器内长期存在，但它们并不适合用于保存游戏数据。倘若游戏性能非常关键，类似JSON、XML或二进制文件等序列化系统会是更好的选择。
+- `ScriptableObject` 可以减少内存痕迹，抛弃 GameObject 和 Transform，将数据储存为项目文件，方便从多个场景访问相同的数据。将数据储存为项目文件，方便从多个场景访问相同的数据。
+- Enum 类
+- 委托对象
+- https://www.youtube.com/watch?v=cHUXh5biQMg
+- 事件频道
+- https://unity.com/how-to/create-modular-and-maintainable-code-observer-pattern
+- Runtime Set（运行时设置）
 - Best Practice
   - https://unity.com/how-to
   - https://unity.com/resources/create-modular-game-architecture-with-scriptable-objects-ebook
