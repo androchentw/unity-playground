@@ -2,12 +2,12 @@
 
 <img src="https://img.shields.io/badge/License-MIT-blue.svg"  alt=""/>
 
-<div style="text-align: center">
+<p style="text-align: center">
   <img style="width:60%;" src="https://i.imgur.com/ZYG59DH.png" alt="">
   <br/>
   <sub><sup>Photo by <a href="https://unsplash.com/@androchentw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andro Chen</a> on <a href="https://unsplash.com/photos/av_vGjHnK-g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   </sup></sub>
-</div>
+</p>
 
 ## Contribute
 
