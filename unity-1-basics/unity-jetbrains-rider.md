@@ -22,6 +22,7 @@
   - 不要勾選"show only monospaced fonts", 不然會選不到字體
   - [Ref](https://youtrack.jetbrains.com/issue/RIDER-89585/IDE-font-is-not-consistent-with-custom-font-settings-under-Chinese):
   - 注意: 跟 Editor > Font > Font 設定不同
+- [Paste as Plaintext](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716)
 
 ## Plugins
 
