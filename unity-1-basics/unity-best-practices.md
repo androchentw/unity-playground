@@ -44,7 +44,7 @@ Note: ignored `*.meta`, `*.asset`
 
 ### Sample Project Structure
 
-<img width="80%" alt="unity-sample-project-structure-markmap.svg" src="res/unity-sample-project-structure-markmap.png"  />
+<img width="60%" alt="unity-sample-project-structure-markmap.svg" src="res/unity-sample-project-structure-markmap.png"  />
 
 - Assets
   - Art
@@ -192,8 +192,8 @@ UnityProject/
 
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
   patterns explained
-  - <img width="80%" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
-  - <img width="80%" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
+  - <img width="60%" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
+  - <img width="60%" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
 - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
@@ -202,9 +202,9 @@ UnityProject/
 
 Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
 
-<img width="80%" alt="unity-best-practices-mvcs-1" src="res/unity-best-practices-mvcs-1.png"  />
+<img width="60%" alt="unity-best-practices-mvcs-1" src="res/unity-best-practices-mvcs-1.png"  />
 
-<img width="80%" alt="unity-best-practices-mvcs-2" src="res/unity-best-practices-mvcs-2.png"  />
+<img width="60%" alt="unity-best-practices-mvcs-2" src="res/unity-best-practices-mvcs-2.png"  />
 
 ## Design Patterns
 

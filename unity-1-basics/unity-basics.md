@@ -98,9 +98,9 @@
 ## MonoBehaviour
 
 - [Unity MonoBehaviour 事件函式的生命週期](https://xunyi-huang.com/2020/09/04/unity-monobehaviour-%E4%BA%8B%E4%BB%B6%E5%87%BD%E5%BC%8F%E7%9A%84%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F/)
-  - <a href="https://docs.unity3d.com/Manual/execution-order.html" target="_blank" rel="noreferrer noopener"><img width="80%" alt="Script lifecycle flowchart" src="https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg"></a>
+  - <a href="https://docs.unity3d.com/Manual/execution-order.html" target="_blank" rel="noreferrer noopener"><img width="60%" alt="Script lifecycle flowchart" src="https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg"></a>
 - [资源工作流程](https://docs.unity3d.com/cn/2023.2/Manual/AssetWorkflow.html)
-  - <img width="80%" alt="" src="https://docs.unity3d.com/cn/2023.2/uploads/Main/AssetWorkflowOverview.svg">
+  - <img width="60%" alt="" src="https://docs.unity3d.com/cn/2023.2/uploads/Main/AssetWorkflowOverview.svg">
 - [遊戲程式設計與Unity3D引擎初步認識(四)](https://home.gamer.com.tw/creationDetail.php?sn=2491667)
 - Awake (exact 1) -> Start (active切換)
   - FixedUpdate(固定時間, 物理計算) -> Update (per frame) -> LateUpdate
@@ -142,7 +142,7 @@
 - [Unity Engine Coroutine協程](https://dev.twsiyuan.com/2017/05/unity-coroutine.html)
   - Nested Coroutine
   - Parallel Coroutine
-    - <img width="80%" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrLmP1QGEKWb_estzs35SnLIY5gKu0yUmFOGn0MAv_HtHxwYogS5ylhDPCNjqBVaLwO4GX_wpBJ7yT73NYBMYdhC15K6FHSukzqRLxkyhOvLo4Zhco22WIXzMpZgqAKILmTNbLh6cLueU/s780/coroutine-parallel-working-flow.png" alt="coroutine-parallel-working-flow.png">
+    - <img width="60%" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrLmP1QGEKWb_estzs35SnLIY5gKu0yUmFOGn0MAv_HtHxwYogS5ylhDPCNjqBVaLwO4GX_wpBJ7yT73NYBMYdhC15K6FHSukzqRLxkyhOvLo4Zhco22WIXzMpZgqAKILmTNbLh6cLueU/s780/coroutine-parallel-working-flow.png" alt="coroutine-parallel-working-flow.png">
   - 無法預期要多少時間時，使用AsyncOperation衍生類別:
   - SceneManager.LoadSceneAsync()：載入場景
   - AssetBundle.LoadAssetAsync()：載入 AssetBundle
