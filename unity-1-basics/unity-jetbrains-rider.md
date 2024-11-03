@@ -15,14 +15,13 @@
   - Edit > Preferences > External Tools > External Script Editor > Rider
   - For Trace code: Unity > Regenerate project File > *.csproj
 - Settings | Editor | Editor tabs --> Mark modified tabs with asterisk
-- [Shortcut for changing tabs->spaces->tabs in IntelliJ IDEA](https://stackoverflow.com/questions/41532061/shortcut-for-changing-tabs-spaces-tabs-in-intellij-idea)
 - 字體: Editor > Color Scheme > Color Scheme Font
   - Font: Hack Nerd Font
   - Fallback font: Microsoft JhengHei UI 
-  - 不要勾選"show only monospaced fonts", 不然會選不到字體
-  - [Ref](https://youtrack.jetbrains.com/issue/RIDER-89585/IDE-font-is-not-consistent-with-custom-font-settings-under-Chinese):
+  - 不要勾選 "show only monospaced fonts", 不然會選不到字體
   - 注意: 跟 Editor > Font > Font 設定不同
-- [Paste as Plaintext](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716)
+  - [Ref: IDE font is not consistent with custom font settings under Chinese](https://youtrack.jetbrains.com/issue/RIDER-89585/IDE-font-is-not-consistent-with-custom-font-settings-under-Chinese):
+- [Shortcut for changing tabs->spaces->tabs in IntelliJ IDEA](https://stackoverflow.com/questions/41532061/shortcut-for-changing-tabs-spaces-tabs-in-intellij-idea)
 
 ## Plugins
 
@@ -35,7 +34,8 @@
   - Statistic, WakaTime, Mario Progress Bar
 - AI 輔助
   - [Codeium](https://blog.user.today/github-copilot-ai-alternatives/#title_i-8) 
-  - [免費用 Codeium 和 Codium AI來加速開發](https://medium.com/@sarala0725/%E5%85%8D%E8%B2%BB%E7%94%A8codeium%E5%92%8Ccodium-ai%E4%BE%86%E5%8A%A0%E9%80%9F%E9%96%8B%E7%99%BC-d43c060a557d). [用 Codeium 自動完成程式碼](https://b6land.github.io/Codeium_Intro/)
+    - [免費用 Codeium 和 Codium AI來加速開發](https://medium.com/@sarala0725/%E5%85%8D%E8%B2%BB%E7%94%A8codeium%E5%92%8Ccodium-ai%E4%BE%86%E5%8A%A0%E9%80%9F%E9%96%8B%E7%99%BC-d43c060a557d)
+    - [用 Codeium 自動完成程式碼](https://b6land.github.io/Codeium_Intro/)
   - 其他
     - SuperMaven, [JetBrains Inline Completion](https://www.jetbrains.com/help/idea/full-line-code-completion.html) 會衝突, 所以要擇一使用
     - Tabnine, AWS Toolkit, Amazon Q, Codeium, JetBrains AI Assistant. GitHub Copilot
@@ -44,27 +44,29 @@
 ## Keymap
 
 - [JetBrains Rider IntelliJ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
-- settings: ctrl+alt+s
+- Settings: `⌘+,`, `ctrl+alt+s`
 - Navigate
   - Search Everywhere: ctrl+T=> `Ctrl+Shift+A`, `⌘+⇧+A`
     - [Cmd+Shift+A hotkey opens Terminal with "apropos" search instead of the Find Action dialog](https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog)
   - Recently Viewed/Changed Files: `⌘+E`, `Ctrl+E`
   - Main Menu | Navigate (視線的轉移)
     - Back: `⌘+⌃+←`, `ctrl+shift+left`, Forward: `⌘+⌃+→`, `ctrl+shift+right`
-    - Navigate in File | Previous Method `⌃+⇧+↑`; Next Method `⌃+⇧+↓`
+    - Navigate in File | Previous Method `⌃+⇧+↑`; Next Method `⌃+⇧+↓` 
+    - Goto by Reference Actions | Jump to Navigation Bar: `⌘+↑`
   - Main Menu | Window | Editor Tabs
     - New Tab => ctrl+T, Close Tab Ctrl+F4=> ctrl+W, Reopen closed Tab => Crtl+shift+T
     - Select previous tab: `⌘+⌥+←`, `alt+left`; Select next tab: `⌘+⌥+→`, `alt+right`
-  - Main Menu | Navigate | Goto by Reference Actions | Jump to Navigation Bar: `⌘+↑`
+  - Main Menu | View 
+    - Quick Definition: `⌘+⇧+D`
+    - Jump to Source: `⌘+↓`
   - shrink selection: ctrl+alt+left
-  - 折疊 fold selection: `⌘+.`
 - Code
   - Other | Show Context Actions: `⌥+enter` => `⌘+enter`. alt+enter; +Ctrl+Shift+D 
   - [Paste as Plain Text](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716): switch `⌘+⌃+⇧+V` with `⌘+V`
   - Refactor: =>ctrl+alt+shift+R; `⌘+⌃+⇧+R`, `⌥+R`, Replace: ctrl+R, Replace in file: ctrl+shift+R 
   - Reformat Code: Ctrl+Alt+L -> Ctrl+Alt+F, `⌥+⇧+F`
   - Optimize Imports: Ctrl+Alt+O, `⌥+⇧+O`
-  - Quick definition: `⌘+⇧+D`
+  - 折疊 fold selection: `⌘+.`
 - AceAction (Ctrl+; by default)
 
 ## Tutorial

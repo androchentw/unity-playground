@@ -9,6 +9,7 @@
   * [Prefabs: 預製品](#prefabs-預製品)
   * [Time 時間控制](#time-時間控制)
   * [Coroutine 協程](#coroutine-協程)
+  * [Switch Scene 切換場景](#switch-scene-切換場景)
 <!-- TOC -->
 
 ## Basic Concepts
@@ -146,3 +147,9 @@
    - AssetBundle.LoadAssetAsync()：載入 AssetBundle
    - Resources.LoadAsync()：從 Resources 目錄載入各種資源
 - `yield async await`
+
+## Switch Scene 切換場景
+
+- [Unity教學：UI設計與場景管理交換](https://youtu.be/DQSTxRylGtI?si=H3GyzYplp0NRueOz)
+  - Build Settings > Add scene 順序
+  - C# `SceneManager.LoadScene(0)`
