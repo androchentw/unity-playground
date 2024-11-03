@@ -42,7 +42,9 @@
 
 Note: ignored `*.meta`, `*.asset`
 
-### Sample Structure
+### Sample Project Structure
+
+<img width="600px" alt="unity-sample-project-structure-markmap.svg" src="res/unity-sample-project-structure-markmap.svg"  />
 
 - Assets
   - Art
