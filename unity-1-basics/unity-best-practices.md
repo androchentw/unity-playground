@@ -15,14 +15,14 @@
 
 - [Day15 物件導向封裝性-Get & Set 存取器](https://ithelp.ithome.com.tw/articles/10223760)
 - [Unity C# | Tag和Layer差異與特性 & 抓取Tag物件](https://vocus.cc/article/6203a9b8fd897800014ad1dd)
-	- `GameObject respawn = GameObject.FindWithTag("...");`
-	- `GameObject [] respawns = GameObject.FindGameObjectsWithTag("...");`
+  - `GameObject respawn = GameObject.FindWithTag("...");`
+  - `GameObject [] respawns = GameObject.FindGameObjectsWithTag("...");`
 
 ## Code Style Guide
 
 - [C# Coding Standards and Naming Conventions](https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md)
-	- 幾乎都是 PascalCase
-	- 除了 localVar 或 _privateVar
+  - 幾乎都是 PascalCase
+  - 除了 localVar 或 _privateVar
 - [Create a C# style guide: Write cleaner code that scales](https://unity.com/resources/create-code-c-sharp-style-guide-e-book?ungated=true)
 - [Unity C# | 命名法則 & 低耦合、高內聚](https://vocus.cc/designer/61fe9831fd897800014eedda)
 - [Unity-Code-Style-Guide](https://github.com/androchentw/Unity-Code-Style-Guide)
@@ -31,16 +31,18 @@
 
 ## MVCS (Model-View-Controller-Service)
 
-- Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
-- [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design patterns explained
+- [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
+  patterns explained
   - <img width="600px" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
   - <img width="600px" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
-- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
+- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure
+  and C# coding standards template
 - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
   - "Any Scene" Bootstrap: developer mode / testing
 
+Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
 
 <img width="600px" alt="unity-best-practices-mvcs-1" src="res/unity-best-practices-mvcs-1.png"  />
 

@@ -75,11 +75,12 @@
 - 按鈕 UI.Button / TextMeshPro (可點擊文字). onClick
   - 動作: Application.OpenURL(), Switch Scene
   - 解析度: Canvas Scaler
-  - 點擊動畫: [DoTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676?source=post_page-----307b9682dbd8--------------------------------), [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595?srsltid=AfmBOood7jjHDyBQ6p4Oxfr5-6_eamp16nUr29xV-NhBiiwqzE9gHvss)
+  - 點擊動畫
+    - [DoTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676?source=post_page-----307b9682dbd8--------------------------------), [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595?srsltid=AfmBOood7jjHDyBQ6p4Oxfr5-6_eamp16nUr29xV-NhBiiwqzE9gHvss)
     - [Unity筆記 手把手帶你走進DOTween的世界](https://medium.com/ericzhan-publication/unity%E7%AD%86%E8%A8%98-%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%B6%E4%BD%A0%E8%B5%B0%E9%80%B2dotween%E7%9A%84%E4%B8%96%E7%95%8C-307b9682dbd8)
 - 彈窗: NativePopup, Messagebox
   - [unity-mobile-dialog-popup-native](https://github.com/khanhuitse05/unity-mobile-dialog-popup-native)
-  - [unity-os-native-popup](https://github.com/yeosu0107/unity-os-native-popup)    
+  - [unity-os-native-popup](https://github.com/yeosu0107/unity-os-native-popup)
 - 選單: [Menu with Tab UI](https://chatgpt.com/share/67073179-8334-800f-83cb-e86daf6ac355)
 - 進度條: UI.Image -> RectTransform -> Filled (Horizontal)
   - Progressbar
@@ -108,15 +109,15 @@
 
 ## Prefabs: 預製品
 
-- Unity學習筆記#6 : Prefab 使用須知 
+- Unity學習筆記#6 : Prefab 使用須知
 - Unity Prefabs 之使用方式筆記
-- Dynamically Create Game Objects 
+- Dynamically Create Game Objects
   - Instantiating prefabs at runtime
   - Dynamically create Game Objects and Components in Unity
 
 ## Time 時間控制
 
-- [GAI - Unity 時間控制系統設計](https://chatgpt.com/share/670e7420-b69c-800f-8371-8b09cf878e42): TimeController.cs 
+- [GAI - Unity 時間控制系統設計](https://chatgpt.com/share/670e7420-b69c-800f-8371-8b09cf878e42): TimeController.cs
   - 資源生成計時器: Unity計時系統，搭配 Coroutine + Time.deltaTime
   - 伺服器同步: Unity Web Request搭配Google Cloud Function
   - 建築排隊系統: ScriptableObject管理本地資料，並定期同步伺服器
@@ -125,7 +126,7 @@
   - 作弊防護: 定時伺服器校驗（GCP雲函數或Firestore Rules）
 - Timer
   - 有套件, 直接用就好
-  - [UnityTimer](https://github.com/akbiggs/UnityTimer/tree/master) 
+  - [UnityTimer](https://github.com/akbiggs/UnityTimer/tree/master)
   - Real world timer: DateTime
   - [Unity: How to Make Real World Timer C#](https://www.youtube.com/watch?v=GW3HdL43cVM)
   - [Get Real World Current Time In Unity](https://www.youtube.com/watch?v=TwtDpSmozRs)
@@ -139,13 +140,13 @@
   - `Start() { StartCoroutine(Task()); }`
 - [Unity Coroutine 使用筆記](https://dev.twsiyuan.com/2017/05/unity-coroutine.html): yield return null / WaitWhile, …
 - [Unity Engine Coroutine協程](https://dev.twsiyuan.com/2017/05/unity-coroutine.html)
-   - Nested Coroutine
-   - Parallel Coroutine
-     - <img width="600px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrLmP1QGEKWb_estzs35SnLIY5gKu0yUmFOGn0MAv_HtHxwYogS5ylhDPCNjqBVaLwO4GX_wpBJ7yT73NYBMYdhC15K6FHSukzqRLxkyhOvLo4Zhco22WIXzMpZgqAKILmTNbLh6cLueU/s780/coroutine-parallel-working-flow.png" alt="coroutine-parallel-working-flow.png">
-   - 無法預期要多少時間時，使用AsyncOperation衍生類別:
-   - SceneManager.LoadSceneAsync()：載入場景
-   - AssetBundle.LoadAssetAsync()：載入 AssetBundle
-   - Resources.LoadAsync()：從 Resources 目錄載入各種資源
+  - Nested Coroutine
+  - Parallel Coroutine
+    - <img width="600px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrLmP1QGEKWb_estzs35SnLIY5gKu0yUmFOGn0MAv_HtHxwYogS5ylhDPCNjqBVaLwO4GX_wpBJ7yT73NYBMYdhC15K6FHSukzqRLxkyhOvLo4Zhco22WIXzMpZgqAKILmTNbLh6cLueU/s780/coroutine-parallel-working-flow.png" alt="coroutine-parallel-working-flow.png">
+  - 無法預期要多少時間時，使用AsyncOperation衍生類別:
+  - SceneManager.LoadSceneAsync()：載入場景
+  - AssetBundle.LoadAssetAsync()：載入 AssetBundle
+  - Resources.LoadAsync()：從 Resources 目錄載入各種資源
 - `yield async await`
 
 ## Switch Scene 切換場景

@@ -16,7 +16,8 @@
 - [Unity學習筆記#8 : Scriptable Object使用須知](https://kendevlog.wordpress.com/2017/11/10/unity%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%988-scriptable-object%E4%BD%BF%E7%94%A8%E9%A0%88%E7%9F%A5/)
   - `ScriptableObject` 是數據容器，而 `MonoBehaviour` 是加強 GameObject 的控制
   - `MonoBehaviour` 必須依附在 `GameObject` 才能使用，但 `ScriptableObject` 不用；
-  - `MonoBehaviour` 在依附在 `GameObject` 後，拉到 Assets Folder 成為 `Prefab`, 而 `ScriptableObject` 透過 CreateAssetMenu 成為 Assets 中的資源;
+  - `MonoBehaviour` 在依附在 `GameObject` 後，拉到 Assets Folder 成為 `Prefab`, 而 `ScriptableObject` 透過
+    CreateAssetMenu 成為 Assets 中的資源;
   - 道具界面 `ItemView` 是用 `MonoBehaviour` 寫成的 Script, 有一個屬性 `"Data"` 來讓設計者定義 item 數據；
   - 道具界面 `ItemView` 在 `Start` 的時候，會根據綁定了的 `ItemData` 來更改界面;
 
@@ -56,9 +57,16 @@
 我的理解:
 
 - Prefab 是製作 GameObject 的工廠, 可以快速產出 GameObject in Scene
-- ScriptableObject 是儲存 Data 用的一種型態. 比如說 sword 的數值[ { name: a, atk: 10 }, { name: b, atk: 20} ]. 可以用來快速編輯(SerializedField) (但跨 scene 就會被重置 default?)
+- ScriptableObject 是儲存 Data 用的一種型態. 比如說 sword 的數值[ { name: a, atk: 10 }, { name: b, atk: 20} ].
+  可以用來快速編輯(SerializedField) (但跨 scene 就會被重置 default?)
 - [Scriptable Objects vs Prefabs](https://www.reddit.com/r/Unity3D/comments/134qpok/scriptable_objects_vs_prefabs/)
-  - Now why you want them: The value of SOs comes in when you have many-to-many relationships. My spell example before you can easily do by just putting all these settings into fields on the character. But what do you do if the player can choose from 10 different characters in your game? Then if you want to change the VFX, you will have to change it 10 times. If you used a SO for each spell, then all the spell settings are stored in one location and you avoid that extra editing effort.
+  - Now why you want them: The value of SOs comes in when you have many-to-many relationships. My spell example before
+    you can easily do by just putting all these settings into fields on the character. But what do you do if the player
+    can choose from 10 different characters in your game? Then, if you want to change the VFX, you will have to change
+    it
+    10 times. If you used a SO for each spell, then all the spell settings are stored in one location, and you avoid
+    that
+    extra editing effort.
 - [ScriptableObject Unity, When and how to use.](https://www.youtube.com/watch?v=IB14q9EQrVQ)
 - [Prefabs VS Scriptable Objects - Spikarian #unity3d](https://www.youtube.com/watch?v=im2RQ9x47nE)
 - [Indie Game Devlog 2 - Item System, ScriptableObjects & Saving JSON](https://www.youtube.com/watch?v=xgJ_Q0leKlE)
