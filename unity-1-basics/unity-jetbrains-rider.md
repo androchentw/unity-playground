@@ -60,21 +60,26 @@
     - New Tab => ctrl+T, Close Tab Ctrl+F4=> ctrl+W, Reopen closed Tab => Crtl+shift+T
     - Select previous tab: `⌘+⌥+←`, `alt+left`; Select next tab: `⌘+⌥+→`, `alt+right`
   - Main Menu | View 
+    - View Recent Actions Group | Recent Files: `⌘+E`, Recent Location: `⌘+⇧+E`
     - Quick Definition: `⌘+⇧+D`
     - Jump to Source: `⌘+↓`
   - Main Menu | Git 
     - VCS Group | Git | Push...: `⌘+⇧+K`
+  - Tool Windows
+    - Left Top. Explorer: `⌘+1`, Structure: `⌘+2`
+    - Left Down. Commit: `⌘+3`, TODO: `⌘+4`, Bookmarks: `⌘+5`
+    - Right. Codeium Chat: `⌘+6`, Problem: `⌘+7`, Notification: `⌘+6`
   - shrink selection: ctrl+alt+left
 - Code
   - Other | Show Context Actions: `⌥+enter` => `⌘+enter`. alt+enter; +Ctrl+Shift+D
   - [Editor Actions | Paste as Plain Text](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716): switch `⌘+⌃+⇧+V` with `⌘+V`
   - Main Menu | Refactor | Refactor This: ctrl+alt+shift+R; `⌘+⌃+⇧+R`, `⌥+R`, 
   - Main Menu | Edit
-    - Find, Find in file 
-    - Replace: ctrl+R, Replace in file: ctrl+shift+R
+    - Find: `⌘+F`, Find in file: `⌘+⇧+F`
+    - Replace: `⌘+R`, ctrl+R, Replace in file: `⌘+⇧+R`, ctrl+shift+R
   - Main Menu | Code | Code Formatting Actions
-    - Reformat Code: Ctrl+Alt+L -> Ctrl+Alt+F, `⌥+⇧+F`
-    - Optimize Imports: Ctrl+Alt+O, `⌥+⇧+O`
+    - Reformat Code: `⌥+⇧+F`, Ctrl+Alt+F 
+    - Optimize Imports: `⌥+⇧+O`, Ctrl+Alt+O
   - Main Menu | Code | Folding | 
     - Expand: `⌘ +`, Collapse `⌘ -`; All + "⇧" 
     - Fold Selection / Remove region: `⌘+.`
