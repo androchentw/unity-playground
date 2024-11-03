@@ -41,9 +41,9 @@
   - Project Settings > Editor >Enter Play Mode Options = True
   - "Any Scene" Bootstrap: developer mode / testing
 
-![unity-best-practices-mvcs-1.png](res/unity-best-practices-mvcs-1.png)
+![unity-best-practices-mvcs-1.png](res/unity-best-practices-mvcs-1.png){width=300px}
 
-![unity-best-practices-mvcs-2.png](res/unity-best-practices-mvcs-2.png)
+![unity-best-practices-mvcs-2.png](res/unity-best-practices-mvcs-2.png){width=300px}
 
 ## Design Patterns
 
@@ -62,7 +62,7 @@
 ## Mobile Game Design
 
 - [Mobile game design with Unity](https://unity.com/topics/mobile-game-design)
-- [Optimize your game performance for mobile, XR, and the web in Unity (Unity 6 edition)](https://unity.com/resources/mobile-xr-web-game-performance-optimization-unity-6)
+- [Optimize your game performance for mobile, XR, and the web in Unity](https://unity.com/resources/mobile-xr-web-game-performance-optimization-unity-6)
   - [GenAI NoteBook LLM Summary](https://notebooklm.google.com/notebook/10e53e23-00fa-49ee-bff4-b27ee0ccf4e7)
 - [Introduction to game level design](https://unity.com/resources/introduction-to-level-design-in-game-development-and-in-unity)
 - [The Unity Game Designer Playbook](https://unity.com/resources/game-designer-playbook)
