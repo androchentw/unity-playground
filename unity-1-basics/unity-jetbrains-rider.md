@@ -73,7 +73,9 @@
 - Code
   - Other | Show Context Actions: `⌥+enter` => `⌘+enter`. alt+enter; +Ctrl+Shift+D
   - [Editor Actions | Paste as Plain Text](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716): switch `⌘+⌃+⇧+V` with `⌘+V`
-  - Main Menu | Refactor | Refactor This: ctrl+alt+shift+R; `⌘+⌃+⇧+R`, `⌥+R`, 
+  - Main Menu | Refactor
+    - Refactor This: ctrl+alt+shift+R; `⌥+R`, `⌘+⌃+⇧+R`
+      - Rename: `⌃+⇧+R`
   - Main Menu | Edit
     - Find: `⌘+F`, Find in file: `⌘+⇧+F`
     - Replace: `⌘+R`, ctrl+R, Replace in file: `⌘+⇧+R`, ctrl+shift+R

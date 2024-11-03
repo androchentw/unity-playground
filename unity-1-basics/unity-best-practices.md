@@ -31,6 +31,7 @@
 
 ## MVCS (Model-View-Controller-Service)
 
+- Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design patterns explained
   - <img width="600px" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
   - <img width="600px" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
@@ -39,6 +40,10 @@
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
   - "Any Scene" Bootstrap: developer mode / testing
+
+![unity-best-practices-mvcs-1.png(res/unity-best-practices-mvcs-1.png)
+
+![unity-best-practices-mvcs-2.png(res/unity-best-practices-mvcs-2.png)
 
 ## Design Patterns
 
