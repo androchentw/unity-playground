@@ -44,6 +44,7 @@
 
 ### Sample Project Structure
 
+- [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP)
 - [Sample Game Projects on Unity Asset Store](../unity-2-assets-collection/unity-assets-templates.md)
 
 <img width="60%" alt="unity-sample-project-structure-markmap.svg" src="res/unity-sample-project-structure-markmap.png"  />
