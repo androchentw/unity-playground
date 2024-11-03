@@ -44,6 +44,8 @@ Note: ignored `*.meta`, `*.asset`
 
 ### Sample Project Structure
 
+- [Sample Game Projects on Unity Asset Store](../unity-2-assets-collection/unity-assets-templates.md)
+
 <img width="60%" alt="unity-sample-project-structure-markmap.svg" src="res/unity-sample-project-structure-markmap.png"  />
 
 - Assets
