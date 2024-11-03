@@ -5,6 +5,8 @@
   * [C# General](#c-general)
   * [Code Style Guide](#code-style-guide)
   * [Unity Folder Structure](#unity-folder-structure)
+    * [Example Structure](#example-structure)
+    * [Reference Structure - unity-project-template](#reference-structure---unity-project-template)
   * [MVCS (Model-View-Controller-Service)](#mvcs-model-view-controller-service)
   * [Design Patterns](#design-patterns)
   * [DI (Dependency Injection), IoC C# unity](#di-dependency-injection-ioc-c-unity)
@@ -35,8 +37,60 @@
 - [Best practices for organizing your Unity project](https://unity.com/how-to/organizing-your-project)
 - [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
 - [unity-project-style-guide](https://github.com/timdhoffmann/unity-project-style-guide)
+- [Adding tests to a package](https://docs.unity3d.com/Manual/cus-tests.html)
+- [How to run automated tests for your games with the Unity Test Framework](https://unity.com/how-to/automated-tests-unity-test-framework)
 
-Note: ignored `*.meta`, `*.asset`  
+Note: ignored `*.meta`, `*.asset`
+
+### Sample Structure
+
+- Assets
+  - Art
+    - Animations
+    - Fonts
+    - Materials
+    - Models
+    - Sprites
+    - Textures
+    - UI
+  - Audio
+    - Music
+    - SFX
+    - UI
+  - Docs
+  - Plugins
+  - Prefabs
+    - Characters
+    - Items
+    - UI
+  - Resources
+  - Scenes
+  - Scripts
+    - Editor
+    - Managers
+    - Mvcs
+      - Controller
+        - Command
+      - Model
+      - Service
+      - View
+        - Input
+    - Systems
+      - Enemies
+      - Items
+      - Players
+      - Skills
+    - UI
+    - Utils
+  - Tests
+    - Editor
+    - Runtime
+  - Settings
+- Packages
+- ProjectSettings
+  - Packages
+
+### Reference Structure - unity-project-template
 
 ```text
 UnityProject/
@@ -73,22 +127,22 @@ UnityProject/
                 ├── Editor/
                     ├── ReadMeMenuItems.cs
     ├── Prefabs/
-        ├── RMC/
+        ├── [MyCompany]/
             ├── [MyProject]/
                 ├── AudioManager.prefab
     ├── Resources/
-        ├── RMC/
+        ├── [MyCompany]/
             ├── [MyProject]/
     ├── Scenes/
         ├── Scene01_Intro.unity
     ├── Scripts/
         ├── Editor/
-            ├── RMC/
+            ├── [MyCompany]/
                 ├── Templates/
                     ├── TemplateEditorMenuItems.cs
                 ├── [MyProject]/
         ├── Runtime/
-            ├── RMC/
+            ├── [MyCompany]/
                 ├── Templates/
                     ├── ITemplateInterface.cs
                     ├── TemplateClass.cs
@@ -101,12 +155,12 @@ UnityProject/
                         ├── HudUI.cs
         ├── Tests/
             ├── Editor/
-                ├── RMC/
+                ├── [MyCompany]/
                     ├── Templates/
                         ├── TemplateClassEditModeTest.cs
                     ├── [MyProject]/
             ├── Runtime/
-                ├── RMC/
+                ├── [MyCompany]/
                     ├── Templates/
                         ├── TemplateComponentPlayModeTest.cs
                     ├── [MyProject]/
@@ -142,6 +196,7 @@ UnityProject/
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
   - "Any Scene" Bootstrap: developer mode / testing
+- https://ithelp.ithome.com.tw/articles/10222311
 
 Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
 
