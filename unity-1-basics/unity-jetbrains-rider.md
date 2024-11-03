@@ -46,21 +46,26 @@
 - [JetBrains Rider IntelliJ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
 - settings: ctrl+alt+s
 - Navigate
-  - Search Everywhere: ctrl+T=> Ctrl+Shift+A
-  - Recently Viewed/Changed Files: Ctrl+E
-  - Navigate > Back: ctrl+shift+left, Forward: ctrl+shift+right
-  - Close Active Tab Ctrl+F4=> ctrl+W, New Tab => ctrl+T, Reopen closed Tab => Ctrl+shift+T
-    Select next tab: alt+left, select previous tab: alt+right
+  - Search Everywhere: ctrl+T=> `Ctrl+Shift+A`, `⌘+⇧+A`
+    - [Cmd+Shift+A hotkey opens Terminal with "apropos" search instead of the Find Action dialog](https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog)
+  - Recently Viewed/Changed Files: `⌘+E`, `Ctrl+E`
+  - Main Menu | Navigate (視線的轉移)
+    - Back: `⌘+⌃+←`, `ctrl+shift+left`, Forward: `⌘+⌃+→`, `ctrl+shift+right`
+    - Navigate in File | Previous Method `⌃+⇧+↑`; Next Method `⌃+⇧+↓`
+  - Main Menu | Window | Editor Tabs
+    - New Tab => ctrl+T, Close Tab Ctrl+F4=> ctrl+W, Reopen closed Tab => Crtl+shift+T
+    - Select previous tab: `⌘+⌥+←`, `alt+left`; Select next tab: `⌘+⌥+→`, `alt+right`
+  - Main Menu | Navigate | Goto by Reference Actions | Jump to Navigation Bar: `⌘+↑`
   - shrink selection: ctrl+alt+left
-  - 折疊 fold selection: cmd+.
+  - 折疊 fold selection: `⌘+.`
 - Code
-  - Reformat Code Ctrl+Alt+L -> Ctrl+Alt+F
-  - rename: ctrl+R, rename in file: ctrl+shift+R, Refactor: =>ctrl+alt+shift+R
-  - Optimize Imports Ctrl+Alt+O
-  - Quick/External Documentation Ctrl+Q
-  - context action: alt+enter; +Ctrl+Shift+D
+  - Other | Show Context Actions: `⌥+enter` => `⌘+enter`. alt+enter; +Ctrl+Shift+D 
+  - [Paste as Plain Text](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716): switch `⌘+⌃+⇧+V` with `⌘+V`
+  - Refactor: =>ctrl+alt+shift+R; `⌘+⌃+⇧+R`, `⌥+R`, Replace: ctrl+R, Replace in file: ctrl+shift+R 
+  - Reformat Code: Ctrl+Alt+L -> Ctrl+Alt+F, `⌥+⇧+F`
+  - Optimize Imports: Ctrl+Alt+O, `⌥+⇧+O`
+  - Quick definition: `⌘+⇧+D`
 - AceAction (Ctrl+; by default)
-
 
 ## Tutorial
 
