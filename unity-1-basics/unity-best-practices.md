@@ -7,6 +7,7 @@
   * [Unity Folder Structure](#unity-folder-structure)
     * [Sample Project Structure](#sample-project-structure)
     * [Reference Structure - unity-project-template](#reference-structure---unity-project-template)
+    * [Asset Type](#asset-type)
   * [MVCS (Model-View-Controller-Service)](#mvcs-model-view-controller-service)
   * [Design Patterns](#design-patterns)
   * [DI (Dependency Injection), IoC C# unity](#di-dependency-injection-ioc-c-unity)
@@ -39,8 +40,6 @@
 - [unity-project-style-guide](https://github.com/timdhoffmann/unity-project-style-guide)
 - [Adding tests to a package](https://docs.unity3d.com/Manual/cus-tests.html)
 - [How to run automated tests for your games with the Unity Test Framework](https://unity.com/how-to/automated-tests-unity-test-framework)
-
-Note: ignored `*.meta`, `*.asset`
 
 ### Sample Project Structure
 
@@ -95,6 +94,8 @@ Note: ignored `*.meta`, `*.asset`
   - Packages
 
 ### Reference Structure - unity-project-template
+
+Note: ignored `*.meta`, `*.asset`
 
 ```text
 UnityProject/
@@ -189,6 +190,27 @@ UnityProject/
     └── packages-lock.json
 ├── ProjectSettings/
 ```
+
+### Asset Type
+
+- [Version control and project organization best practices for game developers](https://unity.com/resources/version-control-project-organization-best-practices-ebook)
+
+| Asset Type | Explanation                                                                                                                                                                                                                                                  |
+|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Animations | Animations contain animated motion clips and their controller files. These can also contain Timeline assets for in-game cinematics or rigging information for procedural animation.                                                                          |
+| Audio      | Sound assets include audio clips as well as the mixers used for blending the effects and music.                                                                                                                                                              |
+| Editor     | This contains scripted tools made for use with the Unity Editor but not appearing in a target build.                                                                                                                                                         |
+| Fonts      | This folder contains the fonts used in the game.                                                                                                                                                                                                             |
+| Materials  | These assets describe surface shading properties.                                                                                                                                                                                                            |
+| Meshes     | Store models created in an external digital content creation (DCC) application here.                                                                                                                                                                         |
+| Particles  | The particle simulations in Unity, created either with the Particle System or Visual Effect Graph.                                                                                                                                                           |
+| Prefabs    | These are reusable GameObjects with prebuilt Components. Add them to a scene to build.                                                                                                                                                                       |
+| Scripts    | All user-developed code for gameplay appears here.                                                                                                                                                                                                           |
+| Settings   | These assets store render pipeline settings, such as for the High Definition Render Pipeline (HDRP) and Universal Render Pipeline (URP).                                                                                                                     |
+| Shaders    | These programs run on the GPU as part of the graphics pipeline.                                                                                                                                                                                              |
+| Scenes     | Unity stores small, functional portions of your project into Scene assets. They often correspond to game levels or part of a level.                                                                                                                          |
+| Textures   | Image files can consist of texture files for materials and surfacing, UI overlay elements for user interface, and lightmaps to store lighting information.                                                                                                   |
+| ThirdParty | If you have assets from an external source like the Asset Store, keep them separated from the rest of your project here. This makes updating your third-party assets and scripts easier. Third-party assets may have a set structure that cannot be altered. |
 
 ## MVCS (Model-View-Controller-Service)
 
