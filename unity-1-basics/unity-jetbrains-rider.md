@@ -82,7 +82,10 @@
     - Optimize Imports: `⌥+⇧+O`, Ctrl+Alt+O
   - Main Menu | Code | Folding | 
     - Expand: `⌘ +`, Collapse `⌘ -`; All + "⇧" 
+      - 小技巧: 先 collapse all 再 expand all, 全部的 markdown link 就會變成 `...`
     - Fold Selection / Remove region: `⌘+.`
+  - Plugins | Markdown | Create Link: `⌘+K`
+    - 小技巧: 在剪貼簿中有 url link 時, 再選取要標是的字段, 按下 Create Link: `⌘+K`, 會自動帶上 url link 
 - AceAction (Ctrl+; by default)
 
 ## Tutorial
