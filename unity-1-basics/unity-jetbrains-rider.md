@@ -43,7 +43,10 @@
 
 ## Keymap
 
-- [JetBrains Rider IntelliJ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
+- [Mac symbol](https://gist.github.com/jlyonsmith/6992156f18c423fd1c5af068aa311fb5)
+  - ⌘ Command(cmd), ⌥ Option, ⌃ Control,  ⇧ Shift
+  - ← Left, → Right, ↑ Up, ↓ Down
+- [Default: JetBrains Rider IntelliJ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
 - Settings: `⌘+,`, `ctrl+alt+s`
 - Navigate
   - Search Everywhere: ctrl+T=> `Ctrl+Shift+A`, `⌘+⇧+A`
@@ -59,14 +62,22 @@
   - Main Menu | View 
     - Quick Definition: `⌘+⇧+D`
     - Jump to Source: `⌘+↓`
+  - Main Menu | Git 
+    - VCS Group | Git | Push...: `⌘+⇧+K`
   - shrink selection: ctrl+alt+left
 - Code
-  - Other | Show Context Actions: `⌥+enter` => `⌘+enter`. alt+enter; +Ctrl+Shift+D 
-  - [Paste as Plain Text](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716): switch `⌘+⌃+⇧+V` with `⌘+V`
-  - Refactor: =>ctrl+alt+shift+R; `⌘+⌃+⇧+R`, `⌥+R`, Replace: ctrl+R, Replace in file: ctrl+shift+R 
-  - Reformat Code: Ctrl+Alt+L -> Ctrl+Alt+F, `⌥+⇧+F`
-  - Optimize Imports: Ctrl+Alt+O, `⌥+⇧+O`
-  - 折疊 fold selection: `⌘+.`
+  - Other | Show Context Actions: `⌥+enter` => `⌘+enter`. alt+enter; +Ctrl+Shift+D
+  - [Editor Actions | Paste as Plain Text](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716): switch `⌘+⌃+⇧+V` with `⌘+V`
+  - Main Menu | Refactor | Refactor This: ctrl+alt+shift+R; `⌘+⌃+⇧+R`, `⌥+R`, 
+  - Main Menu | Edit
+    - Find, Find in file 
+    - Replace: ctrl+R, Replace in file: ctrl+shift+R
+  - Main Menu | Code | Code Formatting Actions
+    - Reformat Code: Ctrl+Alt+L -> Ctrl+Alt+F, `⌥+⇧+F`
+    - Optimize Imports: Ctrl+Alt+O, `⌥+⇧+O`
+  - Main Menu | Code | Folding | 
+    - Expand: `⌘ +`, Collapse `⌘ -`; All + "⇧" 
+    - Fold Selection / Remove region: `⌘+.`
 - AceAction (Ctrl+; by default)
 
 ## Tutorial
