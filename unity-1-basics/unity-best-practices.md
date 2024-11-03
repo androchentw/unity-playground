@@ -4,8 +4,11 @@
 * [Unity Best Practices](#unity-best-practices)
   * [C# General](#c-general)
   * [Code Style Guide](#code-style-guide)
+  * [MVCS (Model-View-Controller-Service)](#mvcs-model-view-controller-service)
   * [Design Patterns](#design-patterns)
   * [DI (Dependency Injection), IoC C# unity](#di-dependency-injection-ioc-c-unity)
+  * [Mobile Game Design](#mobile-game-design)
+  * [LiveOps](#liveops)
 <!-- TOC -->
 
 ## C# General
@@ -26,11 +29,23 @@
 - [Formatting best practices for C# scripting in Unity](https://unity.com/how-to/formatting-best-practices-c-scripting-unity)
 - [Unity Coding guidelines & Basic Best Practices](https://avangarde-software.com/unity-coding-guidelines-basic-best-practices/)
 
+## MVCS (Model-View-Controller-Service)
+
+- [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design patterns explained
+  - <img width="600px" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
+  - <img width="600px" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
+- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
+- [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
+- Tips
+  - Project Settings > Editor >Enter Play Mode Options = True
+  - "Any Scene" Bootstrap: developer mode / testing
+
 ## Design Patterns
 
 - [C# Design Patterns](https://www.dofactory.com/net/design-patterns)
 - [Design Pattern in C# explained by ChatGPT | 2024-10-26](https://chatgpt.com/share/671c90d8-7664-800f-b67e-8bec77698012)
 - [game-programming-patterns-demo](https://github.com/androchentw/game-programming-patterns-demo)
+- [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html)
 
 ## DI (Dependency Injection), IoC C# unity
 
@@ -38,3 +53,27 @@
 - [Dependency Injection in Unity C#](https://medium.com/@ssmore101/dependency-injection-in-unity-c-f32568a2109a)
 - [Dependency Injection in Unity - Inversion of Control Container](https://discussions.unity.com/t/dependency-injection-in-unity-inversion-of-control-container/914827/2)
 - [Zenject](https://github.com/modesttree/Zenject): [Extenject Dependency Injection IOC](https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735)
+
+## Mobile Game Design
+
+- [Mobile game design with Unity](https://unity.com/topics/mobile-game-design)
+- [Optimize your game performance for mobile, XR, and the web in Unity (Unity 6 edition)](https://unity.com/resources/mobile-xr-web-game-performance-optimization-unity-6)
+  - [GenAI NoteBook LLM Summary](https://notebooklm.google.com/notebook/10e53e23-00fa-49ee-bff4-b27ee0ccf4e7)
+- [Introduction to game level design](https://unity.com/resources/introduction-to-level-design-in-game-development-and-in-unity)
+- [The Unity Game Designer Playbook](https://unity.com/resources/game-designer-playbook)
+- [Unity best practices](https://unity.com/how-to)
+- [2D game art, animation, and lighting for artists](https://unity.com/resources/2d-game-art-animation-lighting-for-artists-ebook?isGated=false)
+- [Best practices for managing elements](https://docs.unity3d.com/Manual/UIE-best-practices-for-managing-elements.html)
+
+## LiveOps
+
+- [From DevOps to LiveOps in one platform](https://unity.com/solutions/gaming-services)
+  - Build your foundation: Accounts, Multiplayer, Content management, DevOps
+  - Engage your players: Analytics, Player engagement, Community, Crash reporting
+  - Grow your game: Monetization, User acquisition, Ad mediation, Publishing, Game economy
+- [Use LiveOps to get the insights you need for a better player experience](https://unity.com/solutions/gaming-services/player-insights)
+- [Power-up your live ops strategy for better player retention](https://unity.com/solutions/gaming-services/continuous-game-improvements)
+- [IndieXP: Making the Most of Launch](https://create.unity.com/making-the-most-of-launch)
+- [Indie XP: Building a live service and measuring success](https://create.unity.com/how-to-turn-your-mobile-game-into-a-successful-business)
+- [5 best practices for maximizing long-term player value with Unity Analytics](https://unity.com/how-to/maximizing-long-term-player-value-unity-analytics)
+- [使用 Unity 遊戲服務來開發多人與營運型遊戲 | 2022 TGDF 台北遊戲開發者論壇](https://hackmd.io/@samuel-t-chou/2022-TGDF/%2Fs%2FTeBfn7ePQISPDBHNXxnDjA)
