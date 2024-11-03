@@ -29,11 +29,11 @@
 - Editor
   - Atom Material Icons, Material Theme UI / One Dark Theme
   - .ignore, Markdown, .env files support, CSV Editor, Toml, Json Parser
+    - ToC 自動生成會跟自動 reformat 規則衝突. 要改 Editor > Code Style > Markdown > Minimum blank lines > Around block elements: 1 改為 0
   - Rainbow Brackets, Indent Rainbow, Zero Width Characters locator
   - Key Promoter X, AceJump, String Manipulation
   - Statistic, WakaTime, Mario Progress Bar
   - Treegen
-    - Editor > Code Style > Markdown > Minimum blank lines > Around block elements: 1 改為 0
 - AI 輔助
   - [Codeium](https://blog.user.today/github-copilot-ai-alternatives/#title_i-8)
     - [免費用 Codeium 和 Codium AI來加速開發](https://medium.com/@sarala0725/%E5%85%8D%E8%B2%BB%E7%94%A8codeium%E5%92%8Ccodium-ai%E4%BE%86%E5%8A%A0%E9%80%9F%E9%96%8B%E7%99%BC-d43c060a557d)

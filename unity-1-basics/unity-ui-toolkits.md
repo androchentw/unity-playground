@@ -24,12 +24,12 @@
   - [第二部分](https://www.youtube.com/watch?v=eBda493MQHo) - 另外两种数据绑定方式
     - `[CreateProperty] string CharacterLevelString => $"Level: {characterLevel}";`; `[DontCreateProperty]` 減少錯誤標示
     - BindingMode
-    - TwoWay: 洗點. UI data 互相影響
-    - ToSource: UI 改 data. 如 音量滑動條
-    - ToTarget: 最常用. 當 data 有變動時, 單向改變 UI 顯示
-    - ToTargetOnce: UI 只更新一次. 如成就 UI
+      - TwoWay: 洗點. UI data 互相影響
+      - ToSource: UI 改 data. 如 音量滑動條
+      - ToTarget: 最常用. 當 data 有變動時, 單向改變 UI 顯示
+      - ToTargetOnce: UI 只更新一次. 如成就 UI
     - 第二種方法: 直接改 UXML (效果同 Unity 操作)
-    - 第三種方法: 用 C# 寫 data bindind. 比較複雜/靈活需要彈性時. runtime 才會顯示
+    - 第三種方法: 用 C# 寫 data binding. 比較複雜/靈活需要彈性時. runtime 才會顯示
   - [第三部分](https://www.youtube.com/watch?v=Z9AVTt4zZck) - 更简便地创建自定义控件
     - 自訂血條
 
@@ -47,7 +47,7 @@
   - Layout, Container(Panel); Flex basis (25%) / grow (1), background, border, Margin/Padding, Text, ...
 - 配色: [FlatColors](https://flatuicolors.com/), [Colors](https://coolors.co/palettes/trending)
 - [Part 3 | 為什麽我們應該學習並使用UI Toolkit](https://www.youtube.com/watch?v=PimLImYQFz0)
-  - Panel: sort order, scale mode, reference resolution; source assest => UXML
+  - Panel: sort order, scale mode, reference resolution; source asset => UXML
   - Data binding: `getComponent<UIDocument>().rootVisualElement`
   - 高性能, 高適用性
 

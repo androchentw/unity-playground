@@ -29,14 +29,114 @@
 - [Formatting best practices for C# scripting in Unity](https://unity.com/how-to/formatting-best-practices-c-scripting-unity)
 - [Unity Coding guidelines & Basic Best Practices](https://avangarde-software.com/unity-coding-guidelines-basic-best-practices/)
 
+## Unity Folder Structure
+
+- [Best practices for organizing your Unity project](https://unity.com/how-to/organizing-your-project)
+- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
+- [unity-project-style-guide](https://github.com/timdhoffmann/unity-project-style-guide)
+
+Note: ignored `*.meta`, `*.asset`  
+
+```text
+UnityProject/
+├── Assets/
+    ├── 3rdParty/
+        ├── [CompanyName]/
+            ├── [PackageName]/
+                ├── Version.txt
+    ├── Art/
+        ├── Animation/
+            ├── AnimationClips/
+            ├── Animators/
+        ├── Audio/
+            ├── AudioClips/
+            ├── AudioMixers/
+        ├── Fonts/
+            ├── Arial.ttf
+        ├── Materials/
+            ├── FloorMaterial.mat
+            ├── PlayerMaterial.mat
+        ├── Models/
+        ├── Shaders/
+        ├── Sprites/
+        ├── Textures/
+            ├── FloorTexture.png
+    ├── Documentation/
+        ├── Images/
+            ├── BestPractices.png
+        ├── ReadMe/
+            ├── Art/
+                ├── Sprites/
+                    ├── ProjectIcon.png
+            ├── Scripts/
+                ├── Editor/
+                    ├── ReadMeMenuItems.cs
+    ├── Prefabs/
+        ├── RMC/
+            ├── [MyProject]/
+                ├── AudioManager.prefab
+    ├── Resources/
+        ├── RMC/
+            ├── [MyProject]/
+    ├── Scenes/
+        ├── Scene01_Intro.unity
+    ├── Scripts/
+        ├── Editor/
+            ├── RMC/
+                ├── Templates/
+                    ├── TemplateEditorMenuItems.cs
+                ├── [MyProject]/
+        ├── Runtime/
+            ├── RMC/
+                ├── Templates/
+                    ├── ITemplateInterface.cs
+                    ├── TemplateClass.cs
+                    ├── TemplateComponent.cs
+                    ├── TemplateScriptableObject.cs
+                ├── [MyProject]/
+                    ├── Scenes/
+                        ├── Scene01_Intro.cs
+                    ├── UI/
+                        ├── HudUI.cs
+        ├── Tests/
+            ├── Editor/
+                ├── RMC/
+                    ├── Templates/
+                        ├── TemplateClassEditModeTest.cs
+                    ├── [MyProject]/
+            ├── Runtime/
+                ├── RMC/
+                    ├── Templates/
+                        ├── TemplateComponentPlayModeTest.cs
+                    ├── [MyProject]/
+    ├── Settings/
+        ├── Audio/
+        ├── InputSystem/
+        ├── PhysicMaterials/
+        ├── Presets/
+        ├── ProBuilder/
+        ├── Rendering/
+        ├── UIToolkit/
+            ├── Layouts/
+                ├── TemplateLayout.uxml
+            ├── Resources/
+            ├── Settings/
+            ├── Styles/
+                ├── TemplateStyles.uss
+            ├── Themes/
+                ├── TemplateThemeStyleSheet.tss
+├── Packages/
+    ├── manifest.json
+    └── packages-lock.json
+├── ProjectSettings/
+```
+
 ## MVCS (Model-View-Controller-Service)
 
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
   patterns explained
   - <img width="600px" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
   - <img width="600px" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
-- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure
-  and C# coding standards template
 - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
