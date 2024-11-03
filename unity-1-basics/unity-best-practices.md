@@ -41,9 +41,10 @@
   - Project Settings > Editor >Enter Play Mode Options = True
   - "Any Scene" Bootstrap: developer mode / testing
 
-![unity-best-practices-mvcs-1.png](res/unity-best-practices-mvcs-1.png){width=300px}
 
-![unity-best-practices-mvcs-2.png](res/unity-best-practices-mvcs-2.png){width=300px}
+<img width="600px" alt="unity-best-practices-mvcs-1" src="res/unity-best-practices-mvcs-1.png"  />
+
+<img width="600px" alt="unity-best-practices-mvcs-2" src="res/unity-best-practices-mvcs-2.png"  />
 
 ## Design Patterns
 
