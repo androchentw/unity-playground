@@ -4,16 +4,14 @@
 * [Unity Best Practices](#unity-best-practices)
   * [C# General](#c-general)
   * [Code Style Guide](#code-style-guide)
-  * [Unity Folder Structure](#unity-folder-structure)
-    * [Sample Project Structure](#sample-project-structure)
-    * [Reference Structure - unity-project-template](#reference-structure---unity-project-template)
-    * [Asset Type](#asset-type)
-  * [MVCS (Model-View-Controller-Service)](#mvcs-model-view-controller-service)
   * [Design Patterns](#design-patterns)
   * [DI (Dependency Injection), IoC C# unity](#di-dependency-injection-ioc-c-unity)
+  * [Unity DOTS 提升效能](#unity-dots-提升效能)
   * [Mobile Game Design](#mobile-game-design)
   * [LiveOps](#liveops)
 <!-- TOC -->
+
+- Ref: [unity-folder-structure.md](unity-folder-structure.md)
 
 ## C# General
 
@@ -33,205 +31,6 @@
 - [Formatting best practices for C# scripting in Unity](https://unity.com/how-to/formatting-best-practices-c-scripting-unity)
 - [Unity Coding guidelines & Basic Best Practices](https://avangarde-software.com/unity-coding-guidelines-basic-best-practices/)
 
-## Unity Folder Structure
-
-- [Best practices for organizing your Unity project](https://unity.com/how-to/organizing-your-project)
-- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
-- [unity-project-style-guide](https://github.com/timdhoffmann/unity-project-style-guide)
-- [Package layout](https://docs.unity3d.com/Manual/cus-layout.html)
-- [Adding tests to a package](https://docs.unity3d.com/Manual/cus-tests.html)
-- [How to run automated tests for your games with the Unity Test Framework](https://unity.com/how-to/automated-tests-unity-test-framework)
-
-### Sample Project Structure
-
-- [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP)
-- [Sample Game Projects on Unity Asset Store](../unity-2-assets-collection/unity-assets-templates.md)
-
-<img width="60%" alt="unity-sample-project-structure-markmap.svg" src="res/unity-sample-project-structure-markmap.png"  />
-
-- Assets
-  - Art
-    - Animations
-    - Fonts
-    - Materials
-    - Models
-    - Sprites
-    - Textures
-    - UI
-  - Audio
-    - Music
-    - SFX
-    - UI
-  - Docs
-  - Plugins
-  - Prefabs
-    - Characters
-    - Items
-    - UI
-  - Resources
-  - Scenes
-  - Scripts
-    - Editor
-    - Managers
-    - Mvcs
-      - Controller
-        - Command
-      - Model
-      - Service
-      - View
-        - Input
-    - Systems
-      - Enemies
-      - Items
-      - Players
-      - Skills
-    - UI
-    - Utils
-  - Tests
-    - Editor
-    - Runtime
-  - Settings
-- Packages
-- ProjectSettings
-  - Packages
-
-### Reference Structure - unity-project-template
-
-Note: ignored `*.meta`, `*.asset`
-
-```text
-UnityProject/
-├── Assets/
-    ├── 3rdParty/
-        ├── [CompanyName]/
-            ├── [PackageName]/
-                ├── Version.txt
-    ├── Art/
-        ├── Animation/
-            ├── AnimationClips/
-            ├── Animators/
-        ├── Audio/
-            ├── AudioClips/
-            ├── AudioMixers/
-        ├── Fonts/
-            ├── Arial.ttf
-        ├── Materials/
-            ├── FloorMaterial.mat
-            ├── PlayerMaterial.mat
-        ├── Models/
-        ├── Shaders/
-        ├── Sprites/
-        ├── Textures/
-            ├── FloorTexture.png
-    ├── Documentation/
-        ├── Images/
-            ├── BestPractices.png
-        ├── ReadMe/
-            ├── Art/
-                ├── Sprites/
-                    ├── ProjectIcon.png
-            ├── Scripts/
-                ├── Editor/
-                    ├── ReadMeMenuItems.cs
-    ├── Prefabs/
-        ├── [MyCompany]/
-            ├── [MyProject]/
-                ├── AudioManager.prefab
-    ├── Resources/
-        ├── [MyCompany]/
-            ├── [MyProject]/
-    ├── Scenes/
-        ├── Scene01_Intro.unity
-    ├── Scripts/
-        ├── Editor/
-            ├── [MyCompany]/
-                ├── Templates/
-                    ├── TemplateEditorMenuItems.cs
-                ├── [MyProject]/
-        ├── Runtime/
-            ├── [MyCompany]/
-                ├── Templates/
-                    ├── ITemplateInterface.cs
-                    ├── TemplateClass.cs
-                    ├── TemplateComponent.cs
-                    ├── TemplateScriptableObject.cs
-                ├── [MyProject]/
-                    ├── Scenes/
-                        ├── Scene01_Intro.cs
-                    ├── UI/
-                        ├── HudUI.cs
-        ├── Tests/
-            ├── Editor/
-                ├── [MyCompany]/
-                    ├── Templates/
-                        ├── TemplateClassEditModeTest.cs
-                    ├── [MyProject]/
-            ├── Runtime/
-                ├── [MyCompany]/
-                    ├── Templates/
-                        ├── TemplateComponentPlayModeTest.cs
-                    ├── [MyProject]/
-    ├── Settings/
-        ├── Audio/
-        ├── InputSystem/
-        ├── PhysicMaterials/
-        ├── Presets/
-        ├── ProBuilder/
-        ├── Rendering/
-        ├── UIToolkit/
-            ├── Layouts/
-                ├── TemplateLayout.uxml
-            ├── Resources/
-            ├── Settings/
-            ├── Styles/
-                ├── TemplateStyles.uss
-            ├── Themes/
-                ├── TemplateThemeStyleSheet.tss
-├── Packages/
-    ├── manifest.json
-    └── packages-lock.json
-├── ProjectSettings/
-```
-
-### Asset Type
-
-- [Version control and project organization best practices for game developers](https://unity.com/resources/version-control-project-organization-best-practices-ebook)
-
-| Asset Type | Explanation                                                                                                                                                                                                                                                  |
-|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Animations | Animations contain animated motion clips and their controller files. These can also contain Timeline assets for in-game cinematics or rigging information for procedural animation.                                                                          |
-| Audio      | Sound assets include audio clips as well as the mixers used for blending the effects and music.                                                                                                                                                              |
-| Editor     | This contains scripted tools made for use with the Unity Editor but not appearing in a target build.                                                                                                                                                         |
-| Fonts      | This folder contains the fonts used in the game.                                                                                                                                                                                                             |
-| Materials  | These assets describe surface shading properties.                                                                                                                                                                                                            |
-| Meshes     | Store models created in an external digital content creation (DCC) application here.                                                                                                                                                                         |
-| Particles  | The particle simulations in Unity, created either with the Particle System or Visual Effect Graph.                                                                                                                                                           |
-| Prefabs    | These are reusable GameObjects with prebuilt Components. Add them to a scene to build.                                                                                                                                                                       |
-| Scripts    | All user-developed code for gameplay appears here.                                                                                                                                                                                                           |
-| Settings   | These assets store render pipeline settings, such as for the High Definition Render Pipeline (HDRP) and Universal Render Pipeline (URP).                                                                                                                     |
-| Shaders    | These programs run on the GPU as part of the graphics pipeline.                                                                                                                                                                                              |
-| Scenes     | Unity stores small, functional portions of your project into Scene assets. They often correspond to game levels or part of a level.                                                                                                                          |
-| Textures   | Image files can consist of texture files for materials and surfacing, UI overlay elements for user interface, and lightmaps to store lighting information.                                                                                                   |
-| ThirdParty | If you have assets from an external source like the Asset Store, keep them separated from the rest of your project here. This makes updating your third-party assets and scripts easier. Third-party assets may have a set structure that cannot be altered. |
-
-## MVCS (Model-View-Controller-Service)
-
-- [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
-  patterns explained
-  - <img width="60%" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
-  - <img width="60%" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
-- [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
-- Tips
-  - Project Settings > Editor >Enter Play Mode Options = True
-  - "Any Scene" Bootstrap: developer mode / testing
-- https://ithelp.ithome.com.tw/articles/10222311
-
-Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
-
-<img width="60%" alt="unity-best-practices-mvcs-1" src="res/unity-best-practices-mvcs-1.png"  />
-
-<img width="60%" alt="unity-best-practices-mvcs-2" src="res/unity-best-practices-mvcs-2.png"  />
-
 ## Design Patterns
 
 - [C# Design Patterns](https://www.dofactory.com/net/design-patterns)
@@ -245,6 +44,23 @@ Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://ww
 - [Dependency Injection in Unity C#](https://medium.com/@ssmore101/dependency-injection-in-unity-c-f32568a2109a)
 - [Dependency Injection in Unity - Inversion of Control Container](https://discussions.unity.com/t/dependency-injection-in-unity-inversion-of-control-container/914827/2)
 - [Zenject](https://github.com/modesttree/Zenject): [Extenject Dependency Injection IOC](https://assetstore.unity.com/packages/tools/utilities/extenject-dependency-injection-ioc-157735)
+
+## Unity DOTS 提升效能
+
+- [【阿空】一次搞懂 Unity DOTS 與 JobSystem！ ( Unity DOTS and JobSystem! )](https://www.youtube.com/watch?v=AY3Ejgyv9Ss)
+  - [Unity-DOTS-Tutorial](https://github.com/emptygamer/Unity-DOTS-Tutorial)
+- [【阿空】Unity ECS 概念與基本操作！ ( 2022 Unity ECS v0.51)](https://www.youtube.com/watch?v=_kda6k_WIqY)
+- Unity Official Docs
+  - [Unity’s Data-Oriented Technology Stack (DOTS)](https://unity.com/dots): ECS + C# Job System + Burst Compiler
+  - [Start learning data-oriented design in Unity with these resources](https://unity.com/blog/engine-platform/dots-bootcamp-resources)
+  - [Entities overview](https://docs.unity3d.com/Packages/com.unity.entities@1.3/manual/index.html)
+  - [EntityComponentSystemSamples](https://github.com/Unity-Technologies/EntityComponentSystemSamples)
+  - [Introduction to the Data-Oriented Technology Stack for advanced Unity developers](https://unity.com/resources/introduction-to-dots-ebook)
+- [Unity ECS —— 蜻蜓點水](https://medium.com/遊戲開發隨筆/unity-ecs-蜻蜓點水-e259ccf02d09)
+- [Unity DOTS – A Case Study of Brick Breaker](https://tedsieblog.wordpress.com/2020/03/17/unity-dots-a-case-study-of-brick-breaker/)
+- [淺談多執行緒程式設計與Unity的C# Job System](https://medium.com/akatsuki-taiwan-technology/淺談多執行緒程式設計與unity的c-job-system-19e4d5ca59dd)
+- [Unity 利用C# Job System與Burst Compiler來解放CPU的效能](https://medium.com/akatsuki-taiwan-technology/unity-利用c-job-system與burst-compiler來解放cpu的效能-c9447357a076)
+- [開始使用Unity的C# Job System(一)](https://medium.com/@eric.hu/開始使用unity的c-job-system-一-78b72b1e96bd)
 
 ## Mobile Game Design
 
