@@ -11,7 +11,11 @@
   * [DDD](#ddd)
 <!-- TOC -->
 
-- Ref: [unity-best-practices.md](unity-best-practices.md)
+Ref
+
+- [unity-best-practices.md](unity-best-practices.md)
+- [unity-ui-toolkits.md](unity-ui-toolkits.md)
+- [unity-custom-package.md](unity-custom-package.md)
 
 ## Project Structure Template
 
@@ -53,7 +57,7 @@
   - Scripts
     - Editor
     - Managers
-    - Mvcs
+    - Mvcs (Core)
       - Controller
         - Command
       - Model
@@ -175,6 +179,8 @@ UnityProject/
 
 ## Asset Type
 
+- [Unity项目中Assets目录下常见的文件类型](https://blog.csdn.net/c373756607/article/details/86601926)
+- [浅谈Assets——Unity资源映射](https://blog.csdn.net/UWA4D/article/details/104060885)
 - [Version control and project organization best practices for game developers](https://unity.com/resources/version-control-project-organization-best-practices-ebook)
 
 | Asset Type | Explanation                                                                                                                                                                                                                                                  |
@@ -204,7 +210,7 @@ UnityProject/
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
   - "Any Scene" Bootstrap: developer mode / testing
-- https://ithelp.ithome.com.tw/articles/10222311
+- [DDD 架構： 整合 Clean Architecture](https://ithelp.ithome.com.tw/articles/10222311)
 
 Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
 
@@ -214,12 +220,17 @@ Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://ww
 
 ## MVVM
 
+- Ref: [unity-ui-toolkits.md](unity-ui-toolkits.md)
+- [Unity App UI](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/index.html)
 - [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
 - [MVVM — 架構篇：書讀得多，人自然就好看起來](https://medium.com/ken-do-everything/mvvm-架構篇-書讀得多-人自然就好看起來-4fd595581e7f)
   - Ref Android Jetpack: ViewModel, LiveData, Room, DataBinding
 - [MVC、MVP、MVVM 解析【理论篇】](https://aihailan.com/archives/100)
 - [Unity开发 浅谈MVC、MVP、MVVM的特点、运用与区别](https://blog.csdn.net/qq_43505432/article/details/111154779)
-- [Unity中的MVC、MVP、MVVM框架](https://blog.csdn.net/qq_54476817/article/details/132513548)- https://github.com/Unity-Technologies/game-programming-patterns-demo/tree/main/Assets/UnityTechnologies/_DesignPatterns/7_MVVM
+- [Unity中的MVC、MVP、MVVM框架](https://blog.csdn.net/qq_54476817/article/details/132513548)
+- [Game-Programming-Patterns-Demo](https://github.com/Unity-Technologies/game-programming-patterns-demo/tree/main/Assets/UnityTechnologies/_DesignPatterns/7_MVVM)
+- [loxodon-framework](https://github.com/vovgou/loxodon-framework)
+- [Introduction to the MVVM Pattern](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/mvvm-intro.html)
 
 ## DDD
 
