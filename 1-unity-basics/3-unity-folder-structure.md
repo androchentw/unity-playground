@@ -14,8 +14,8 @@
 Ref
 
 - [4-unity-best-practices.md](4-unity-best-practices.md)
-- [unity-ui-toolkits.md](unity-ui-toolkits.md)
-- [unity-custom-package.md](unity-custom-package.md)
+- [5-unity-custom-package.md](5-unity-custom-package.md)
+- [6-unity-ui-toolkits.md](6-unity-ui-toolkits.md)
 
 ## Project Structure Template
 
@@ -210,7 +210,6 @@ UnityProject/
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
   - "Any Scene" Bootstrap: developer mode / testing
-- [DDD 架構： 整合 Clean Architecture](https://ithelp.ithome.com.tw/articles/10222311)
 
 Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
 
@@ -220,7 +219,7 @@ Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://ww
 
 ## MVVM
 
-- Ref: [unity-ui-toolkits.md](unity-ui-toolkits.md)
+- Ref: [6-unity-ui-toolkits.md](6-unity-ui-toolkits.md)
 - [Unity App UI](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/index.html)
 - [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
 - [MVVM — 架構篇：書讀得多，人自然就好看起來](https://medium.com/ken-do-everything/mvvm-架構篇-書讀得多-人自然就好看起來-4fd595581e7f)
@@ -234,6 +233,8 @@ Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://ww
 
 ## DDD
 
+- [DDD 架構： 整合 Clean Architecture](https://ithelp.ithome.com.tw/articles/10222311)
+- [領域驅動設計(Domain-Driven Design DDD)學習](https://hackmd.io/@ohQEG7SsQoeXVwVP2-v06A/rJjR_PyBi)
 - [为什么从 MVC 到 DDD，架构的本质是什么？](https://www.cnblogs.com/xiaofuge/p/17524726.html)
 - [从MVC到DDD，该如何下手重构？](https://www.cnblogs.com/xiaofuge/p/17729277.html)
 - [MVC和DDD的对比 (一)](https://blog.csdn.net/qq_43141726/article/details/124973784)
