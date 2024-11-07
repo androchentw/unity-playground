@@ -7,6 +7,7 @@
   * [Reference Structure - unity-project-template](#reference-structure---unity-project-template)
   * [Asset Type](#asset-type)
   * [MVCS (Model-View-Controller-Service)](#mvcs-model-view-controller-service)
+  * [MVP](#mvp)
   * [MVVM](#mvvm)
   * [DDD](#ddd)
 <!-- TOC -->
@@ -217,11 +218,17 @@ Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://ww
 
 <img width="60%" alt="unity-best-practices-mvcs-2" src="res/unity-best-practices-mvcs-2.png"  />
 
+## MVP
+
+- [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
+- [Level up your code with game programming patterns: Model-view-presenter | Tutorial](https://www.youtube.com/watch?v=agoe5BdLzdk)
+- [Level up your code with design patterns and SOLID](https://assetstore.unity.com/packages/essentials/tutorial-projects/level-up-your-code-with-design-patterns-and-solid-289616#content)
+
+
 ## MVVM
 
 - Ref: [6-unity-ui-toolkits.md](6-unity-ui-toolkits.md)
 - [Unity App UI](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/index.html)
-- [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
 - [MVVM — 架構篇：書讀得多，人自然就好看起來](https://medium.com/ken-do-everything/mvvm-架構篇-書讀得多-人自然就好看起來-4fd595581e7f)
   - Ref Android Jetpack: ViewModel, LiveData, Room, DataBinding
 - [MVC、MVP、MVVM 解析【理论篇】](https://aihailan.com/archives/100)
@@ -229,6 +236,7 @@ Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://ww
 - [Unity中的MVC、MVP、MVVM框架](https://blog.csdn.net/qq_54476817/article/details/132513548)
 - [Game-Programming-Patterns-Demo](https://github.com/Unity-Technologies/game-programming-patterns-demo/tree/main/Assets/UnityTechnologies/_DesignPatterns/7_MVVM)
 - [loxodon-framework](https://github.com/vovgou/loxodon-framework)
+- [UnityMvvmToolkit](https://github.com/LibraStack/UnityMvvmToolkit)
 - [Introduction to the MVVM Pattern](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/mvvm-intro.html)
 
 ## DDD

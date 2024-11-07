@@ -24,7 +24,7 @@
     - Inspector > Data Source > ScriptableObject > Add Binding > Data Source Path
   - [第二部分](https://www.youtube.com/watch?v=eBda493MQHo) - 另外两种数据绑定方式
     - `[CreateProperty] string CharacterLevelString => $"Level: {characterLevel}";`; `[DontCreateProperty]` 減少錯誤標示
-    - BindingMode
+    - [BindingMode](https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-runtime-binding-mode-update.html)
       - TwoWay: 洗點. UI data 互相影響
       - ToSource: UI 改 data. 如 音量滑動條
       - ToTarget: 最常用. 當 data 有變動時, 單向改變 UI 顯示
