@@ -13,7 +13,7 @@
 
 Ref
 
-- [unity-best-practices.md](unity-best-practices.md)
+- [4-unity-best-practices.md](4-unity-best-practices.md)
 - [unity-ui-toolkits.md](unity-ui-toolkits.md)
 - [unity-custom-package.md](unity-custom-package.md)
 
@@ -29,7 +29,7 @@ Ref
 ## Sample Project Structure
 
 - [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP)
-- [Sample Game Projects on Unity Asset Store](../unity-2-assets-collection/unity-assets-templates.md)
+- [Sample Game Projects on Unity Asset Store](../2-unity-assets-collection/unity-assets-templates.md)
 
 <img width="60%" alt="unity-sample-project-structure-markmap.svg" src="res/unity-sample-project-structure-markmap.png"  />
 
