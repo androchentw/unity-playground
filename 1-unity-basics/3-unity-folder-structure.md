@@ -6,10 +6,6 @@
   * [Sample Project Structure](#sample-project-structure)
   * [Reference Structure - unity-project-template](#reference-structure---unity-project-template)
   * [Asset Type](#asset-type)
-  * [MVCS (Model-View-Controller-Service)](#mvcs-model-view-controller-service)
-  * [MVP](#mvp)
-  * [MVVM](#mvvm)
-  * [DDD](#ddd)
 <!-- TOC -->
 
 Ref
@@ -17,6 +13,8 @@ Ref
 - [4-unity-best-practices.md](4-unity-best-practices.md)
 - [5-unity-custom-package.md](5-unity-custom-package.md)
 - [6-unity-ui-toolkits.md](6-unity-ui-toolkits.md)
+- [MVC-MVP-MVVM.md](../0-architecture-patterns/MVC-MVP-MVVM.md)
+- [DDD-Domain-Driven-Design.md](../0-architecture-patterns/DDD-Domain-Driven-Design.md)
 
 ## Project Structure Template
 
@@ -200,52 +198,3 @@ UnityProject/
 | Scenes     | Unity stores small, functional portions of your project into Scene assets. They often correspond to game levels or part of a level.                                                                                                                          |
 | Textures   | Image files can consist of texture files for materials and surfacing, UI overlay elements for user interface, and lightmaps to store lighting information.                                                                                                   |
 | ThirdParty | If you have assets from an external source like the Asset Store, keep them separated from the rest of your project here. This makes updating your third-party assets and scripts easier. Third-party assets may have a set structure that cannot be altered. |
-
-## MVCS (Model-View-Controller-Service)
-
-- [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
-  patterns explained
-  - <img width="60%" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
-  - <img width="60%" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
-- [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
-- Tips
-  - Project Settings > Editor >Enter Play Mode Options = True
-  - "Any Scene" Bootstrap: developer mode / testing
-
-Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
-
-<img width="60%" alt="unity-best-practices-mvcs-1" src="res/unity-best-practices-mvcs-1.png"  />
-
-<img width="60%" alt="unity-best-practices-mvcs-2" src="res/unity-best-practices-mvcs-2.png"  />
-
-## MVP
-
-- [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
-- [Level up your code with game programming patterns: Model-view-presenter | Tutorial](https://www.youtube.com/watch?v=agoe5BdLzdk)
-- [Level up your code with design patterns and SOLID](https://assetstore.unity.com/packages/essentials/tutorial-projects/level-up-your-code-with-design-patterns-and-solid-289616#content)
-
-
-## MVVM
-
-- Ref: [6-unity-ui-toolkits.md](6-unity-ui-toolkits.md)
-- [Unity App UI](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/index.html)
-- [MVVM — 架構篇：書讀得多，人自然就好看起來](https://medium.com/ken-do-everything/mvvm-架構篇-書讀得多-人自然就好看起來-4fd595581e7f)
-  - Ref Android Jetpack: ViewModel, LiveData, Room, DataBinding
-- [MVC、MVP、MVVM 解析【理论篇】](https://aihailan.com/archives/100)
-- [Unity开发 浅谈MVC、MVP、MVVM的特点、运用与区别](https://blog.csdn.net/qq_43505432/article/details/111154779)
-- [Unity中的MVC、MVP、MVVM框架](https://blog.csdn.net/qq_54476817/article/details/132513548)
-- [Game-Programming-Patterns-Demo](https://github.com/Unity-Technologies/game-programming-patterns-demo/tree/main/Assets/UnityTechnologies/_DesignPatterns/7_MVVM)
-- [loxodon-framework](https://github.com/vovgou/loxodon-framework)
-- [UnityMvvmToolkit](https://github.com/LibraStack/UnityMvvmToolkit)
-- [Introduction to the MVVM Pattern](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/mvvm-intro.html)
-
-## DDD
-
-- [DDD 架構： 整合 Clean Architecture](https://ithelp.ithome.com.tw/articles/10222311)
-- [領域驅動設計(Domain-Driven Design DDD)學習](https://hackmd.io/@ohQEG7SsQoeXVwVP2-v06A/rJjR_PyBi)
-- [为什么从 MVC 到 DDD，架构的本质是什么？](https://www.cnblogs.com/xiaofuge/p/17524726.html)
-- [从MVC到DDD，该如何下手重构？](https://www.cnblogs.com/xiaofuge/p/17729277.html)
-- [MVC和DDD的对比 (一)](https://blog.csdn.net/qq_43141726/article/details/124973784)
-- [从MVC 到DDD 架构](https://blog.csdn.net/aasd23/article/details/137084215)
-- [DDD 落地的思考 --MVC-DDD 理論與實踐](https://www.readfog.com/a/1672443702438629376)
-- [DDD 架構： 分層式架構與依賴反向原則](https://ithelp.ithome.com.tw/articles/10222162)
