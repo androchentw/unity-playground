@@ -4,7 +4,6 @@
 * [Unity Best Practices](#unity-best-practices)
   * [C# General](#c-general)
   * [Code Style Guide](#code-style-guide)
-  * [Design Patterns](#design-patterns)
   * [Unity DOTS 提升效能](#unity-dots-提升效能)
   * [Mobile Game Design](#mobile-game-design)
   * [LiveOps](#liveops)
