@@ -32,7 +32,7 @@
   - Managing menu screens in UI Toolkit
   - The model-view-presenter pattern in QuizU
   - Event handling in UI Toolkit
-- Tutorial: QuizU-documentation-Nov1-2023.pdf
+- Tutorial: [QuizU-documentation-Nov1-2023.pdf](https://github.com/androchentw/unity-tutorial-projects/blob/main/QuizU/Assets/Unity%20Technologies/QuizU-documentation-Nov1-2023.pdf)
 - [Codebase: unity-tutorial-projects/QuizU](https://github.com/androchentw/unity-tutorial-projects/tree/main/QuizU)
 - [UI Toolkit Examples](https://docs.unity3d.com/Manual/UIE-examples.html)
 
