@@ -13,7 +13,6 @@
     * [Example](#example)
   * [Large-scale Structures 大型結構](#large-scale-structures-大型結構)
     * [Example](#example-1)
-  * [Ref: Principles](#ref-principles)
   * [Tutorials](#tutorials)
   * [Unity Development 想法](#unity-development-想法)
 <!-- TOC -->
@@ -35,7 +34,7 @@
 - Value object: What. Often immutable, static/singleton
 - Service: How. Is Action, operation. Is Stateless.
 - Module / Package
-- 心得: 先區分領域, 再判斷model
+- 心得: 先區分領域, 再判斷 model
 
 ## Life Cycle Management
 
@@ -128,14 +127,6 @@ Model-driven design
   - Customer: customer
   - Geography: port, location
 
-## Ref: Principles
-
-- DRY, KISS, SOLID
-- 低耦合高內聚
-  - 內聚: 放在一起才能成立
-- 內層不依賴高層 (using, import)
-- Clean Architecture
-
 ## Tutorials
 
 - [DDD 架構： 整合 Clean Architecture](https://ithelp.ithome.com.tw/articles/10222311)
@@ -151,7 +142,7 @@ Model-driven design
 
 Goal: 達到 Clean Architecture & SOLID, 清楚知道如何持續擴充與測試遊戲功能
 
-- MVVM, Data-oriented : 用 UI Toolkit 處理大部分UI & Data Binding 等介面互動操作
-- MVP, Object-oriented : 複雜操作如功能切換, 透過 MVP 與指令模式, 進行系統上下前後串接
-- DDD, Model-oriented : 整體資料與架構維護採用 DDD 設計, 進行核心業務邏輯建模
+- MVVM, Data-oriented: 用 UI Toolkit 處理大部分 UI & Data Binding 等介面互動操作
+- MVP, Object-oriented: 複雜操作如功能切換, 透過 MVP 與指令模式, 進行系統上下前後串接
+- DDD, Model-oriented: 整體資料與架構維護採用 DDD 設計, 進行核心業務邏輯建模
 - Framework: Plugins
