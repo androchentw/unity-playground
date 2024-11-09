@@ -70,6 +70,7 @@
     - Jump to Source: `⌘+↓`, `Alt+Down`
   - **Git** Main Menu | Git
     - VCS Group | Git | Push...: `⌘+⇧+K`, `Crtl+Shift+K`
+    - 打開完整的 git log: Version Control Systems | Log | Open New VCS Log Editor Tab: `⌘+⌃+⇧+R` 
   - **工具視窗** Tool Windows. (=> on Windows, use Alt)
     - Left Top. Explorer: `⌘+1`, Structure: `⌘+2`
     - Left Down. Commit: `⌘+3`, TODO: `⌘+4`, Bookmarks: `⌘+5`
