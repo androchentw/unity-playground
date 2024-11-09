@@ -20,11 +20,14 @@ Ref
 ## Project Structure Template
 
 - Best practices for organizing your Unity project
-- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
-- [unity-project-style-guide](https://github.com/timdhoffmann/unity-project-style-guide)
-- [Package layout](https://docs.unity3d.com/Manual/cus-layout.html)
-- [Adding tests to a package](https://docs.unity3d.com/Manual/cus-tests.html)
-- [How to run automated tests for your games with the Unity Test Framework](https://unity.com/how-to/automated-tests-unity-test-framework)
+- Code Samples
+  - [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
+  - [unity-project-style-guide](https://github.com/timdhoffmann/unity-project-style-guide)
+  - [gameplay-framework-unity](https://github.com/GiovanniZambiasi/gameplay-framework-unity)
+- Unity
+  - [Package layout](https://docs.unity3d.com/Manual/cus-layout.html)
+  - [Adding tests to a package](https://docs.unity3d.com/Manual/cus-tests.html)
+  - [How to run automated tests for your games with the Unity Test Framework](https://unity.com/how-to/automated-tests-unity-test-framework)
 
 ## Sample Project Structure
 

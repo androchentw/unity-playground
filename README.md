@@ -16,11 +16,9 @@ unity-playground/
 ├── 0-architecture-patterns/
 │   ├── design-patterns/
 │   │   ├── design-patterns-cs/
-│   │   ├── README-unity-6-practices.md
 │   │   ├── Tutorial-Lessons.md
 │   │   ├── Tutorial-Samples-Basic.md
 │   │   ├── Tutorial-Samples-More.md
-│   │   └── design-patterns.md
 │   ├── Clean-Architecture.md
 │   ├── DDD-Domain-Driven-Design.md
 │   ├── MVC-MVP-MVVM.md

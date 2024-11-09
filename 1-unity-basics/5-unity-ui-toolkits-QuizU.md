@@ -7,6 +7,7 @@
   * [Demos](#demos)
   * [The mini-game](#the-mini-game)
   * [Design patterns](#design-patterns)
+    * [Event-driven development](#event-driven-development)
 <!-- TOC -->
 
 ## Overview
@@ -101,7 +102,10 @@
 ## Design patterns
 
 - Ref: [Design Patterns](../0-architecture-patterns/design-patterns/README.md)
-- The **state pattern** allows an object to alter its behavior when its internal state changes. This pattern can reduce a more complex object into a predetermined set of states. The QuizU project uses a SequenceManager and UIManager that show
- different types of state machines.
-- The model-view-presenter (MVP) pattern maintains a strict separation between the app's data (Model), UI (View), and the controlling intermediary that binds the two (Presenter). This improves readability and maintainability.
-- The observer pattern can help decouple objects to reduce their interdependencies. This can improve testability and reduce class si
+- The **state pattern** allows an object to alter its behavior when its internal state changes. The QuizU project uses a `SequenceManager` and `UIManager` that show different types of state machines.
+- The **model-view-presenter (MVP) pattern** maintains a strict separation between the app's data (Model), UI (View), and the controlling intermediary that binds the two (Presenter). 
+- The **observer pattern** can help decouple objects to reduce their interdependencies. QuizU uses `System.Action` delegates as well as the `UI Toolkit event system`.
+
+### Event-driven development
+
+- Observer pattern reduce reliance on the singleton pattern

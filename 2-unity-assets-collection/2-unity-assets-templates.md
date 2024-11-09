@@ -31,6 +31,7 @@
 
 - [Easy Build System - Modular Building System](https://assetstore.unity.com/packages/templates/systems/easy-build-system-modular-building-system-45394#content)
 - [Tactics Toolkit: Pathfinding](https://assetstore.unity.com/packages/templates/tutorials/tactics-toolkit-pathfinding-237954)
+  - [Unity AI Navigation](https://docs.unity3d.com/Manual/com.unity.ai.navigation.html)
 - [Turn Based Strategy Framework](https://assetstore.unity.com/packages/templates/systems/turn-based-strategy-framework-50282): 回合制系統
 
 ### 多人連線

@@ -10,7 +10,7 @@
   * [Unity 6 Practices](#unity-6-practices)
 <!-- TOC -->
 
-<img src="../res/design-patterns.gif" width="600" alt="">
+<img src="../res/design-patterns.gif" width="600" alt="design-patterns">
 
 ```text
 │   ├── design-patterns-cs/

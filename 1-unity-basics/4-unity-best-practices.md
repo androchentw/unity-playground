@@ -42,6 +42,7 @@
   - [Introduction to the Data-Oriented Technology Stack for advanced Unity developers](https://unity.com/resources/introduction-to-dots-ebook)
 - [Unity ECS —— 蜻蜓點水](https://medium.com/遊戲開發隨筆/unity-ecs-蜻蜓點水-e259ccf02d09)
 - [Unity DOTS – A Case Study of Brick Breaker](https://tedsieblog.wordpress.com/2020/03/17/unity-dots-a-case-study-of-brick-breaker/)
+- [The Future of Game Development: Data-Oriented vs Object-Oriented](https://medium.com/@canernurdag/the-future-of-game-development-data-oriented-vs-object-oriented-e92e146dad4c)
 - [淺談多執行緒程式設計與Unity的C# Job System](https://medium.com/akatsuki-taiwan-technology/淺談多執行緒程式設計與unity的c-job-system-19e4d5ca59dd)
 - [Unity 利用C# Job System與Burst Compiler來解放CPU的效能](https://medium.com/akatsuki-taiwan-technology/unity-利用c-job-system與burst-compiler來解放cpu的效能-c9447357a076)
 - [開始使用Unity的C# Job System(一)](https://medium.com/@eric.hu/開始使用unity的c-job-system-一-78b72b1e96bd)
