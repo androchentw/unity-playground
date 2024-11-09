@@ -31,6 +31,7 @@ unity-playground/
 │   ├── 5-unity-ui-toolkits.md
 │   ├── 5-unity-ui-toolkits-QuizU.md
 │   ├── 6-unity-data-management.md
+│   ├── 6-unity-scriptable-object.md
 │   ├── 7-unity-custom-package.md
 │   ├── 8-unity-localization.md
 │   ├── 9-unity-input-system.md
@@ -50,13 +51,15 @@ unity-playground/
 
 ## Codebase Ref
 
+- [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP): A 2D URP Unity template to start with
+- [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro): Unity Best Practices for C# Design Patterns.
+- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
   patterns explained
-  - <img width="80%" alt="mvcs-excalidraw" src="0-architecture-patterns/res/2024-10-22-MVCS.excalidraw.svg"  />
-  - <img width="80%" alt="design-patterns" src="0-architecture-patterns/res/design-patterns.gif"  />
-- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure
-  and C# coding standards template
-- [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
+
+<img width="80%" alt="mvcs-excalidraw" src="0-architecture-patterns/res/2024-10-22-MVCS.excalidraw.svg"  />
+
+<img width="80%" alt="design-patterns" src="0-architecture-patterns/res/design-patterns.gif"  />
 
 ## Contribute
 

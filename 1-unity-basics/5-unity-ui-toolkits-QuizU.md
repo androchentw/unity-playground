@@ -11,6 +11,7 @@
     * [BootloadScreen](#bootloadscreen)
     * [Utilities](#utilities)
     * [Others](#others)
+    * [ScriptableObjects](#scriptableobjects)
   * [QuizU: State pattern for game flow](#quizu-state-pattern-for-game-flow)
     * [Game states](#game-states)
   * [Managing menu screens in UI Toolkit](#managing-menu-screens-in-ui-toolkit)
@@ -136,7 +137,10 @@
 
 - [Unity E-book: Create a C# style guide: Write cleaner code that scales](https://unity.com/resources/create-code-c-sharp-style-guide-e-book)
 - ScriptTemplates
-- ScriptableObjects
+
+### ScriptableObjects
+
+- Ref: [6-unity-scriptable-object](6-unity-scriptable-object.md)
 
 ## QuizU: State pattern for game flow
 
@@ -176,7 +180,7 @@
 
 ## QuizU: Event handling in UI Toolkit
 
-<img width="600px" src="res/unity-QuizU-ui-toolkit-sample/QuizU-PubSub.png" alt="QuizU-PubSub">
+<img width="400px" src="res/unity-QuizU-ui-toolkit-sample/QuizU-PubSub.png" alt="QuizU-PubSub">
 
 ### Registering events
 
