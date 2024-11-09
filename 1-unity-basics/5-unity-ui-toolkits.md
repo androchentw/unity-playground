@@ -4,6 +4,8 @@
 * [Unity UI Toolkits](#unity-ui-toolkits)
   * [Tutorials](#tutorials)
   * [QuizU - A UI toolkit sample](#quizu---a-ui-toolkit-sample)
+    * [Tutorial: QuizU-documentation-Nov1-2023.pdf](#tutorial-quizu-documentation-nov1-2023pdf)
+      * [Catalog](#catalog)
   * [UI Toolkit sample – Dragon Crashers](#ui-toolkit-sample--dragon-crashers)
   * [阿嚴 YouTube 教學](#阿嚴-youtube-教學)
     * [新功能](#新功能)
@@ -26,6 +28,49 @@
   - Managing menu screens in UI Toolkit
   - The model-view-presenter pattern in QuizU
   - Event handling in UI Toolkit
+
+### Tutorial: QuizU-documentation-Nov1-2023.pdf
+
+#### Catalog
+
+<img src="res/unity-QuizU-ui-toolkit-sample-catalog.png" width="600px" alt="unity-QuizU-ui-toolkit-sample-catalog">
+
+- Basics
+  - QuizU: Exploring the demo scenes
+  - GroupBox versus VisualElement
+  - Flexbox rules and layout
+  - USS Styles
+  - UQuery
+  - Manipulators
+  - Others
+    - C# Style Guide
+    - Utilities
+    - ScriptTemplates
+    - ScriptableObjects
+- QuizU: State pattern for game flow
+  - IState, ILink
+  - StateMachine, ConcreteStates
+  - SequenceManager
+- Managing menu screens in UI Toolkit
+  - UIManager versus SequenceManager
+- QuizU: Model View Presenter pattern
+  - The Model: AudioSettings
+  - The View: Settings Screen
+  - The Presenter: SettingsPresenter
+  - SettingsEvents
+- QuizU: Event handling in UI Toolkit
+  - Registering events
+  - Event dispatch and propagation
+  - The Event Registry pattern
+- UI Toolkit performance tips
+  - Hierarchy and elements
+  - Asset loading
+  - UQuery
+  - Garbage collection
+  - Rendering
+  - Balancing Performance and Usability
+
+
 
 ## UI Toolkit sample – Dragon Crashers
 
@@ -61,7 +106,7 @@
   - Window > UIToolkit > UI Builder or Assets > Data > UIDocuments > UXML(Content), USS(Style), Behavior(C#)
   - Screen Overlay UI: 像是手機/網頁 box model (FlexBox)
 - [Part 2 | UI的布局和樣式](https://www.youtube.com/watch?v=wZP47DZcAzM)
-  - Layout, Container(Panel); Flex basis (25%) / grow (1), background, border, Margin/Padding, Text, ...
+  - Layout, Container(Panel); Flex basis (25%) / grow (1), background, border, Margin/Padding, Text
 - 配色: [FlatColors](https://flatuicolors.com/), [Colors](https://coolors.co/palettes/trending)
 - [Part 3 | 為什麽我們應該學習並使用UI Toolkit](https://www.youtube.com/watch?v=PimLImYQFz0)
   - Panel: sort order, scale mode, reference resolution; source asset => UXML
