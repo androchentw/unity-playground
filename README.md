@@ -16,7 +16,6 @@ unity-playground/
 ├── 0-architecture-patterns/
 │   ├── design-patterns/
 │   │   ├── design-patterns-cs/
-│   │   ├── 2024-10-22-MVCS.excalidraw.svg
 │   │   ├── README-unity-6-practices.md
 │   │   ├── Tutorial-Lessons.md
 │   │   ├── Tutorial-Samples-Basic.md
@@ -55,8 +54,8 @@ unity-playground/
 
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
   patterns explained
-  - <img width="60%" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22-MVCS.excalidraw.svg"  />
-  - <img width="60%" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
+  - <img width="60%" alt="mvcs-excalidraw" src="0-architecture-patterns/res/2024-10-22-MVCS.excalidraw.svg"  />
+  - <img width="60%" alt="design-patterns" src="0-architecture-patterns/res/design-patterns.gif"  />
 - [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure
   and C# coding standards template
 - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)

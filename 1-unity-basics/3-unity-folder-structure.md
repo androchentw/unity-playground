@@ -12,7 +12,8 @@ Ref
 
 - [4-unity-best-practices.md](4-unity-best-practices.md)
 - [5-unity-ui-toolkits.md](5-unity-ui-toolkits.md)
-- [6-unity-custom-package.md](6-unity-custom-package.md)
+- [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
+- [7-unity-custom-package.md](7-unity-custom-package.md)
 - [MVC-MVP-MVVM.md](../0-architecture-patterns/MVC-MVP-MVVM.md)
 - [DDD-Domain-Driven-Design.md](../0-architecture-patterns/DDD-Domain-Driven-Design.md)
 
@@ -28,7 +29,7 @@ Ref
 ## Sample Project Structure
 
 - [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP)
-- [Sample Game Projects on Unity Asset Store](../2-unity-assets-collection/unity-assets-templates.md)
+- [Sample Game Projects on Unity Asset Store](../2-unity-assets-collection/2-unity-assets-templates.md)
 
 <img width="60%" alt="unity-sample-project-structure-markmap.svg" src="res/unity-sample-project-structure-markmap.png"  />
 

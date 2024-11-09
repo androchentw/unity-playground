@@ -9,7 +9,7 @@
 
 ## MVP
 
-- [6-unity-ui-toolkits.md](../1-unity-basics/6-unity-ui-toolkits.md)
+- [5-unity-ui-toolkits.md](../1-unity-basics/5-unity-ui-toolkits.md)
 - [YouTube - Level up your code with game programming patterns: Model-view-presenter | Tutorial](https://www.youtube.com/watch?v=agoe5BdLzdk&list=PLX2vGYjWbI0TmDVbWNA56NbKKUgyUAQ9i&index=4) 
   - [Ebook - Level up your code with game programming patterns](https://unity.com/resources/level-up-your-code-with-game-programming-patterns)
 - [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
@@ -23,8 +23,8 @@
 
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
   patterns explained
-  - <img width="60%" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22-MVCS.excalidraw.svg"  />
-  - <img width="60%" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
+  - <img width="60%" alt="mvcs-excalidraw" src="res/2024-10-22-MVCS.excalidraw.svg"  />
+  - <img width="60%" alt="design-patterns" src="res/design-patterns.gif"  />
 - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
