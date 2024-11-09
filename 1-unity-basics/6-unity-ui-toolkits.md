@@ -3,6 +3,8 @@
 <!-- TOC -->
 * [Unity UI Toolkits](#unity-ui-toolkits)
   * [Tutorials](#tutorials)
+  * [QuizU - A UI toolkit sample](#quizu---a-ui-toolkit-sample)
+  * [UI Toolkit sample – Dragon Crashers](#ui-toolkit-sample--dragon-crashers)
   * [阿嚴 YouTube 教學](#阿嚴-youtube-教學)
     * [新功能](#新功能)
     * [UI Toolkit基礎教程](#ui-toolkit基礎教程)
@@ -12,8 +14,22 @@
 
 ## Tutorials
 
+- [Ebook - User interface design and implementation in Unity](https://unity.com/resources/user-interface-design-and-implementation-in-unity)
+- [UI Toolkit Manual](https://docs.unity3d.com/6000.0/Documentation/Manual/UIElements.html)
 - [Using Unity UI Toolkit](https://www.youtube.com/watch?v=pqSwaqJmYwk&list=PL5domiITryHhlCKPSpiGuUt_kQg0nk3Of&index=5)
-- [UI Toolkit](https://docs.unity3d.com/6000.0/Documentation/Manual/UIElements.html)
+
+## QuizU - A UI toolkit sample
+
+- [Unity Asset Store: QuizU - A UI toolkit sample](https://assetstore.unity.com/packages/essentials/tutorial-projects/quizu-a-ui-toolkit-sample-268492#description)
+  - Event dispatch and propagation
+  - The state pattern for game flow
+  - Managing menu screens in UI Toolkit
+  - The model-view-presenter pattern in QuizU
+  - Event handling in UI Toolkit
+
+## UI Toolkit sample – Dragon Crashers
+
+- [Unity Asset Store: UI Toolkit sample – Dragon Crashers](https://assetstore.unity.com/packages/essentials/tutorial-projects/dragon-crashers-ui-toolkit-sample-project-231178)
 
 ## 阿嚴 YouTube 教學
 

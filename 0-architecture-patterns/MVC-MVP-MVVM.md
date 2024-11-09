@@ -2,10 +2,22 @@
 
 <!-- TOC -->
 * [MVC MVP MVVM](#mvc-mvp-mvvm)
-  * [MVCS (Model-View-Controller-Service)](#mvcs-model-view-controller-service)
   * [MVP](#mvp)
+  * [MVCS (Model-View-Controller-Service)](#mvcs-model-view-controller-service)
   * [MVVM](#mvvm)
 <!-- TOC -->
+
+## MVP
+
+- [6-unity-ui-toolkits.md](../1-unity-basics/6-unity-ui-toolkits.md)
+- [YouTube - Level up your code with game programming patterns: Model-view-presenter | Tutorial](https://www.youtube.com/watch?v=agoe5BdLzdk&list=PLX2vGYjWbI0TmDVbWNA56NbKKUgyUAQ9i&index=4) 
+  - [Ebook - Level up your code with game programming patterns](https://unity.com/resources/level-up-your-code-with-game-programming-patterns)
+- [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
+- [Level up your code with design patterns and SOLID](https://assetstore.unity.com/packages/essentials/tutorial-projects/level-up-your-code-with-design-patterns-and-solid-289616#content)
+- [從Clean Architecture 的角度來看看MVP與MVVM](https://hung-yanbin.medium.com/從clean-architecture-的角度來看看mvp與mvvm-84b4883b0dde)
+- [UnitySimpleCleanArchitecturePlane](https://github.com/genki-tx/UnitySimpleCleanArchitecturePlane)
+
+<img src="https://github.com/genki-tx/UnitySimpleCleanArchitecturePlane/raw/master/docs/images/components.png" width="600px" alt="genki-tx/UnitySimpleCleanArchitecturePlane"/>
 
 ## MVCS (Model-View-Controller-Service)
 
@@ -24,15 +36,8 @@ Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://ww
 
 <img width="60%" alt="unity-best-practices-mvcs-2" src="res/unity-best-practices-mvcs-2.png"  />
 
-## MVP
-
-- [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
-- [Level up your code with game programming patterns: Model-view-presenter | Tutorial](https://www.youtube.com/watch?v=agoe5BdLzdk)
-- [Level up your code with design patterns and SOLID](https://assetstore.unity.com/packages/essentials/tutorial-projects/level-up-your-code-with-design-patterns-and-solid-289616#content)
-
 ## MVVM
 
-- Ref: [6-unity-ui-toolkits.md](../1-unity-basics/6-unity-ui-toolkits.md)
 - [Unity App UI](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/index.html)
 - [MVVM — 架構篇：書讀得多，人自然就好看起來](https://medium.com/ken-do-everything/mvvm-架構篇-書讀得多-人自然就好看起來-4fd595581e7f)
   - Ref Android Jetpack: ViewModel, LiveData, Room, DataBinding

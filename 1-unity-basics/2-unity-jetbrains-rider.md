@@ -51,45 +51,45 @@
 - [Default: JetBrains Rider IntelliJ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
 - Settings: `⌘+,`, `ctrl+alt+s`
 - Navigate
-  - Search Everywhere: `⌘+⇧+A`, `Ctrl+Shift+A`
+  - **全域搜尋** Search Everywhere: `⌘+⇧+A`, `Ctrl+Shift+A`
     - [Cmd+Shift+A hotkey opens Terminal with "apropos" search instead of the Find Action dialog](https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog)
   - Recently Viewed/Changed Files: `⌘+E`, `Ctrl+E`
-  - Main Menu | Window | Editor Tabs
+  - **頁籤操作** Main Menu | Window | Editor Tabs
     - Close Tab: `⌘+W`, `Ctrl+W`, Reopen closed Tab: `⌘+⇧+T`, `Crtl+Shift+T`
     - Select previous tab: `⌘+⌥+←`, `Alt+Left`; Select next tab: `⌘+⌥+→`, `Alt+Right`
     - Plugins | Code With Me | New Tab: Ctrl+T
-  - Main Menu | Navigate (視線的轉移)
+  - **切換視線** Main Menu | Navigate
     - Back: `⌘+⌃+←`, `Ctrl+Alt+Left`, Forward: `⌘+⌃+→`, `Ctrl+Alt+Right`
     - Navigate in File | Previous Method `⌃+⇧+↑`, `Alt+Shift+Up`; Next Method `⌃+⇧+↓`, `Alt+Shift+Down`
     - Goto by Reference Actions | Jump to Navigation Bar: `⌘+↑`, `Alt+Up`
-  - Main Menu | View
+  - **查檔溯源** Main Menu | View
     - View Recent Actions Group | Recent Files: `⌘+E`, `Ctrl+E`, Recent Location: `⌘+⇧+E`, `Crtl+Shift+E`
-    - Quick Definition: `⌘+⇧+D`, `Crtl+Shift+D`
+    - Quick Definition: `⌥+⇧+D`, `Crtl+Shift+D`
     - Jump to Source: `⌘+↓`, `Alt+Down`
-  - Main Menu | Git
+  - **Git** Main Menu | Git
     - VCS Group | Git | Push...: `⌘+⇧+K`, `Crtl+Shift+K`
-  - Tool Windows. (=> on Windows, use Alt)
+  - **工具視窗** Tool Windows. (=> on Windows, use Alt)
     - Left Top. Explorer: `⌘+1`, Structure: `⌘+2`
     - Left Down. Commit: `⌘+3`, TODO: `⌘+4`, Bookmarks: `⌘+5`
     - Right. Codeium Chat: `⌘+6`, Problem: `⌘+7`, Notification: `⌘+8`
   - shrink selection: ctrl+alt+left
 - Code
-  - Other | Show Context Actions: `⌘+⌥+D`, `⌘+enter`. alt+enter; `Ctrl+Alt+D`
+  - **確認程式建議** Other | Show Context Actions: `⌘+⇧+D`, `⌘+enter`. alt+enter; `Ctrl+Alt+D`
   - Switch `⌘+⌃+⇧+V` with `⌘+V` for [Editor Actions | Paste as Plain Text](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716)
   - Main Menu | Refactor
     - Refactor This: `⌘+⌃+⇧+R`, `⌥+R`, `Ctrl+Alt+Ahift+R`
       - Rename: `⌃+⇧+R`, `Ctrl+Alt+R`
-  - Main Menu | Edit
+  - **搜尋取代** Main Menu | Edit
     - Find: `⌘+F`, `Ctrl+F`, Find in file: `⌘+⇧+F`, `Ctrl+Shift+F`
     - Replace: `⌘+R`, `Ctrl+R`, Replace in file: `⌘+⇧+R`, `Ctrl+Shift+R`
-  - Main Menu | Code | Code Formatting Actions
+  - **程式格式** Main Menu | Code | Code Formatting Actions
     - Reformat Code: `⌥+⇧+F`, `Ctrl+Alt+F`
     - Optimize Imports: `⌥+⇧+O`, `Ctrl+Alt+O`
-  - Main Menu | Code | Folding |
+  - **折疊** Main Menu | Code | Folding
     - Expand: `⌘ +`, Collapse `⌘ -`; All + "⇧"
       - 小技巧: 先 collapse all 再 expand all, 全部的 markdown link 就會變成 `...`
     - Fold Selection / Remove region: `⌘+.`
-  - Plugins | Markdown
+  - **Markdown** Plugins | Markdown
     - Create Link: `⌘+K`
       - 小技巧: 在剪貼簿中有 url link 時, 再選取要標是的字段, 按下 Create Link: `⌘+K`, 會自動帶上 url link
     - Generate Table Of Contents: `⌘+N`, Update Table Of Contents:  `⌘+⌃+⇧+T`, `⌥+R`, `Ctrl+Alt+Ahift+T`

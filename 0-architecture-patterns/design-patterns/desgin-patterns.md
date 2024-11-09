@@ -14,7 +14,7 @@
 
 ## C# Examples
 
-- [design-patterns](desgin-patterns/README.md)
+- [design-patterns](design-patterns-cs/README.md)
 
 ## Tutorials
 
