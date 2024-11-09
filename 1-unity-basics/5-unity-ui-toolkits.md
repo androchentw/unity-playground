@@ -3,9 +3,6 @@
 <!-- TOC -->
 * [Unity UI Toolkits](#unity-ui-toolkits)
   * [Tutorials](#tutorials)
-  * [QuizU - A UI toolkit sample](#quizu---a-ui-toolkit-sample)
-    * [Tutorial: QuizU-documentation-Nov1-2023.pdf](#tutorial-quizu-documentation-nov1-2023pdf)
-      * [Catalog](#catalog)
   * [UI Toolkit sample – Dragon Crashers](#ui-toolkit-sample--dragon-crashers)
   * [阿嚴 YouTube 教學](#阿嚴-youtube-教學)
     * [新功能](#新功能)
@@ -16,61 +13,10 @@
 
 ## Tutorials
 
+- [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
 - [Ebook - User interface design and implementation in Unity](https://unity.com/resources/user-interface-design-and-implementation-in-unity)
 - [UI Toolkit Manual](https://docs.unity3d.com/6000.0/Documentation/Manual/UIElements.html)
 - [Using Unity UI Toolkit](https://www.youtube.com/watch?v=pqSwaqJmYwk&list=PL5domiITryHhlCKPSpiGuUt_kQg0nk3Of&index=5)
-
-## QuizU - A UI toolkit sample
-
-- [Unity Asset Store: QuizU - A UI toolkit sample](https://assetstore.unity.com/packages/essentials/tutorial-projects/quizu-a-ui-toolkit-sample-268492#description)
-  - Event dispatch and propagation
-  - The state pattern for game flow
-  - Managing menu screens in UI Toolkit
-  - The model-view-presenter pattern in QuizU
-  - Event handling in UI Toolkit
-
-### Tutorial: QuizU-documentation-Nov1-2023.pdf
-
-#### Catalog
-
-<img src="res/unity-QuizU-ui-toolkit-sample-catalog.png" width="600px" alt="unity-QuizU-ui-toolkit-sample-catalog">
-
-- Basics
-  - QuizU: Exploring the demo scenes
-  - GroupBox versus VisualElement
-  - Flexbox rules and layout
-  - USS Styles
-  - UQuery
-  - Manipulators
-  - Others
-    - C# Style Guide
-    - Utilities
-    - ScriptTemplates
-    - ScriptableObjects
-- QuizU: State pattern for game flow
-  - IState, ILink
-  - StateMachine, ConcreteStates
-  - SequenceManager
-- Managing menu screens in UI Toolkit
-  - UIManager versus SequenceManager
-- QuizU: Model View Presenter pattern
-  - The Model: AudioSettings
-  - The View: Settings Screen
-  - The Presenter: SettingsPresenter
-  - SettingsEvents
-- QuizU: Event handling in UI Toolkit
-  - Registering events
-  - Event dispatch and propagation
-  - The Event Registry pattern
-- UI Toolkit performance tips
-  - Hierarchy and elements
-  - Asset loading
-  - UQuery
-  - Garbage collection
-  - Rendering
-  - Balancing Performance and Usability
-
-
 
 ## UI Toolkit sample – Dragon Crashers
 
