@@ -78,6 +78,8 @@
 - Code
   - **確認程式建議** Other | Show Context Actions: `⌘+⇧+D`, `⌘+enter`. alt+enter; `Ctrl+Alt+D`
   - Switch `⌘+⌃+⇧+V` with `⌘+V` for [Editor Actions | Paste as Plain Text](https://stackoverflow.com/questions/76500225/rider-copying-and-pasting-text-from-word-pastes-as-image-link/79150716#79150716)
+    - Editor Actions | Paste: 這個是平常編輯器裡面的行為
+    - Main Menu | Edit | Cut/Copy/Paste Actions | Paste | Paste: 這個是側邊欄(例如 File System) 的行為. 要把這裡再改回 `⌘+V`, 才能正常 copy/paste 檔案 
   - Main Menu | Refactor
     - Refactor This: `⌘+⌃+⇧+R`, `⌥+R`, `Ctrl+Alt+Ahift+R`
       - Rename: `⌃+⇧+R`, `Ctrl+Alt+R`
