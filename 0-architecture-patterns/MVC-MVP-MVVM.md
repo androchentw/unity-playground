@@ -24,7 +24,6 @@
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
   patterns explained
   - <img width="60%" alt="mvcs-excalidraw" src="res/2024-10-22-MVCS.excalidraw.svg"  />
-  - <img width="60%" alt="design-patterns" src="res/design-patterns.gif"  />
 - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
 - Tips
   - Project Settings > Editor >Enter Play Mode Options = True
