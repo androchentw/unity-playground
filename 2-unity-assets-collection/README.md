@@ -4,6 +4,7 @@
 * [Readme](#readme)
   * [Assets Bundle 購買](#assets-bundle-購買)
   * [Assets 使用教學](#assets-使用教學)
+  * [Courses - 參考目錄 & 學習](#courses---參考目錄--學習-)
 <!-- TOC -->
 
 ```text
@@ -29,3 +30,10 @@ unity-2-assets-collection/
   - Tilemap + Sprite Sheet
   - [繪製場景地圖](https://www.youtube.com/watch?v=C9SrWspWpEE) + [TinyRPGTown](https://assetstore.unity.com/packages/2d/environments/tiny-rpg-town-environment-88293#content)
   - 留意 PPU. 搭配 2D Tilemap Editor + 2D Sprite (將素材切出來
+
+## Courses - 參考目錄 & 學習 
+
+- [Unity 2D RPG: Complete Combat System](https://www.gamedev.tv/courses/unity-2d-rpg-combat)
+- [Unity 2.5D Turn-Based RPG](https://www.gamedev.tv/courses/unity-2-5d-turn-based-combat)
+- [Unity Mobile C# Developer: Create and deploy games for Android and iOS](https://www.gamedev.tv/courses/unity-mobile)
+- [Unity Programming Design Patterns: Learn Programming Best Practices](https://www.gamedev.tv/courses/unity-programming-design-patterns)
