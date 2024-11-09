@@ -44,12 +44,14 @@
 - considering: - Docker, kubernetes; GitToolBox
 
 ## Keymap
-
+ + up
 - [Mac symbol](https://gist.github.com/jlyonsmith/6992156f18c423fd1c5af068aa311fb5)
   - ⌘ Command(cmd), ⌥ Option, ⌃ Control, ⇧ Shift
   - ← Left, → Right, ↑ Up, ↓ Down
 - [Default: JetBrains Rider IntelliJ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
 - Settings: `⌘+,`, `ctrl+alt+s`
+- Editor Actions
+  - **選取** Page Down with Selection: `⌘+⇧+↓`, Up: `⌘+⇧+↑`
 - Navigate
   - **全域搜尋** Search Everywhere: `⌘+⇧+A`, `Ctrl+Shift+A`
     - [Cmd+Shift+A hotkey opens Terminal with "apropos" search instead of the Find Action dialog](https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog)
