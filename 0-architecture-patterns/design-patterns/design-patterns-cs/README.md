@@ -1,9 +1,11 @@
-# Desgin Patterns in C#
+# Design Patterns in C#
 
-- [Desgin Patterns in C#](#desgin-patterns-in-c)
-  - [Creational Patterns](#creational-patterns)
-  - [Structural Patterns](#structural-patterns)
-  - [Behavioral Patterns](#behavioral-patterns)
+<!-- TOC -->
+* [Design Patterns in C#](#design-patterns-in-c)
+  * [Creational Patterns](#creational-patterns)
+  * [Structural Patterns](#structural-patterns)
+  * [Behavioral Patterns](#behavioral-patterns)
+<!-- TOC -->
 
 ## Creational Patterns
 

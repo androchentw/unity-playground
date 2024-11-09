@@ -36,7 +36,7 @@
 │   │   ├── 7_DataBinding.jpg
 │   │   └── 8_MultipleMini.jpg
 │   ├── res/
-│   ├── 2024-10-22 MVCS.excalidraw.svg
+│   ├── 2024-10-22-MVCS.excalidraw.svg
 │   ├── README-unity-6-practices.md
 │   ├── Tutorial-Lessons.md
 │   ├── Tutorial-Samples-Basic.md

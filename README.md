@@ -13,25 +13,36 @@
 
 ```text
 unity-playground/
-├── unity-1-basics/
-│   ├── README.md
-│   ├── TimerController.cs
-│   ├── unity-basics.md
-│   ├── unity-best-practices.md
-│   ├── unity-custom-package.md
-│   ├── unity-data-management.md
-│   ├── unity-input-system.md
-│   ├── unity-jetbrains-rider.md
-│   ├── unity-localization.md
-│   └── unity-ui-toolkits.md
-├── unity-2-assets-collection/
-│   ├── README.md
-│   ├── unity-assets-audio.md
-│   ├── unity-assets-gui.md
-│   ├── unity-assets-templates.md
-│   └── unity-assets-tools.md
-├── unity-3-advanced/
-│   ├── README.md
+├── 0-architecture-patterns/
+│   ├── design-patterns/
+│   │   ├── design-patterns-cs/
+│   │   ├── 2024-10-22-MVCS.excalidraw.svg
+│   │   ├── README-unity-6-practices.md
+│   │   ├── Tutorial-Lessons.md
+│   │   ├── Tutorial-Samples-Basic.md
+│   │   ├── Tutorial-Samples-More.md
+│   │   └── design-patterns.md
+│   ├── Clean-Architecture.md
+│   ├── DDD-Domain-Driven-Design.md
+│   ├── MVC-MVP-MVVM.md
+│   └── UML.md
+├── 1-unity-basics/
+│   ├── 1-unity-jetbrains-rider.md
+│   ├── 2-unity-basics.md
+│   ├── 3-unity-folder-structure.md
+│   ├── 4-unity-best-practices.md
+│   ├── 5-unity-ui-toolkits.md
+│   ├── 6-unity-data-management.md
+│   ├── 7-unity-custom-package.md
+│   ├── 8-unity-localization.md
+│   ├── 9-unity-input-system.md
+│   └── TimerController.cs
+├── 2-unity-assets-collection/
+│   ├── 1-unity-assets-tools.md
+│   ├── 2-unity-assets-templates.md
+│   ├── 3-unity-assets-gui.md
+│   └── 4-unity-assets-audio.md
+├── 3-unity-advanced/
 │   ├── unity-addressable.md
 │   ├── unity-others.md
 │   └── unity-web-request.md
@@ -43,7 +54,7 @@ unity-playground/
 
 - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
   patterns explained
-  - <img width="60%" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22%20MVCS.excalidraw.svg"  />
+  - <img width="60%" alt="mvcs-excalidraw" src="https://raw.githubusercontent.com/androchentw/rmc-mini-mvcs/refs/heads/andro/docs/2024-10-22-MVCS.excalidraw.svg"  />
   - <img width="60%" alt="design-patterns" src="https://raw.githubusercontent.com/androchentw/unity-best-practices/refs/heads/main/Unity/Assets/Samples/%7E%20Shared/Documentation/Images/design-patterns.gif"  />
 - [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure
   and C# coding standards template
