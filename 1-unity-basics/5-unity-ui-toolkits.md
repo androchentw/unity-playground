@@ -17,9 +17,10 @@
 - Unity Docs
   - [Ebook - User interface design and implementation in Unity](https://unity.com/resources/user-interface-design-and-implementation-in-unity)
   - [UI Toolkit Manual](https://docs.unity3d.com/6000.0/Documentation/Manual/UIElements.html)
-- YouTube
+- Others
   - [【Unity Devlog開發日誌】強大的UI管理工具 - UI框架](https://www.youtube.com/watch?v=JvKUhK0ZLD4)
   - [Using Unity UI Toolkit](https://www.youtube.com/watch?v=pqSwaqJmYwk&list=PL5domiITryHhlCKPSpiGuUt_kQg0nk3Of&index=5)
+  - [【筆記】視覺物件與工具開發](https://angus945.github.io/learn/unity/visual-element/)
 
 ## 🥇 UI Toolkit Sample - Unity QuizU 
 

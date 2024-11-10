@@ -12,7 +12,6 @@
 [//]: # (TODO)
 
 - [ ] Rigidbody2D Collision Detection
-  
 - [ ] Unity - Level up your code with design patterns and SOLID
 
 ## Overview
