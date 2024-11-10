@@ -10,10 +10,7 @@
 ## MVP
 
 - [5-unity-ui-toolkits.md](../1-unity-basics/5-unity-ui-toolkits.md)
-- [YouTube - Level up your code with game programming patterns: Model-view-presenter | Tutorial](https://www.youtube.com/watch?v=agoe5BdLzdk&list=PLX2vGYjWbI0TmDVbWNA56NbKKUgyUAQ9i&index=4) 
-  - [Ebook - Level up your code with game programming patterns](https://unity.com/resources/level-up-your-code-with-game-programming-patterns)
-- [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
-- [Level up your code with design patterns and SOLID](https://assetstore.unity.com/packages/essentials/tutorial-projects/level-up-your-code-with-design-patterns-and-solid-289616#content)
+- [design-patterns/README.md](../0-architecture-patterns/design-patterns/README.md)
 - [從Clean Architecture 的角度來看看MVP與MVVM](https://hung-yanbin.medium.com/從clean-architecture-的角度來看看mvp與mvvm-84b4883b0dde)
 - [UnitySimpleCleanArchitecturePlane](https://github.com/genki-tx/UnitySimpleCleanArchitecturePlane)
 
@@ -26,7 +23,7 @@
   - <img width="60%" alt="mvcs-excalidraw" src="res/2024-10-22-MVCS.excalidraw.svg"  />
 - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro)
 - Tips
-  - Project Settings > Editor >Enter Play Mode Options = True
+  - Project Settings > Editor > Enter Play Mode Options = True
   - "Any Scene" Bootstrap: developer mode / testing
 
 Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://www.youtube.com/watch?v=Y5uaw4mYR_E&list=PL5domiITryHiP04FA13aCM9pl4S_c9XOi&index=6)
@@ -43,7 +40,6 @@ Credit: [Samuel Asher Rivello. Best Practices - 4 - Unity Case Study](https://ww
 - [MVC、MVP、MVVM 解析【理论篇】](https://aihailan.com/archives/100)
 - [Unity开发 浅谈MVC、MVP、MVVM的特点、运用与区别](https://blog.csdn.net/qq_43505432/article/details/111154779)
 - [Unity中的MVC、MVP、MVVM框架](https://blog.csdn.net/qq_54476817/article/details/132513548)
-- [Game-Programming-Patterns-Demo](https://github.com/Unity-Technologies/game-programming-patterns-demo/tree/main/Assets/UnityTechnologies/_DesignPatterns/7_MVVM)
 - [loxodon-framework](https://github.com/vovgou/loxodon-framework)
 - [UnityMvvmToolkit](https://github.com/LibraStack/UnityMvvmToolkit)
 - [Introduction to the MVVM Pattern](https://docs.unity3d.com/Packages/com.unity.dt.app-ui@2.0/manual/mvvm-intro.html)

@@ -11,8 +11,8 @@
 
 [//]: # (TODO)
 
-- [ ] [1-unity-basics/6-unity-scriptable-object.md](1-unity-basics/6-unity-scriptable-object.md)
 - [ ] Rigidbody2D Collision Detection
+- [ ] Unity - Level up your code with design patterns and SOLID
 
 ## Overview
 
@@ -45,7 +45,6 @@ unity-playground/
 │   ├── 5-unity-ui-toolkits.md
 │   ├── 5-unity-ui-toolkits-QuizU.md
 │   ├── 6-unity-data-management.md
-│   ├── 6-unity-scriptable-object.md
 │   ├── 7-unity-custom-package.md
 │   ├── 8-unity-localization.md
 │   ├── 9-unity-input-system.md

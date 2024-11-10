@@ -140,7 +140,7 @@
 
 ### ScriptableObjects
 
-- Ref: [6-unity-scriptable-object](6-unity-scriptable-object.md)
+- Ref: [6-unity-data-management.md](6-unity-data-management.md)
 
 ## QuizU: State pattern for game flow
 

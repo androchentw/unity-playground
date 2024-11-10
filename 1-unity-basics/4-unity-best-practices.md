@@ -4,8 +4,9 @@
 * [Unity Best Practices](#unity-best-practices)
   * [C# General](#c-general)
   * [Code Style Guide](#code-style-guide)
+  * [Unity General](#unity-general)
+  * [Game Design](#game-design)
   * [Unity DOTS 提升效能](#unity-dots-提升效能)
-  * [Mobile Game Design](#mobile-game-design)
   * [LiveOps](#liveops)
 <!-- TOC -->
 
@@ -30,6 +31,23 @@
 - [Unity Coding guidelines & Basic Best Practices](https://avangarde-software.com/unity-coding-guidelines-basic-best-practices/)
 - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro): Unity Best Practices for C# Design Patterns.
 
+## Unity General
+
+- [Unity best practices](https://unity.com/how-to)
+- [Best practices for project organization and version control (Unity 6 edition)](https://unity.com/resources/best-practices-version-control-unity-6)
+
+## Game Design
+
+- [The Unity Game Designer Playbook](https://unity.com/resources/game-designer-playbook)
+  - [Systems that create ecosystems: Emergent game design](https://unity.com/blog/games/systems-that-create-ecosystems-emergent-game-design)
+  - [Unpredictably fun: The value of randomization in game design](https://unity.com/blog/games/unpredictably-fun-the-value-of-randomization-in-game-design)
+- [Introduction to game level design](https://unity.com/resources/introduction-to-level-design-in-game-development-and-in-unity)
+- [2D game art, animation, and lighting for artists](https://unity.com/resources/2d-game-art-animation-lighting-for-artists-ebook?isGated=false)
+- [Best practices for managing elements](https://docs.unity3d.com/Manual/UIE-best-practices-for-managing-elements.html)
+- [Mobile game design with Unity](https://unity.com/topics/mobile-game-design)
+- [Optimize your game performance for mobile, XR, and the web in Unity (Unity 6 edition)](https://unity.com/resources/mobile-xr-web-game-performance-optimization-unity-6)
+  - [GenAI NoteBook LLM Summary](https://notebooklm.google.com/notebook/10e53e23-00fa-49ee-bff4-b27ee0ccf4e7)
+
 ## Unity DOTS 提升效能
 
 - [【阿空】一次搞懂 Unity DOTS 與 JobSystem！ ( Unity DOTS and JobSystem! )](https://www.youtube.com/watch?v=AY3Ejgyv9Ss)
@@ -47,17 +65,6 @@
 - [淺談多執行緒程式設計與Unity的C# Job System](https://medium.com/akatsuki-taiwan-technology/淺談多執行緒程式設計與unity的c-job-system-19e4d5ca59dd)
 - [Unity 利用C# Job System與Burst Compiler來解放CPU的效能](https://medium.com/akatsuki-taiwan-technology/unity-利用c-job-system與burst-compiler來解放cpu的效能-c9447357a076)
 - [開始使用Unity的C# Job System(一)](https://medium.com/@eric.hu/開始使用unity的c-job-system-一-78b72b1e96bd)
-
-## Mobile Game Design
-
-- [Mobile game design with Unity](https://unity.com/topics/mobile-game-design)
-- [Optimize your game performance for mobile, XR, and the web in Unity](https://unity.com/resources/mobile-xr-web-game-performance-optimization-unity-6)
-  - [GenAI NoteBook LLM Summary](https://notebooklm.google.com/notebook/10e53e23-00fa-49ee-bff4-b27ee0ccf4e7)
-- [Introduction to game level design](https://unity.com/resources/introduction-to-level-design-in-game-development-and-in-unity)
-- [The Unity Game Designer Playbook](https://unity.com/resources/game-designer-playbook)
-- [Unity best practices](https://unity.com/how-to)
-- [2D game art, animation, and lighting for artists](https://unity.com/resources/2d-game-art-animation-lighting-for-artists-ebook?isGated=false)
-- [Best practices for managing elements](https://docs.unity3d.com/Manual/UIE-best-practices-for-managing-elements.html)
 
 ## LiveOps
 

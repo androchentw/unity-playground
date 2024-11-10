@@ -21,7 +21,6 @@
 ├── 5-unity-ui-toolkits.md
 ├── 5-unity-ui-toolkits-QuizU.md
 ├── 6-unity-data-management.md
-├── 6-unity-scriptable-object.md
 ├── 7-unity-custom-package.md
 ├── 8-unity-localization.md
 ├── 9-unity-input-system.md
