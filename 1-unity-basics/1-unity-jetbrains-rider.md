@@ -4,7 +4,7 @@
 * [Unity JetBrains Rider](#unity-jetbrains-rider)
   * [Settings](#settings)
   * [Plugins](#plugins)
-  * [Keymap](#keymap)
+  * [🥇 Keymap](#-keymap)
   * [Tutorial](#tutorial)
 <!-- TOC -->
 
@@ -14,7 +14,7 @@
 - [Jetbrains Rider Editor](https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/using-the-jetbrains-rider-editor-package.html)
   - Edit > Preferences > External Tools > External Script Editor > Rider
   - For Trace code: Unity > Regenerate project File > *.csproj
-- Settings | Editor | Editor tabs --> Mark modified tabs with asterisk
+- Settings | Editor | Editor tabs | Mark modified tabs with asterisk
 - 字體: Editor > Color Scheme > Color Scheme Font
   - Font: Hack Nerd Font
   - Fallback font: Microsoft JhengHei UI
@@ -43,15 +43,16 @@
     - Tabnine, AWS Toolkit, Amazon Q, Codeium, JetBrains AI Assistant. GitHub Copilot
 - considering: - Docker, kubernetes; GitToolBox
 
-## Keymap
- + up
+## 🥇 Keymap
+
 - [Mac symbol](https://gist.github.com/jlyonsmith/6992156f18c423fd1c5af068aa311fb5)
   - ⌘ Command(cmd), ⌥ Option, ⌃ Control, ⇧ Shift
   - ← Left, → Right, ↑ Up, ↓ Down
 - [Default: JetBrains Rider IntelliJ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
 - Settings: `⌘+,`, `ctrl+alt+s`
 - Editor Actions
-  - **選取** Page Down with Selection: `⌘+⇧+↓`, Up: `⌘+⇧+↑`
+  - **選取** Page Down: `⌘+↓`, Up: `⌘+↑`
+  -  Page Down with Selection: `⌘+⇧+↓`, Up: `⌘+⇧+↑`
 - Navigate
   - **全域搜尋** Search Everywhere: `⌘+⇧+A`, `Ctrl+Shift+A`
     - [Cmd+Shift+A hotkey opens Terminal with "apropos" search instead of the Find Action dialog](https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog)
@@ -60,10 +61,10 @@
     - Close Tab: `⌘+W`, `Ctrl+W`, Reopen closed Tab: `⌘+⇧+T`, `Crtl+Shift+T`
     - Select previous tab: `⌘+⌥+←`, `Alt+Left`; Select next tab: `⌘+⌥+→`, `Alt+Right`
     - Plugins | Code With Me | New Tab: Ctrl+T
-  - **切換視線** Main Menu | Navigate
-    - Back: `⌘+⌃+←`, `Ctrl+Alt+Left`, Forward: `⌘+⌃+→`, `Ctrl+Alt+Right`
-    - Navigate in File | Previous Method `⌃+⇧+↑`, `Alt+Shift+Up`; Next Method `⌃+⇧+↓`, `Alt+Shift+Down`
-    - Goto by Reference Actions | Jump to Navigation Bar: `⌘+↑`, `Alt+Up`
+  - 📝 (常忘) **切換視線** Main Menu | Navigate
+    - **Back**: `⌘+⌃+←`, `Ctrl+Alt+Left`, Forward: `⌘+⌃+→`, `Ctrl+Alt+Right`
+    - **Navigate in File** | Previous Method `⌃+⇧+←`, `Alt+Shift+Up`; Next Method `⌃+⇧+→`, `Alt+Shift+Down`
+    - Goto by Reference Actions | Jump to Navigation Bar: `⌥+↑`, `Alt+Up`
   - **查檔溯源** Main Menu | View
     - View Recent Actions Group | Recent Files: `⌘+E`, `Ctrl+E`, Recent Location: `⌘+⇧+E`, `Crtl+Shift+E`
     - Quick Definition: `⌥+⇧+D`, `Crtl+Shift+D`
@@ -71,7 +72,7 @@
   - **Git** Main Menu | Git
     - VCS Group | Git | Push...: `⌘+⇧+K`, `Crtl+Shift+K`
     - 打開完整的 git log: Version Control Systems | Log | Open New VCS Log Editor Tab: `⌘+⌃+⇧+R` 
-  - **工具視窗** Tool Windows. (=> on Windows, use Alt)
+  - **工具視窗** Tool Windows. (on Windows, use Alt)
     - Left Top. Explorer: `⌘+1`, Structure: `⌘+2`
     - Left Down. Commit: `⌘+3`, TODO: `⌘+4`, Bookmarks: `⌘+5`
     - Right. Codeium Chat: `⌘+6`, Problem: `⌘+7`, Notification: `⌘+8`

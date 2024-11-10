@@ -9,6 +9,11 @@
   </sup></sub>
 </div>
 
+[//]: # (TODO)
+
+- [ ] [1-unity-basics/6-unity-scriptable-object.md](1-unity-basics/6-unity-scriptable-object.md)
+- [ ] Rigidbody2D Collision Detection
+
 ## Overview
 
 <!-- TOC -->
@@ -58,12 +63,7 @@ unity-playground/
 
 ## Project Structure Template
 
-- [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP): A 2D URP Unity template to start with
-- Others
-  - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro): Unity Best Practices for C# Design Patterns.
-  - [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
-  - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
-    patterns explained
+- 🥇 [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP): A 2D URP Unity template to start with
 
 <img width="500px" src="https://github.com/androchentw/UnityBaseTemplate2DURP/blob/main/Assets/Docs/res/unity-sample-project-structure-markmap.png?raw=true" alt="UnityBaseTemplate2DURP-project-structure-markmap">
 

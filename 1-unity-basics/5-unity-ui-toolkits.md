@@ -3,7 +3,8 @@
 <!-- TOC -->
 * [Unity UI Toolkits](#unity-ui-toolkits)
   * [Tutorials](#tutorials)
-  * [UI Toolkit sample – Dragon Crashers](#ui-toolkit-sample--dragon-crashers)
+  * [🥇 UI Toolkit Sample - Unity QuizU](#-ui-toolkit-sample---unity-quizu-)
+  * [UI Toolkit sample – Unity Dragon Crashers](#ui-toolkit-sample--unity-dragon-crashers)
   * [阿嚴 YouTube 教學](#阿嚴-youtube-教學)
     * [新功能](#新功能)
     * [UI Toolkit基礎教程](#ui-toolkit基礎教程)
@@ -13,12 +14,18 @@
 
 ## Tutorials
 
-- [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
-- [Ebook - User interface design and implementation in Unity](https://unity.com/resources/user-interface-design-and-implementation-in-unity)
-- [UI Toolkit Manual](https://docs.unity3d.com/6000.0/Documentation/Manual/UIElements.html)
-- [Using Unity UI Toolkit](https://www.youtube.com/watch?v=pqSwaqJmYwk&list=PL5domiITryHhlCKPSpiGuUt_kQg0nk3Of&index=5)
+- Unity Docs
+  - [Ebook - User interface design and implementation in Unity](https://unity.com/resources/user-interface-design-and-implementation-in-unity)
+  - [UI Toolkit Manual](https://docs.unity3d.com/6000.0/Documentation/Manual/UIElements.html)
+- YouTube
+  - [【Unity Devlog開發日誌】強大的UI管理工具 - UI框架](https://www.youtube.com/watch?v=JvKUhK0ZLD4)
+  - [Using Unity UI Toolkit](https://www.youtube.com/watch?v=pqSwaqJmYwk&list=PL5domiITryHhlCKPSpiGuUt_kQg0nk3Of&index=5)
 
-## UI Toolkit sample – Dragon Crashers
+## 🥇 UI Toolkit Sample - Unity QuizU 
+
+- [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
+
+## UI Toolkit sample – Unity Dragon Crashers
 
 - [Unity Asset Store: UI Toolkit sample – Dragon Crashers](https://assetstore.unity.com/packages/essentials/tutorial-projects/dragon-crashers-ui-toolkit-sample-project-231178)
 
@@ -49,10 +56,10 @@
 - [UI Toolkit基礎教程 Part 1 | 如何使用UI Toolkit | UI工具包 | JRPG 教程項目前置](https://www.youtube.com/watch?v=CfQL0cI-zPc)
   - UI Toolkit > UGUI: [各有擅場](https://docs.unity3d.com/2022.2/Documentation/Manual/UIElements.html)
   - UGUI: GameObject based, prefab workflow
-  - Window > UIToolkit > UI Builder or Assets > Data > UIDocuments > UXML(Content), USS(Style), Behavior(C#)
+  - Window > UIToolkit > UI Builder or Assets > Data > UIDocuments > UXML(Content), USS (Style), Behavior(C#)
   - Screen Overlay UI: 像是手機/網頁 box model (FlexBox)
 - [Part 2 | UI的布局和樣式](https://www.youtube.com/watch?v=wZP47DZcAzM)
-  - Layout, Container(Panel); Flex basis (25%) / grow (1), background, border, Margin/Padding, Text
+  - Layout, Container (Panel); Flex basis (25%) / grow (1), background, border, Margin/Padding, Text
 - 配色: [FlatColors](https://flatuicolors.com/), [Colors](https://coolors.co/palettes/trending)
 - [Part 3 | 為什麽我們應該學習並使用UI Toolkit](https://www.youtube.com/watch?v=PimLImYQFz0)
   - Panel: sort order, scale mode, reference resolution; source asset => UXML

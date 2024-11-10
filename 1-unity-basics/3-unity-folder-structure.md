@@ -2,39 +2,39 @@
 
 <!-- TOC -->
 * [Unity Folder Structure](#unity-folder-structure)
-  * [Project Structure Template](#project-structure-template)
-  * [Sample Project Structure](#sample-project-structure)
-  * [Reference Structure - unity-project-template](#reference-structure---unity-project-template)
+  * [Sample Project Structure Template](#sample-project-structure-template)
+    * [Others](#others)
+    * [Ref - unity-project-template](#ref---unity-project-template)
   * [Asset Type](#asset-type)
 <!-- TOC -->
 
-Ref
+## Sample Project Structure Template
 
-- [4-unity-best-practices.md](4-unity-best-practices.md)
-- [5-unity-ui-toolkits.md](5-unity-ui-toolkits.md)
-- [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
-- [7-unity-custom-package.md](7-unity-custom-package.md)
-- [MVC-MVP-MVVM.md](../0-architecture-patterns/MVC-MVP-MVVM.md)
-- [DDD-Domain-Driven-Design.md](../0-architecture-patterns/DDD-Domain-Driven-Design.md)
+- [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP)
+- [Sample Game Projects on Unity Asset Store](../2-unity-assets-collection/2-unity-assets-templates.md)
+- Ref
+  - [4-unity-best-practices.md](4-unity-best-practices.md)
+  - [5-unity-ui-toolkits.md](5-unity-ui-toolkits.md)
+  - [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
+  - [7-unity-custom-package.md](7-unity-custom-package.md)
+  - [MVC-MVP-MVVM.md](../0-architecture-patterns/MVC-MVP-MVVM.md)
+  - [DDD-Domain-Driven-Design.md](../0-architecture-patterns/DDD-Domain-Driven-Design.md)
 
-## Project Structure Template
+<img width="500px" src="https://github.com/androchentw/UnityBaseTemplate2DURP/blob/main/Assets/Docs/res/unity-sample-project-structure-markmap.png?raw=true" alt="UnityBaseTemplate2DURP-project-structure-markmap">
 
-- Best practices for organizing your Unity project
-- Code Samples
-  - [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
-  - [unity-project-style-guide](https://github.com/timdhoffmann/unity-project-style-guide)
-  - [gameplay-framework-unity](https://github.com/GiovanniZambiasi/gameplay-framework-unity)
+### Others
+
 - Unity
   - [Package layout](https://docs.unity3d.com/Manual/cus-layout.html)
   - [Adding tests to a package](https://docs.unity3d.com/Manual/cus-tests.html)
   - [How to run automated tests for your games with the Unity Test Framework](https://unity.com/how-to/automated-tests-unity-test-framework)
+- Others
+  - [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
+  - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design patterns explained
+  - [unity-project-style-guide](https://github.com/timdhoffmann/unity-project-style-guide)
+  - [gameplay-framework-unity](https://github.com/GiovanniZambiasi/gameplay-framework-unity)
 
-## Sample Project Structure
-
-- [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP)
-- [Sample Game Projects on Unity Asset Store](../2-unity-assets-collection/2-unity-assets-templates.md)
-
-## Reference Structure - unity-project-template
+### Ref - unity-project-template
 
 Note: ignored `*.meta`, `*.asset`
 

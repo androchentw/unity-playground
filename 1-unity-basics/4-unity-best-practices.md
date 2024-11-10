@@ -28,6 +28,7 @@
 - [Unity-Code-Style-Guide](https://github.com/androchentw/Unity-Code-Style-Guide)
 - [Formatting best practices for C# scripting in Unity](https://unity.com/how-to/formatting-best-practices-c-scripting-unity)
 - [Unity Coding guidelines & Basic Best Practices](https://avangarde-software.com/unity-coding-guidelines-basic-best-practices/)
+- [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro): Unity Best Practices for C# Design Patterns.
 
 ## Unity DOTS 提升效能
 
