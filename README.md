@@ -11,6 +11,15 @@
 
 ## Overview
 
+<!-- TOC -->
+* [Unity Playground](#unity-playground)
+  * [Overview](#overview)
+  * [Project Structure Template](#project-structure-template)
+  * [Design Patterns](#design-patterns)
+  * [Unity Lifecycle](#unity-lifecycle-)
+  * [Contribute](#contribute)
+<!-- TOC -->
+
 ```text
 unity-playground/
 ├── 0-architecture-patterns/
@@ -47,19 +56,30 @@ unity-playground/
 │   └── unity-web-request.md
 ```
 
-- <a href="https://docs.unity3d.com/Manual/execution-order.html" target="_blank" rel="noreferrer noopener"><img width="80%" alt="Script lifecycle flowchart" src="https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg"></a>
-
-## Codebase Ref
+## Project Structure Template
 
 - [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP): A 2D URP Unity template to start with
-- [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro): Unity Best Practices for C# Design Patterns.
-- [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
-- [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
-  patterns explained
+- Others
+  - [unity-best-practices](https://github.com/androchentw/unity-best-practices/tree/andro): Unity Best Practices for C# Design Patterns.
+  - [unity-project-template](https://github.com/androchentw/unity-project-template/tree/andro): clean project structure and C# coding standards template
+  - [rmc-mini-mvcs](https://github.com/androchentw/rmc-mini-mvcs/tree/andro/docs): MVCS architecture example and design
+    patterns explained
+
+<img width="500px" src="https://github.com/androchentw/UnityBaseTemplate2DURP/blob/main/Assets/Docs/res/unity-sample-project-structure-markmap.png?raw=true" alt="UnityBaseTemplate2DURP-project-structure-markmap">
 
 <img width="80%" alt="mvcs-excalidraw" src="0-architecture-patterns/res/2024-10-22-MVCS.excalidraw.svg"  />
 
+<img width="500px" src="1-unity-basics/res/unity-QuizU-ui-toolkit-sample/QuizU-catalog.png" alt="unity-QuizU-ui-toolkit-sample-catalog">
+
+## Design Patterns
+
 <img width="80%" alt="design-patterns" src="0-architecture-patterns/res/design-patterns.gif"  />
+
+## Unity Lifecycle 
+
+- [Unity Script lifecycle overview](https://docs.unity3d.com/Manual/execution-order.html)
+
+<img width="80%" alt="Script lifecycle flowchart" src="https://docs.unity3d.com/uploads/Main/monobehaviour_flowchart.svg">
 
 ## Contribute
 
