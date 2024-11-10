@@ -50,7 +50,7 @@ unity-playground/
 ├── 2-unity-assets-collection/
 │   ├── 1-unity-assets-tools.md
 │   ├── 2-unity-assets-templates.md
-│   ├── 3-unity-assets-gui.md
+│   ├── 3-unity-assets-art.md
 │   └── 4-unity-assets-audio.md
 ├── 3-unity-advanced/
 │   ├── unity-addressable.md
