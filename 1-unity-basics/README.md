@@ -22,8 +22,7 @@
 ├── 5-unity-ui-toolkits-QuizU.md
 ├── 6-unity-data-management.md
 ├── 7-unity-custom-package.md
-├── 8-unity-localization.md
-├── 9-unity-input-system.md
+├── 8-unity-rigidbody.md
 ├── README.md
 └── TimerController.cs
 ```
