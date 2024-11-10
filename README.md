@@ -12,6 +12,13 @@
 [//]: # (TODO)
 
 - [ ] Rigidbody2D Collision Detection
+  - Unity Learn Pathway - Essentials: [Collect the collectible](https://learn.unity.com/tutorial/collect-the-collectible?uv=6&pathwayId=664b6225edbc2a01973f4f19&missionId=664be6b2edbc2a09af6fc654#)
+  - [Unity遊戲程式設計 - 2D運動與碰撞處理](https://www.slideshare.net/slideshow/unity-2di-179105744/179105744#14)
+  - RigidBody2D
+    - Dynamic, Kinematic, Static
+  - Collider2D
+    - `BoxCollider2D`, `CircleCollider2D`, ...
+    - `OnCollisionEnter2D` > `OnCollisionStay2D` > `OnCollisionExit2D`
 - [ ] Unity - Level up your code with design patterns and SOLID
 
 ## Overview
@@ -46,8 +53,6 @@ unity-playground/
 │   ├── 5-unity-ui-toolkits-QuizU.md
 │   ├── 6-unity-data-management.md
 │   ├── 7-unity-custom-package.md
-│   ├── 8-unity-localization.md
-│   ├── 9-unity-input-system.md
 │   └── TimerController.cs
 ├── 2-unity-assets-collection/
 │   ├── 1-unity-assets-tools.md
@@ -56,6 +61,8 @@ unity-playground/
 │   └── 4-unity-assets-audio.md
 ├── 3-unity-advanced/
 │   ├── unity-addressable.md
+│   ├── unity-input-system.md
+│   ├── unity-localization.md
 │   ├── unity-others.md
 │   └── unity-web-request.md
 ```

@@ -36,7 +36,7 @@
 - [unity-essentials](https://github.com/androchentw/unity-essentials)
 - Project > Assets > _Unity Essentials > Scenes
 - 介面: Hierarchy > `GameObjects`
-  - Hierarchy window displays all the GameObjects in the current scene
+  - The Hierarchy window displays all the GameObjects in the current scene
   - Inspector: property
 - 操控
   - Play Mode: WASD
@@ -82,7 +82,7 @@
   - [unity-mobile-dialog-popup-native](https://github.com/khanhuitse05/unity-mobile-dialog-popup-native)
   - [unity-os-native-popup](https://github.com/yeosu0107/unity-os-native-popup)
 - 選單: [Menu with Tab UI](https://chatgpt.com/share/67073179-8334-800f-83cb-e86daf6ac355)
-- 進度條: UI.Image -> RectTransform -> Filled (Horizontal)
+- 進度條: UI.Image > RectTransform > Filled (Horizontal)
   - Progressbar
 - 開關 UI.Toggle. onValueChanged
 - 輸入: UI.InputField. onValueChanged, onEndEdit
@@ -102,10 +102,10 @@
 - [资源工作流程](https://docs.unity3d.com/cn/2023.2/Manual/AssetWorkflow.html)
   - <img width="60%" alt="" src="https://docs.unity3d.com/cn/2023.2/uploads/Main/AssetWorkflowOverview.svg">
 - [遊戲程式設計與Unity3D引擎初步認識(四)](https://home.gamer.com.tw/creationDetail.php?sn=2491667)
-- Awake (exact 1) -> Start (active切換)
-  - FixedUpdate(固定時間, 物理計算) -> Update (per frame) -> LateUpdate
+- Awake (exact 1) > Start (active切換)
+  - FixedUpdate(固定時間, 物理計算) > Update (per frame) > LateUpdate
   - yield (WWW, StartCoroutine, …)
-  - OnDisable -> OnDestroy
+  - OnDisable > OnDestroy
 
 ## Prefabs: 預製品
 
@@ -121,7 +121,7 @@
   - 資源生成計時器: Unity計時系統，搭配 Coroutine + Time.deltaTime
   - 伺服器同步: Unity Web Request搭配Google Cloud Function
   - 建築排隊系統: ScriptableObject管理本地資料，並定期同步伺服器
-  - 通知系統: Unity Notification Plugin (跨平台推播套件 or Firebase )
+  - 通知系統: Unity Notification Plugin (跨平台推播套件 or Firebase)
   - 伺服器同步：利用伺服器的真實時間校正本地計時，避免時間操控的問題。可以定期將倒數狀態同步到伺服器，並在場景切換或應用關閉時進行保存。
   - 作弊防護: 定時伺服器校驗（GCP雲函數或Firestore Rules）
 - Timer
@@ -152,5 +152,5 @@
 ## Switch Scene 切換場景
 
 - [Unity教學：UI設計與場景管理交換](https://youtu.be/DQSTxRylGtI?si=H3GyzYplp0NRueOz)
-  - Build Settings > Add scene 順序
+  - Build Settings > Add the scene 順序
   - C# `SceneManager.LoadScene(0)`
