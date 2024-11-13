@@ -2,20 +2,29 @@
 
 <!-- TOC -->
 * [Unity Assets - Art](#unity-assets---art)
-  * [UI](#ui)
-  * [Sprites](#sprites)
   * [Fonts](#fonts)
-  * [RPG](#rpg)
+  * [Sprites](#sprites)
+    * [General](#general)
+    * [Inventory](#inventory)
+    * [RPG](#rpg)
+    * [Skills](#skills)
+  * [UI](#ui)
   * [VFX](#vfx)
 <!-- TOC -->
 
-## UI
+## Fonts
 
 ## Sprites
 
-## Fonts
+### General
 
-## RPG
+### Inventory
+
+### RPG
+
+### Skills
+
+## UI
 
 ## VFX
 

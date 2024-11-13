@@ -3,15 +3,21 @@
 <!-- TOC -->
 * [Unity Assets - Audio](#unity-assets---audio)
   * [Music](#music)
+    * [General](#general)
     * [8bit](#8bit)
+    * [Modern](#modern)
     * [RPG](#rpg)
+    * [Soft](#soft)
   * [SFX](#sfx)
-    * [UI](#ui)
+    * [General](#general-1)
     * [8bit](#8bit-1)
     * [RPG](#rpg-1)
+    * [UI](#ui)
 <!-- TOC -->
 
 ## Music
+
+### General
 
 - Season Cycle: Casual Gaming Music Pack
 - Music - Sanctuary (Free Piano Solo)
@@ -32,6 +38,8 @@
 - Arcade Game BGM #3
 - Arcade Game BGM #17
 
+### Modern
+
 ### RPG
 
 - Adventure RPG Essentials Music Pack
@@ -44,7 +52,12 @@
 - RPG BGM - Dungeon
 - RPG BGM - Kingdom
 
+### Soft
+
+
 ## SFX
+
+### General
 
 - 96 General Library (Free Sample Pack)
 - Score and Time
@@ -59,13 +72,6 @@
 - Sci-Fi Sfx
 - Nature Sound FX
 - Nature - Essentials
-
-### UI
-
-- Universal UI SFX
-- UI Sfx
-- Free UI Click Sound Pack
-- Fantasy Menu SFX
 
 ### 8bit
 
@@ -82,3 +88,10 @@
 - Fantasy Sfx
 - Medieval Fantasy SFX Bundle
 - Middle Age - Medieval Action Sound FX Pack
+
+### UI
+
+- Universal UI SFX
+- UI Sfx
+- Free UI Click Sound Pack
+- Fantasy Menu SFX
