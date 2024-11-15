@@ -69,15 +69,17 @@ Actions
 
 ## Game Board
 
-- Hierarchy > **Main Camera** > Inspector
+- 設定相機 Hierarchy > **Main Camera** > Inspector
   - Projection: Orthographic, Size: 5
   - Environment > Background: black (000000)
-- Hierarchy > create 2D Object > **Tilemap** > Rectangular. (inside `Grid`)
+- 創建 Tilemap: Hierarchy > create 2D Object > **Tilemap** > Rectangular. (inside `Grid`)
   - [Create a basic 2D gameplay environment tutorial](https://learn.unity.com/tutorial/create-a-basic-2d-gameplay-environment?uv=2022.3&courseId=64774201edbc2a1638d25d18&projectId=64774230edbc2a143ab0e3a7#64d2142eedbc2a5edea814f7)
   - [Tilemaps in Unity](https://docs.unity3d.com/6000.0/Documentation/Manual/tilemaps/tilemaps-landing.html)
-- Assets > Create folder 'Tiles' > Create > 2D > **Tile Palette** > Rectangular
+- 創建 Tile Palette: Assets > Create folder 'Tiles' > Create > 2D > **Tile Palette** > Rectangular
   - Window > 2D > Tile Palette
   - Assets > Roguelike2D > TutorialAssets > Sprites > select then drag-drop into the Tile Palette window
+- Ref
+  - [Unity學習筆記#10 : TileMap基本功](https://kendevlog.wordpress.com/2018/01/02/unity學習筆記10-tilemap基本功)
 
 ### Scripting a tilemap
 
@@ -106,6 +108,21 @@ Actions
 - `private CellData[,] m_BoardData;`
 
 ## Player Character
+
+- Assets > Roguelike2D > TutorialAssets > Sprites: drag into the scene. Auto creates a new GameObject with a Sprite Renderer component 
+- Scripts > PlayerController.cs > add it to the PlayerCharacter GameObject
+- Breakdowns
+  - At the start, the board sets the player on a specific cell after it finishes generating the level. 
+  - When the user presses a direction button (up, down, left, or right arrow keys), the script checks if the cell in that direction is passable. 
+  - If the cell is passable, the script moves the character to that new cell.
+- Functions
+  - When the board places the player character, the player character will need a **Spawn** method that will move it to the right spot. 
+  - The script needs to know where the player character currently is to search for the next cells the player character can move to, so it will need to store its current cell index. 
+  - As the script needs to know if the cell the player character is trying to move to is passable, and that information is stored in the **BoardManager**. The script will need to store a reference to the BoardManager to query it about the state of a given cell.
+- Variables in PlayerController.cs
+  - A private variable of type `BoardManager`.
+  - A private variable of type `Vector2Int` that saves the current cell the player is on.
+  - A public method called `Spawn` that saves the BoardManager that the player is placed in and the index where it is currently.
 
 ## Turn System
 
