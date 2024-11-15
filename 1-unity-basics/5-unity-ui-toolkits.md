@@ -2,9 +2,10 @@
 
 <!-- TOC -->
 * [Unity UI Toolkits](#unity-ui-toolkits)
-  * [Tutorials](#tutorials)
-  * [🥇 UI Toolkit Sample - Unity QuizU](#-ui-toolkit-sample---unity-quizu-)
+  * [🥇 UI Toolkit Sample - Unity QuizU](#-ui-toolkit-sample---unity-quizu)
   * [UI Toolkit sample – Unity Dragon Crashers](#ui-toolkit-sample--unity-dragon-crashers)
+  * [Unity Ebook - User interface design and implementation in Unity](#unity-ebook---user-interface-design-and-implementation-in-unity)
+  * [Others](#others)
   * [阿嚴 YouTube 教學](#阿嚴-youtube-教學)
     * [新功能](#新功能)
     * [UI Toolkit基礎教程](#ui-toolkit基礎教程)
@@ -12,23 +13,27 @@
   * [其他](#其他)
 <!-- TOC -->
 
-## Tutorials
-
-- Unity Docs
-  - [Ebook - User interface design and implementation in Unity](https://unity.com/resources/user-interface-design-and-implementation-in-unity)
-  - [UI Toolkit Manual](https://docs.unity3d.com/6000.0/Documentation/Manual/UIElements.html)
-- Others
-  - [【Unity Devlog開發日誌】強大的UI管理工具 - UI框架](https://www.youtube.com/watch?v=JvKUhK0ZLD4)
-  - [Using Unity UI Toolkit](https://www.youtube.com/watch?v=pqSwaqJmYwk&list=PL5domiITryHhlCKPSpiGuUt_kQg0nk3Of&index=5)
-  - [【筆記】視覺物件與工具開發](https://angus945.github.io/learn/unity/visual-element/)
-
-## 🥇 UI Toolkit Sample - Unity QuizU 
+## 🥇 UI Toolkit Sample - Unity QuizU
 
 - [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
 
 ## UI Toolkit sample – Unity Dragon Crashers
 
 - [Unity Asset Store: UI Toolkit sample – Dragon Crashers](https://assetstore.unity.com/packages/essentials/tutorial-projects/dragon-crashers-ui-toolkit-sample-project-231178)
+
+## Unity Ebook - User interface design and implementation in Unity
+
+- [User interface design and implementation in Unity](https://unity.com/resources/user-interface-design-and-implementation-in-unity)
+  - Sprite, Tilemap
+  - UI Toolkit
+  - Dragon Crasher
+    - Home, character, resources, shop, mail, settings, menu bar, inventory
+
+## Others
+
+- [【Unity Devlog開發日誌】強大的UI管理工具 - UI框架](https://www.youtube.com/watch?v=JvKUhK0ZLD4)
+- [Using Unity UI Toolkit](https://www.youtube.com/watch?v=pqSwaqJmYwk&list=PL5domiITryHhlCKPSpiGuUt_kQg0nk3Of&index=5)
+- [【筆記】視覺物件與工具開發](https://angus945.github.io/learn/unity/visual-element/)
 
 ## 阿嚴 YouTube 教學
 
