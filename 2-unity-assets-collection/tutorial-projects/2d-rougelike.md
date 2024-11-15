@@ -122,11 +122,13 @@ Actions
 - Variables in PlayerController.cs
   - A private variable of type `BoardManager`.
   - A private variable of type `Vector2Int` that saves the current cell the player is on.
-  - A public method called `Spawn` that saves the BoardManager that the player is placed in and the index where it is currently.
+  - A public method called `Spawn` that saves the BoardManager that the player is placed in and the index where it is current.
 
 ## Turn System
 
 ## Food Resource
+
+[//]: # (TODO)
 
 ## Obstacles
 
