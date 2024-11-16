@@ -404,7 +404,7 @@ public class GameManager : MonoBehaviour
 
 - `public FoodObject FoodPrefab`. FoodObject : `CellObject` : GameObject
 - `GenerateFood()` in `Init()`: `FoodObject newFood = Instantiate(FoodPrefab);`
-  - `Instantiate()` 是 Monobehaviour [UnityEngine.Object 的 API](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html): Clones the object original and returns the clone
+  - `Instantiate()` 是來自 Monobehaviour [UnityEngine.Object 的 API](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html): Clones the object original and returns the clone
 - Assign `SmallFood prefab` to `FoodPrefab` slot on `BoardManager` in the Inspector window
 - Keep track of empty cells for pick by `m_EmptyCellsList = new List<Vector2Int>();`
 
@@ -462,9 +462,76 @@ public class FoodObject : CellObject
 
 ### Add obstacles
 
+- Create WallObject : `CellObject`
+  1. Hierarchy > Create GameObject > rename `Wall`
+  2. Project > Create Scripting > MonoBehaviour > rename `WallObject.cs`
+  3. Add `WallObject.cs` script component to `Wall` GameObject
+  4. Drag `Wall` GameObject into `Prefabs` folder
+  5. Delete the `Wall` GameObject from the scene
+  6. `BoardManager.cs`: add `public WallObject WallPrefab;` and `GenerateWall()` inside `Init()`
+  7. In Editor, assign `WallPrefab` to `BoardManager`
+- Change the tile sprite it's placed on to a wall sprite
+  - Extend `CellObject` and implement `WallObject`
+  - `BoardManager` Update `GenerateWall()`, add `SetCellTile()`
+  - Assign `ObstacleTile` to `Wallprefab`
+- Stop the player character from entering a cell
+  - Detect if the player wants to move to a certain cell.
+  - Stop the player from moving there if the cell has a special condition (in this case, has a wall).
+  - update `PlayerController`, `CellObject`, `WallObject`
+
+```csharp
+// CellObject.cs
+public class CellObject : MonoBehaviour
+{
+   protected Vector2Int m_Cell;
+
+   public virtual void Init(Vector2Int cell)
+   {
+       m_Cell = cell;
+   }
+  
+   public virtual void PlayerEntered()
+   {
+      
+   }
+   
+   public virtual bool PlayerWantsToEnter()
+   {
+      return true;
+   }
+}
+```
+
+```csharp
+// WallObject.cs
+using UnityEngine;
+using UnityEngine.Tilemaps;
+
+public class WallObject : CellObject
+{
+   public Tile ObstacleTile;
+  
+   public override void Init(Vector2Int cell)
+   {
+       base.Init(cell);
+       GameManager.Instance.BoardManager.SetCellTile(cell, ObstacleTile);
+   }
+   
+   public override bool PlayerWantsToEnter()
+   {
+      return false;
+   }
+}
+```
+
 ### Refactoring
 
+- `BoardManager`: `AddObject()` to centralize `CellObject obj.Init(coord)` in `GenerateWall()`, `GenerateFood()` 
+
 ### Damaging walls
+
+- Create a new counter variable in WallObject that stores the hit-point count of that wall
+- Save the original tile in that cell during `Init()` before it’s replaced with the wall tile
 
 ## Win and Lose Conditions
 
