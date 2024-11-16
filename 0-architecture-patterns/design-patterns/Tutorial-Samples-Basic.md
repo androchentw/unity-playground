@@ -19,23 +19,7 @@
     * [Ref](#ref-2)
 <!-- TOC -->
 
-* [Path](https://github.com/androchentw/rmc-mini-mvcs/tree/andro): `RMC Mini MVCS/Samples~/RMC Mini MVCS - 1. Beginner Examples/Examples`
-* [RMC Tutorial - Samples Example: Basic](#rmc-tutorial---samples-example-basic)
-  * [Example 1 ClockMini](#example-1-clockmini)
-    * [MVCS](#mvcs)
-    * [General Function](#general-function)
-    * [Test](#test)
-    * [Ref](#ref)
-  * [Example 2 LoginMini](#example-2-loginmini)
-    * [MVCS](#mvcs-1)
-    * [General Function](#general-function-1)
-    * [Test](#test-1)
-    * [Ref](#ref-1)
-  * [Example 3 RollABall](#example-3-rollaball)
-    * [MVCS](#mvcs-2)
-    * [General Function](#general-function-2)
-    * [Test](#test-2)
-    * [Ref](#ref-2)
+- [Path](https://github.com/androchentw/rmc-mini-mvcs/tree/andro): `RMC Mini MVCS/Samples~/RMC Mini MVCS - 1. Beginner Examples/Examples`
 
 ## Example 1 ClockMini
 
@@ -44,15 +28,15 @@
 * ClockWithMiniExample > clockSimpleMini.Initialize()
 * public class ClockSimpleMini: SimpleMiniMvcs
   <Context,
-    ClockModel,
-    ClockView,
-    ClockController,
-    ClockService>
-    Initialize()
+  ClockModel,
+  ClockView,
+  ClockController,
+  ClockService>
+  Initialize()
 * ClockModel: BaseModel
   * Observable. Observable Pattern
-* ClockService : BaseService
-  * LoadedUnityEvent : UnityEvent
+* ClockService: BaseService
+  * LoadedUnityEvent: UnityEvent
   * async Task LoadAsync
     * OnLoaded.Invoke();
   * TextAsset textAsset = `Resources.Load<TextAsset>("Texts/ClockWithMiniText");` //讀取 Resources folder 實體檔案

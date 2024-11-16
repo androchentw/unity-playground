@@ -2,23 +2,10 @@
 
 <!-- TOC -->
 * [Design Patterns](#design-patterns)
-  * [C# Code Examples](#c-code-examples)
   * [Tutorials](#tutorials)
-    * [Creational: Creation](#creational-creation)
-    * [Structural: Relationships](#structural-relationships)
-    * [Behavioral: Communication](#behavioral-communication)
-  * [🥇 Unity - Level up your code with design patterns and SOLID](#-unity---level-up-your-code-with-design-patterns-and-solid)
-  * [SOLID](#solid)
-  * [Observer pattern](#observer-pattern)
-    * [事件（Events）和委派（Delegates）的差異](#事件events和委派delegates的差異)
-  * [Command Pattern](#command-pattern)
-    * [The command object and command invoker](#the-command-object-and-command-invoker)
-    * [Example: Undoable movement](#example-undoable-movement)
-  * [Factory Pattern](#factory-pattern)
-    * [Creating a simple factory](#creating-a-simple-factory)
-    * [Adapting the factory pattern](#adapting-the-factory-pattern)
-  * [Object Pooling](#object-pooling)
-  * [State Pattern](#state-pattern)
+  * [Creational: Creation](#creational-creation)
+  * [Structural: Relationships](#structural-relationships)
+  * [Behavioral: Communication](#behavioral-communication)
   * [Performance Benchmarking](#performance-benchmarking)
     * [Comparison](#comparison)
 <!-- TOC -->
@@ -54,20 +41,18 @@
 │   ├── Tutorial-Lessons.md
 │   ├── Tutorial-Samples-Basic.md
 │   ├── Tutorial-Samples-More.md
+│   ├── unity-design-patterns-solid.md
 ```
-
-## C# Code Examples
-
-- [design-patterns](design-patterns-cs/README.md)
 
 ## Tutorials
 
-- [C# Design Patterns](https://www.dofactory.com/net/design-patterns)
-- [Design Pattern in C# explained by ChatGPT | 2024-10-26](https://chatgpt.com/share/671c90d8-7664-800f-b67e-8bec77698012)
+- [unity-design-patterns-solid.md](unity-design-patterns-solid.md)
+- [design-patterns](design-patterns-cs/README.md)
 - [game-programming-patterns-demo](https://github.com/androchentw/game-programming-patterns-demo)
+- [C# Design Patterns](https://www.dofactory.com/net/design-patterns)
 - [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html)
 
-### Creational: Creation
+## Creational: Creation
 
 | **分類**       | **設計模式**                           | **目的/結果對比**                                                                                                                   |
 |--------------|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -76,7 +61,7 @@
 | **唯一性與全局訪問** | Singleton                          | - **Singleton**：確保一個類別只有一個實例，並提供全局訪問點                                                                                         |
 | **對象查找與管理**  | Service Locator                    | - **Service Locator**：提供全局的對象訪問和管理機制，用於動態查找和注入                                                                                |
 
-### Structural: Relationships
+## Structural: Relationships
 
 | **分類**      | **設計模式**        | **目的/結果對比**                                                       |
 |-------------|-----------------|-------------------------------------------------------------------|
@@ -87,7 +72,7 @@
 | **資源共享與優化** | Flyweight       | - **Flyweight**：共享內部狀態以減少相似對象的內存消耗                                |
 | **訪問控制與代理** | Proxy           | - **Proxy**：為另一對象提供控制訪問的替身，並可延遲加載或權限控制                            |
 
-### Behavioral: Communication
+## Behavioral: Communication
 
 | **分類**       | **設計模式**                         | **目的/結果對比**                                                                         |
 |--------------|----------------------------------|-------------------------------------------------------------------------------------|
@@ -97,90 +82,6 @@
 | **協調與通知**    | Mediator, Observer               | - **Mediator**：集中管理對象間的通信 <br> - **Observer**：當狀態改變時通知依賴對象                          |
 | **模板與規範化操作** | Template Method                  | - **Template Method**：定義算法骨架，讓子類覆蓋特定步驟                                              |
 | **保存與回溯**    | Memento                          | - **Memento**：保存對象狀態，以便在需要時回溯                                                       |
-
-## 🥇 Unity - Level up your code with design patterns and SOLID
-
-- [Asset Store: Level up your code with design patterns and SOLID](https://assetstore.unity.com/packages/essentials/tutorial-projects/level-up-your-code-with-design-patterns-and-solid-289616)
-- [GitHub: game-programming-patterns-demo](https://github.com/androchentw/game-programming-patterns-demo)
-- [Ebook- Level up your code with design patterns and SOLID](https://unity.com/resources/design-patterns-solid-ebook)
-  - [YouTube: Level up your code with game programming patterns: Model-view-presenter | Tutorial](https://www.youtube.com/watch?v=agoe5BdLzdk&list=PLX2vGYjWbI0TmDVbWNA56NbKKUgyUAQ9i&index=4)
-  - [Build a modular codebase with MVC and MVP programming patterns](https://unity.com/how-to/build-modular-codebase-mvc-and-mvp-programming-patterns)
-
-## SOLID
-
-## Observer pattern
-
-- Subject / Publisher
-  - `public event Action ThingHappened;`
-  - `public void DoThing() { ThingHappened?.Invoke(); }`
-- Observer
-  - attach to GameObject as a component, reference the `subjectToObserver` in the Inspector to listen for the `ThingHappened` event.
-  - `OnThingHappened`: `Awake or Start` subscribe to the event with the `+=` operator; `OnDestroy` unsubscribe with `-=`
-- UnityEvents vs. UnityActions
-  - slower than System.Action
-  - Ref
-    - [【Unity】Delegate, Event, UnityEvent, Action, UnityAction, Func 傻傻分不清](https://blog.csdn.net/weixin_45775438/article/details/128449023)
-      - Event = 一種特殊的 delegate
-      - 亦可用 anonymous delegate or lambda 實現- [Understanding Events and Delegates in C# Unity](https://medium.com/@sonusprocks/understanding-events-and-delegates-in-c-unity-ba4d3bbe9234)
-    - [Events & Delegates in Unity](https://gamedevbeginner.com/events-and-delegates-in-unity/)
-- Improvements to the pattern
-  - C# `ObservableCollection`
-  - pass the unique ID into the event (use type Action)
-  - Create a static EventManager
-    - [Game architecture with ScriptableObjects | Open Projects Devlog](https://www.youtube.com/watch?v=WLDgtRNK2VE)
-  - Create an event queue: Combine with the command pattern and use a command buffer to play back the events one at a time or selectively ignore them as necessary
-
-### 事件（Events）和委派（Delegates）的差異
-
-| 特性   | 事件（Events）                    | 委派（Delegates）                        |
-|------|-------------------------------|--------------------------------------|
-| 定義   | 事件是委派的封裝，提供更高層次的抽象。           | 委派是一種類型，類似於函數指標。                     |
-| 訪問控制 | 只能在聲明它們的類中觸發。                 | 可以在任何地方調用。                           |
-| 安全性  | 提供更高的安全性，防止外部對事件的直接操作。        | 直接操作，沒有額外的安全層。                       |
-| 使用場景 | 適合用於需要通知多個訂閱者的情況。             | 適合用於需要靈活調用方法的情況。                     |
-| 語法   | `event EventHandler MyEvent;` | `public delegate void MyDelegate();` |
-
-## Command Pattern
-
-- [Use the command pattern for flexible and extensible game systems](https://unity.com/how-to/use-command-pattern-flexible-and-extensible-game-systems)
-
-- track a specific series of actions: move, undo, redo, ...
-  - Imagine a strategy game where the user can plan several turns before actually executing them. That’s the command pattern.
-  - Encapsulating actions as objects enables you to create a flexible and extensible system for controlling the behavior of GameObjects in response to user input.
-
-### The command object and command invoker
-
-- `public interface ICommand { void Execute(); void Undo(); }`
-
-### Example: Undoable movement
-
-- `CommandInvoker` + `ExecuteCommand`, `UndoCommand`
-
-## Factory Pattern
-
-- [How to use the factory pattern for object creation at runtime](https://unity.com/how-to/how-use-factory-pattern-object-creation-runtime)
-- spawn different objects
-- `Factory`: `+GetProduct(): IProduct`
-
-### Creating a simple factory
-
-- Adding redo functionality is a matter of adding another stack
-- Limit the size of the stacks
-
-### Adapting the factory pattern
-
-- Use a dictionary to search for products: key-value pairs. unique ID
-- Make the factory (or a factory manager) static
-- Apply it to non-GameObjects and non-MonoBehaviours
-- Combine with the object pool pattern
-
-## Object Pooling
-
-- [Use object pooling to boost the performance of C# scripts in Unity](https://unity.com/how-to/use-object-pooling-boost-performance-c-scripts-unity)
-
-## State Pattern
-
-- [Develop a modular, flexible codebase with the state programming pattern](https://unity.com/how-to/develop-modular-flexible-codebase-state-programming-pattern)
 
 ## Performance Benchmarking
 

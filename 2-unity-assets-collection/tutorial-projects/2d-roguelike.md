@@ -6,14 +6,14 @@
     * [Features](#features)
     * [Actionable Tasks](#actionable-tasks)
   * [Game Board](#game-board)
-  * [Tilemap, Tile Palette, Sprites](#tilemap-tile-palette-sprites)
+    * [比較: Tilemap, Tile Palette, Sprites](#比較-tilemap-tile-palette-sprites)
     * [生成: Scripting a tilemap](#生成-scripting-a-tilemap)
     * [Add a border to the board](#add-a-border-to-the-board)
     * [Camera](#camera)
     * [Board Data](#board-data)
   * [Player Character](#player-character)
     * [Sprite](#sprite)
-    * [Scripts `PlayerController.cs`](#scripts-playercontrollercs)
+    * [Player character](#player-character-1)
   * [Turn System](#turn-system)
   * [Food Resource](#food-resource)
     * [UIToolkit](#uitoolkit)
@@ -33,6 +33,9 @@
 
 - [2D Roguelike | Complete Project](https://assetstore.unity.com/packages/templates/tutorials/2d-roguelike-complete-project-299017)
 - Codebase: [unity-tutorial-projects/2d-roguelike](https://github.com/androchentw/unity-tutorial-projects/tree/main/2d-roguelike/Assets/Roguelike2D/TutorialVersion)
+- Ref
+  - [code-style-guide](/1-unity-basics/4-unity-best-practices.md#code-style-guide)
+  - [design-patterns](/0-architecture-patterns/design-patterns/README.md)
 
 ## Architecturing 拆解遊戲實作架構
 
@@ -41,29 +44,29 @@
 ### Features
 
 - 棋盤 Board
-- 生成 Procedural generation
+  - 生成 Procedural generation
   - 回合 Tick
-- 移動 Move
+  - 移動 Move
   - 牆壁 Wall
 - 目標 Goal
-  - 結束 End
   - 食物 Food resources
+  - 採集 Collectible
+  - 結束 End
 - 敵人 Enemy
   - 受傷 Hurt
   - 攻擊 Attack
   - 移除 Remove
-- 採集 Collectible
 
 ### Actionable Tasks
 
 - 棋盤 Game board
+  - 回合 Turn-based
 - 角色 Character
-- 回合 Turn-based
+  - 敵人 Enemy
 - 資源 Food resources
-- 採集 Collectibles
-- 出口 Exit
+  - 採集 Collectibles
 - 迴圈 Gameplay loop. Gamemanager
-- 敵人 Enemy
+  - 出口 Exit
 
 ## Game Board
 
@@ -79,7 +82,7 @@
 - Ref
   - [Unity學習筆記#10 : TileMap基本功](https://kendevlog.wordpress.com/2018/01/02/unity學習筆記10-tilemap基本功)
 
-## Tilemap, Tile Palette, Sprites
+### 比較: Tilemap, Tile Palette, Sprites
 
 - Tilemap 由 tiles (瓦, 地形單元) 組成, 是場景裡的特殊 asset (2D Object)
 - Tile Palette 是編輯器工具, 方便管理 tiles
@@ -153,19 +156,55 @@ public class LevelLoader : MonoBehaviour
 - Assets > Roguelike2D > TutorialAssets > Sprites
 - Drag into the scene: Auto creates a new GameObject with a Sprite Renderer component
 
-### Scripts `PlayerController.cs`
+### Player character
 
 - Goal: attach it to the PlayerCharacter GameObject
 - 拆解 Breakdowns
-  - 隨機起始位置: `Spawn()` 生成 + `Vector2Int` 位置 + `Move()` 移動
-  - 移動 + 障礙判斷: `BoardManager`
+  - 隨機起始位置: `PlayerController.cs` = `Spawn()` 生成 + `Vector2Int` 位置 + `Move()` 移動
+  - 移動 + 障礙判斷: `BoardManager.cs`
+
+```csharp
+// PlayerController.cs
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+   private BoardManager m_Board;
+   private Vector2Int m_CellPosition;
+
+   public void Spawn(BoardManager boardManager, Vector2Int cell)
+   {
+       m_Board = boardManager;
+       m_CellPosition = cell;
+
+       //let's move to the right position...
+       transform.position = m_Board.CellToWorld(cell);
+   }
+}
+```
+
+```csharp
+// BoardManager.cs
+private Grid m_Grid;
+
+public void Init() 
+{
+    m_Grid = GetComponentInChildren<Grid>();   
+}
+
+// access to the grid to convert a cell index (x,y) into a Vector3 world position
+public Vector3 CellToWorld(Vector2Int cellIndex)
+{
+    return m_Grid.GetCellCenterWorld((Vector3Int) cellIndex);
+}
+```
 
 ## Turn System
 
 ## Food Resource
 
 - `GameManager.cs` + `TurnManager.cs` callback system (when turn events happen)
-- Ref: [Observer pattern](/0-architecture-patterns/design-patterns/README.md#observer-pattern)
+- Ref: [Observer pattern](/0-architecture-patterns/design-patterns/unity-design-patterns-solid.md#observer-pattern)
 
 ```csharp
 // TurnManager.cs
@@ -299,6 +338,9 @@ public class FoodObject : CellObject
 ```
 
 ### Increasing the food count
+
+- `GameManager.cs`: update `OnTurnHappen()`
+- `FoodObject.cs`: `GameManager.Instance.ChangeFood(AmountGranted);` singleton
 
 ### Challenge
 

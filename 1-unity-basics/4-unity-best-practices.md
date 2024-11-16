@@ -22,8 +22,9 @@
 ## Code Style Guide
 
 - [C# Coding Standards and Naming Conventions](https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md)
-  - 幾乎都是 PascalCase
-  - 除了 localVar 或 _privateVar
+  - 幾乎都是 PascalCase (包含 Class, Function, PublicMember)
+  - 除了 localVar 或 _privateVar, s_privateStatic
+  - [Microsoft: C# 識別碼命名規則和慣例](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/coding-style/identifier-names)
 - [Create a C# style guide: Write cleaner code that scales](https://unity.com/resources/create-code-c-sharp-style-guide-e-book?ungated=true)
 - [Unity C# | 命名法則 & 低耦合、高內聚](https://vocus.cc/designer/61fe9831fd897800014eedda)
 - [Unity-Code-Style-Guide](https://github.com/androchentw/Unity-Code-Style-Guide)

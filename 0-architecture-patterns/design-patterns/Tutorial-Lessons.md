@@ -57,7 +57,7 @@
 
 ## 2 Advanced Scalability_01_Simple
 
-- Scalability_01_Simple : MonoBehaviour
+- Scalability_01_Simple: MonoBehaviour
   - `_mini = new SimpleInventorySimpleMini(_inventoryView);`
   - `_mini.Initialize();`
 - InventoryService: BaseService
@@ -86,7 +86,7 @@
 
 ## 🥇 2 Advanced Scalability_02_Standard
 
-- Scalability_02_Standard : MonoBehaviour
+- Scalability_02_Standard: MonoBehaviour
   - Unity `start()`: Add to _mini then init. available for multiple MVCS in multi-Scene
     - InventoryMini _mini = InventoryMiniSingleton.Instance.InventoryMini;
     - [SerializeField] InventoryView
@@ -99,7 +99,7 @@
 
 ## 🥇 2 Advanced Scalability_03_StandardWithFeature
 
-- Scalability_03_StandardWithFeature : MonoBehaviour
+- Scalability_03_StandardWithFeature: MonoBehaviour
   - Extract the `start()` part of `Scalability_02_Standard` into `InventoryFeature` and init by `AddFeature`
   - start() { AddFeature(); }
     - _mini.AddFeature<InventoryFeature>(inventoryFeature);

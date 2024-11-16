@@ -26,13 +26,13 @@
 - `Start() { new CalculatorSimpleMini([SerializeField] _calculatorView).Initialize(); }`
 - CalculatorSimpleMini: ISimpleMiniMvcs
   - init MVC with ModelLocator
-- CalculatorModel : BaseModel
+- CalculatorModel: BaseModel
   - public Properties, private SerializeField
   - Observable
-- CalculatorView : MonoBehaviour, IView
+- CalculatorView: MonoBehaviour, IView
   - UnityEvent, public Properties, private SerializeField
   - field.(onValueChanged/onClick).AddListener(eventHandler) => Invoke
-- CalculatorController : IController
+- CalculatorController: IController
   - Implement data binding of Model and View
 
 ## 5_CountUp
