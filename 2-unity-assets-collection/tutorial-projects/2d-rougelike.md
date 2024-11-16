@@ -6,12 +6,14 @@
     * [Features](#features)
     * [Actionable Tasks](#actionable-tasks)
   * [Game Board](#game-board)
-    * [**Tilemap, Tile Palette, Sprites**](#tilemap-tile-palette-sprites)
-    * [Scripting a tilemap](#scripting-a-tilemap)
+  * [Tilemap, Tile Palette, Sprites](#tilemap-tile-palette-sprites)
+    * [生成: Scripting a tilemap](#生成-scripting-a-tilemap)
     * [Add a border to the board](#add-a-border-to-the-board)
     * [Camera](#camera)
     * [Board Data](#board-data)
   * [Player Character](#player-character)
+    * [Sprite](#sprite)
+    * [Scripts `PlayerController.cs`](#scripts-playercontrollercs)
   * [Turn System](#turn-system)
   * [Food Resource](#food-resource)
   * [Obstacles](#obstacles)
@@ -23,6 +25,7 @@
 <!-- TOC -->
 
 - [2D Roguelike | Complete Project](https://assetstore.unity.com/packages/templates/tutorials/2d-roguelike-complete-project-299017)
+- Codebase: [unity-tutorial-projects/2d-roguelike](https://github.com/androchentw/unity-tutorial-projects/tree/main/2d-roguelike/Assets/Roguelike2D/TutorialVersion)
 
 ## Architecturing 拆解遊戲實作架構
 
@@ -69,17 +72,20 @@
 - Ref
   - [Unity學習筆記#10 : TileMap基本功](https://kendevlog.wordpress.com/2018/01/02/unity學習筆記10-tilemap基本功)
 
-### **Tilemap, Tile Palette, Sprites**
+## Tilemap, Tile Palette, Sprites
 
-| **特性**     | **Tilemap**               | **Tile Palette**                 | **Sprites**                     |
-|------------|---------------------------|----------------------------------|---------------------------------|
-| **定義**     | 用於 2D 網格地圖系統的組件，用於管理和繪製地圖 | 一個編輯器工具，用於快速管理和繪製 Tile           | 2D 圖像，用於創建遊戲角色、物件或地圖元素          |
-| **用途**     | 建立大型地圖，如關卡地形、平台           | 方便選取和繪製多個 Tile 至 Tilemap         | 用於顯示遊戲中的單一圖像或動畫                 |
-| **編輯器支援**  | 支援編輯器中的可視化繪製              | 提供拖放式的圖塊選擇工具                     | 支援 Sprites 編輯器，用於切割圖像           |
-| **數據管理**   | 儲存在 `Tilemap` 組件中         | 儲存在 `Tile Palette` 中，作為 Tile 資料庫 | Sprites 儲存在 `Assets/` 資料夾下的圖像文件 |
-| **效能**     | 優化的繪製系統，適合大範圍重複使用的地圖元素    | 主要用於提高 Tilemap 的編輯效率             | 取決於 Sprite 的大小和使用的數量            |
-| **靈活性**    | 適合用於靜態地圖                  | 用於快速繪製重複模式的 Tile                 | 用於動態顯示，如角色動畫、UI 元素              |
-| **常見應用場景** | 關卡設計、地形繪製                 | 創建關卡設計時方便快速填充                    | 適用於角色、物品、敵人、UI 元素等              |
+- Tilemap 由 tiles (瓦, 地形單元) 組成, 是場景裡的特殊 asset (2D Object)
+- Tile Palette 是編輯器工具, 方便管理 tiles
+
+| **特性**     | **Tilemap**                   | **Tile Palette**                 | **Sprites**                     |
+|------------|-------------------------------|----------------------------------|---------------------------------|
+| **定義**     | 用於 2D 網格地圖系統的組件，用於管理和**繪製地圖** | 一個**編輯器工具**，用於快速管理和繪製 Tile       | 2D 圖像，用於創建遊戲角色、物件或地圖元素          |
+| **用途**     | 建立大型地圖，如關卡地形、平台               | 方便選取和繪製多個 Tile 至 Tilemap         | 用於顯示遊戲中的單一圖像或動畫                 |
+| **編輯器支援**  | 支援編輯器中的可視化繪製                  | 提供拖放式的圖塊選擇工具                     | 支援 Sprites 編輯器，用於切割圖像           |
+| **數據管理**   | 儲存在 `Tilemap` 組件中             | 儲存在 `Tile Palette` 中，作為 Tile 資料庫 | Sprites 儲存在 `Assets/` 資料夾下的圖像文件 |
+| **效能**     | 優化的繪製系統，適合大範圍重複使用的地圖元素        | 主要用於提高 Tilemap 的編輯效率             | 取決於 Sprite 的大小和使用的數量            |
+| **靈活性**    | 適合用於靜態地圖                      | 用於快速繪製重複模式的 Tile                 | 用於動態顯示，如角色動畫、UI 元素              |
+| **常見應用場景** | 關卡設計、地形繪製                     | 創建關卡設計時方便快速填充                    | 適用於角色、物品、敵人、UI 元素等              |
 
 ```csharp
 using UnityEngine;
@@ -106,17 +112,18 @@ public class LevelLoader : MonoBehaviour
 }
 ```
 
-### Scripting a tilemap
+### 生成: Scripting a tilemap
 
-- rename `Grid` to BoardManager (GameObject)
+- 因為這邊是採用動態生成地形, 所以會使用到 csharp 來操作 Tilemap
+  - rename `Grid` to BoardManager (GameObject)
 - Assets > Create folder 'Scripts' > Create > Scripting > MonoBehaviour Script: **BoardManager.cs**. Add it as a component of the **BoardManager** GameObject.
-  - The width (in number of tiles) of our level.
-  - The height (in number of tiles) of our level.
-  - An array of tiles that are going to be used for the board.
+  - 寬: The width (in number of tiles) of our level.
+  - 高: The height (in number of tiles) of our level.
+  - 數量: An array of tiles that are going to be used for the board.
     - `public Tile[] GroundTiles`
     - `private m_Tilemap = GetComponentInChildren<Tilemap>();`
 - BoardManager GameObject > Inspector: width: 8, height: 8
-  - Ground Tiles: Select sprites
+  - Ground Tiles: Select sprites (選取不同風格的 tiles)
 
 ### Add a border to the board
 
@@ -134,20 +141,17 @@ public class LevelLoader : MonoBehaviour
 
 ## Player Character
 
-- Assets > Roguelike2D > TutorialAssets > Sprites: drag into the scene. Auto creates a new GameObject with a Sprite Renderer component
-- Scripts > PlayerController.cs > add it to the PlayerCharacter GameObject
-- Breakdowns
-  - At the start, the board sets the player on a specific cell after it finishes generating the level.
-  - When the user presses a direction button (up, down, left, or right arrow keys), the script checks if the cell in that direction is passable.
-  - If the cell is passable, the script moves the character to that new cell.
-- Functions
-  - When the board places the player character, the player character will need a **Spawn** method that will move it to the right spot.
-  - The script needs to know where the player character currently is to search for the next cells the player character can move to, so it will need to store its current cell index.
-  - As the script needs to know if the cell the player character is trying to move to is passable, and that information is stored in the **BoardManager**. The script will need to store a reference to the BoardManager to query it about the state of a given cell.
-- Variables in PlayerController.cs
-  - A private variable of type `BoardManager`.
-  - A private variable of type `Vector2Int` that saves the current cell the player is on.
-  - A public method called `Spawn` that saves the BoardManager that the player is placed in and the index where it is current.
+### Sprite
+
+- Assets > Roguelike2D > TutorialAssets > Sprites
+- Drag into the scene: Auto creates a new GameObject with a Sprite Renderer component
+
+### Scripts `PlayerController.cs`
+
+- attach it to the PlayerCharacter GameObject
+- 拆解 Breakdowns
+  - 隨機起始位置: `Spawn()` 生成 + `Vector2Int` 位置 + `Move()` 移動
+  - 移動 + 障礙判斷: `BoardManager`
 
 ## Turn System
 
