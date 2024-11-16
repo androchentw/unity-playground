@@ -14,6 +14,8 @@
   * [Player Character](#player-character)
     * [Sprite](#sprite)
     * [Player character](#player-character-1)
+    * [Moving the player character](#moving-the-player-character)
+    * [Refactoring](#refactoring)
   * [Turn System](#turn-system)
   * [Food Resource](#food-resource)
     * [UIToolkit](#uitoolkit)
@@ -158,9 +160,10 @@ public class LevelLoader : MonoBehaviour
 
 ### Player character
 
-- Goal: attach it to the PlayerCharacter GameObject
+- Goal: Render PlayerCharacter GameObject
 - 拆解 Breakdowns
   - 隨機起始位置: `PlayerController.cs` = `Spawn()` 生成 + `Vector2Int` 位置 + `Move()` 移動
+    - Inspector > Player > Sprite Renderer component > Order in Layer property: 10
   - 移動 + 障礙判斷: `BoardManager.cs`
 
 ```csharp
@@ -185,19 +188,49 @@ public class PlayerController : MonoBehaviour
 
 ```csharp
 // BoardManager.cs
+private Tilemap m_Tilemap;
 private Grid m_Grid;
+
+// Introduces the depedency on PlayerController, to be refactored
+public PlayerController Player; 
 
 public void Init() 
 {
-    m_Grid = GetComponentInChildren<Grid>();   
+    m_Grid = GetComponentInChildren<Grid>();
+    m_Tilemap = GetComponentInChildren<Tilemap>();
+    
+    for (y) 
+    {
+        for (x)
+        {
+            m_Tilemap.SetTile(new Vector3Int(x, y, 0), tile);
+        }
+    }
+    
+    Player.Spawn(this, new Vector2Int(1, 1));
 }
 
 // access to the grid to convert a cell index (x,y) into a Vector3 world position
 public Vector3 CellToWorld(Vector2Int cellIndex)
 {
+    // Unity.Grid.GetCellCenterWorld: Get the logical center coordinate of a grid cell in world space.
     return m_Grid.GetCellCenterWorld((Vector3Int) cellIndex);
 }
 ```
+
+### Moving the player character
+
+- Goal: add the ability to control player movement
+- 拆解
+  - Input 控制 `Update()`: `UnityEngine.InputSystem`, `Keyboard.current.upArrowKey.wasPressedThisFrame`
+    - `InputSystem_Actions`: default InputActionAsset
+  - `Move()` if `IsPassable`
+
+### Refactoring
+
+- duplication: you move the player in `Spawn()` and `Update()`
+  - both CellPosition and Transform position need to be updated
+- Refactor: add `MoveTo()` into `PlayerCharacter.cs` of `BoardManager.cs`'s `Start()` and `Update()`
 
 ## Turn System
 
