@@ -113,8 +113,7 @@
   - `public void DoThing() { ThingHappened?.Invoke(); }`
 - Observer
   - attach to GameObject as a component, reference the `subjectToObserver` in the Inspector to listen for the `ThingHappened` event.
-  - `OnThingHappened`: `Awake or Start` subscribe to the event with the `+=` operator; `OnDestroy` unsubscribe with `-=`
-  -
+  - `OnThingHappened`: `Awake or Start` subscribe to the event with the `+=` operator; `OnDestroy` unsubscribe with `-=`  
 - UnityEvents vs. UnityActions
   - slower than System.Action
   - Ref

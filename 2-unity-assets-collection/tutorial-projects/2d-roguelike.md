@@ -16,8 +16,7 @@
     * [Scripts `PlayerController.cs`](#scripts-playercontrollercs)
   * [Turn System](#turn-system)
   * [Food Resource](#food-resource)
-    * [Add a food resource](#add-a-food-resource)
-    * [UI](#ui)
+    * [UIToolkit](#uitoolkit)
     * [Update the Label using code](#update-the-label-using-code)
     * [Objects in cell and food refill](#objects-in-cell-and-food-refill)
     * [Challenges](#challenges)
@@ -165,11 +164,47 @@ public class LevelLoader : MonoBehaviour
 
 ## Food Resource
 
-### Add a food resource
+- `GameManager.cs` + `TurnManager.cs` callback system (when turn events happen)
+- Ref: [Observer pattern](/0-architecture-patterns/design-patterns/README.md#observer-pattern)
 
+```csharp
+// TurnManager.cs
+// `event`, C# keyword, allows only current class to trigger'
+public event System.Action OnTick;
 
+public void Tick()
+{
+    // `?`, C# null checker
+    OnTick?.Invoke();
+}
+```
 
-### UI
+```csharp
+// GameManager.cs
+private int m_FoodAmount = 100;     // initial value
+
+// Introduces the dependecy of TurnManager, BoardManager, PlayerController
+void Start()
+{
+    // Register the OnTurnHappen method to your TurnManager.OnTurn callback.
+    // Unregister OnDestroy with -=
+    TurnManager = new TurnManager();
+    TurnManager.OnTick += OnTurnHappen;
+  
+    BoardManager.Init();
+    PlayerController.Spawn(BoardManager, new Vector2Int(1,1));
+}
+
+void OnTurnHappen()
+{
+    m_FoodAmount -= 1;
+    Debug.Log("Current amount of food : " + m_FoodAmount);
+}
+```
+
+### UIToolkit
+
+- Ref: [Unity UI Toolkit](/1-unity-basics/5-unity-ui-toolkits.md)
 
 ### Update the Label using code
 
