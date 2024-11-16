@@ -215,6 +215,7 @@ void OnTurnHappen()
 - Goal: `GameManager` Display the amount of food the player has on each turn.
 
 ```csharp
+// GameManager.cs
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
@@ -241,19 +242,19 @@ public class GameManager : MonoBehaviour
 ### Objects in cell and food refill
 
 - Goal: add a collectible object that refills 10 units of food
-- `PlayerController.cs` moves and checks `CellData` if `isCollectible` then `remove()` and `addFood()`
+- `PlayerController.cs` `Move()` and checks `CellData` if `isCollectible` then `Remove()` and `AddFood()`
 - Drag `SmallFoodGameObject` from Hierarchy window to `Prefabs` folder, delete `SmallFoodGameObject` from the scene
 
 #### `BoardManager.cs`
 
-- `public FoodObject FoodPrefab`. FoodObject : CellObject : GameObject
-- `GenerateFood()` in `Init()`
+- `public FoodObject FoodPrefab`. FoodObject : `CellObject` : GameObject
+- `GenerateFood()` in `Init()`: `FoodObject newFood = Instantiate(FoodPrefab);`
+  - `Instantiate()` 是 Monobehaviour [UnityEngine.Object 的 API](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html): Clones the object original and returns the clone
 - Assign `SmallFood prefab` to `FoodPrefab` slot on `BoardManager` in the Inspector window
 - Keep track of empty cells for pick by `m_EmptyCellsList = new List<Vector2Int>();`
 
 ```csharp
 // BoardManager.cs
-
 public class CellData
 {
     public bool Passable;
@@ -262,6 +263,40 @@ public class CellData
 ```
 
 ### Collect food
+
+- FoodObject : `CellObject`. `PlayerEntered()`
+- `PlayerController.cs` `OnMove()`: `cellData.ContainedObject.PlayerEntered();`
+- `FoodPrefab` add `FoodObject.cs` script component
+
+```csharp
+// CellObject.cs
+using UnityEngine;
+
+public class CellObject : MonoBehaviour
+{
+   //Called when the player enter the cell in which that object is
+   public virtual void PlayerEntered()
+   {
+      
+   }
+}
+```
+
+```csharp
+// FoodObject.cs
+using UnityEngine;
+
+public class FoodObject : CellObject
+{
+   public override void PlayerEntered()
+   {
+       Destroy(gameObject);
+       
+       //increase food
+       Debug.Log("Food increased");
+   }
+}
+```
 
 ### Increasing the food count
 
