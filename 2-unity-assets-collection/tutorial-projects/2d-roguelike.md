@@ -37,6 +37,8 @@
     * [Refactoring](#refactoring-1)
     * [Damaging walls](#damaging-walls)
   * [Win and Lose Conditions](#win-and-lose-conditions)
+    * [Finishing a level](#finishing-a-level)
+    * [Game over](#game-over)
   * [Improve Graphics](#improve-graphics)
   * [Animation](#animation)
   * [Enemy](#enemy)
@@ -526,7 +528,7 @@ public class WallObject : CellObject
 
 ### Refactoring
 
-- `BoardManager`: `AddObject()` to centralize `CellObject obj.Init(coord)` in `GenerateWall()`, `GenerateFood()` 
+- `BoardManager`: `AddObject()` to centralize `CellObject obj.Init(coord)` in `GenerateWall()`, `GenerateFood()`
 
 ### Damaging walls
 
@@ -534,6 +536,50 @@ public class WallObject : CellObject
 - Save the original tile in that cell during `Init()` before it’s replaced with the wall tile
 
 ## Win and Lose Conditions
+
+- Add an exit cell that, once the player character touches it, ends the current level.
+- Code the functionality to spawn a new level when the old one ends.
+- Add a Game Over state if the player runs out of food.
+- Use the UI Builder window to add a Game Over Label to the game when the player loses.
+
+### Finishing a level
+
+- Create `ExitCellObject`. Just like [Create WallObject](#add-obstacles)
+  1. Hierarchy > Create GameObject > rename `ExitCell`
+  2. Create a new tile for `ExitCell` and assign the sprite for `ExitCellObject`
+  3. Project > Create Scripting > MonoBehaviour > rename `ExitCellObject.cs`
+  4. Add `ExitCellObject.cs` script component to `ExitCell` GameObject
+  5. Drag `ExitCell` GameObject into `Prefabs` folder
+  6. Delete the `ExitCell` GameObject from the scene
+  7. `BoardManager.cs`: add `public ExitCellObject ExitCellPrefab;` and `GenerateExitCell()` inside `Init()`
+  8. In Editor, assign `ExitCellPrefab` to `BoardManager`
+- `BoardManager`: Generating a new level
+  - `Clean()` the current level (board, character)
+  - `NewLevel()` spawns a new level
+
+### Game over
+
+- Goal: Add a Game Over state when food reaches 0
+- UI display message
+  - UI builder > `GameOverPanel: VisualElement` + `GameOverMessage: Label`
+  - `GameManager.cs`: set visibility and modify `ChangeFood()`
+- Disable input
+  - Game Over state: Notify `PlayerController` in early `Update()`
+- Restart to level 1
+  - `GameManager.cs`: `StartNewGame()`
+  - `PlayerController.cs`: check `Enter` key is pressed
+
+```csharp
+// GameManager.cs
+
+void Start() 
+{
+    m_GameOverPanel = UIDoc.rootVisualElement.Q<VisualElement>("GameOverPanel");
+    m_GameOverMessage = m_GameOverPanel.Q<Label>("GameOverMessage");
+
+    m_GameOverPanel.style.visibility = Visibility.Hidden;
+}
+```
 
 ## Improve Graphics
 

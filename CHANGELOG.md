@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0-alpha] - 2024-11-24
+
+- feat: Implement [Unity Tutorial](/2-unity-assets-collection/2-unity-assets-templates.md)
+  - [x] [2d Roguelike](/2-unity-assets-collection/tutorial-projects/2d-roguelike.md)
+  - [ ] [2D Beginner Adventure Game](/2-unity-assets-collection/tutorial-projects/2d-beginner-adventure-game.md)
+  - [ ] [2d Game Kit](/2-unity-assets-collection/tutorial-projects/2d-game-kit.md)
+  - [ ] [Dragon Crashers](/2-unity-assets-collection/tutorial-projects/dragon-crashers.md)
+  - [ ] [Level up your code with design patterns and SOLID](/0-architecture-patterns/design-patterns/README.md)
+
 ## [1.1.0] - 2024-11-10
 
 - chore: reorder examples
@@ -27,5 +36,6 @@
 <!-- Links -->
 
 <!-- Versions -->
+[1.2.0]: https://github.com/androchentw/unity-playground/releases/tag/v1.2.0
 [1.1.0]: https://github.com/androchentw/unity-playground/releases/tag/v1.1.0
 [1.0.0]: https://github.com/androchentw/unity-playground/releases/tag/v1.0.0
