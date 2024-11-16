@@ -2,9 +2,7 @@
 
 <!-- TOC -->
 * [Unity UI Toolkits](#unity-ui-toolkits)
-  * [🥇 UI Toolkit Sample - Unity QuizU](#-ui-toolkit-sample---unity-quizu)
-  * [UI Toolkit sample – Unity Dragon Crashers](#ui-toolkit-sample--unity-dragon-crashers)
-  * [Unity Ebook - User interface design and implementation in Unity](#unity-ebook---user-interface-design-and-implementation-in-unity)
+  * [🥇 UI Toolkit Sample](#-ui-toolkit-sample)
   * [Others](#others)
   * [阿嚴 YouTube 教學](#阿嚴-youtube-教學)
     * [新功能](#新功能)
@@ -13,21 +11,10 @@
   * [其他](#其他)
 <!-- TOC -->
 
-## 🥇 UI Toolkit Sample - Unity QuizU
+## 🥇 UI Toolkit Sample
 
 - [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
-
-## UI Toolkit sample – Unity Dragon Crashers
-
-- [Unity Asset Store: UI Toolkit sample – Dragon Crashers](https://assetstore.unity.com/packages/essentials/tutorial-projects/dragon-crashers-ui-toolkit-sample-project-231178)
-
-## Unity Ebook - User interface design and implementation in Unity
-
-- [User interface design and implementation in Unity](https://unity.com/resources/user-interface-design-and-implementation-in-unity)
-  - Sprite, Tilemap
-  - UI Toolkit
-  - Dragon Crasher
-    - Home, character, resources, shop, mail, settings, menu bar, inventory
+- [Dragon Crashers](../2-unity-assets-collection/tutorial-projects/dragon-crashers.md)
 
 ## Others
 

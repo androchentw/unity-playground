@@ -3,6 +3,7 @@
 <!-- TOC -->
 * [Unity Assets - Templates](#unity-assets---templates)
   * [Unity 範例遊戲](#unity-範例遊戲)
+    * [Not yet implemented](#not-yet-implemented)
   * [遊戲模板 & 引擎](#遊戲模板--引擎)
   * [特殊系統](#特殊系統)
   * [多人連線](#多人連線)
@@ -12,16 +13,19 @@
 
 ## Unity 範例遊戲
 
+- [2D Roguelike](tutorial-projects/2d-rougelike.md)
+- [Dragon Crashers - UI Toolkit Sample project](tutorial-projects/dragon-crashers.md)
+- [Level up your code with design patterns and SOLID](../0-architecture-patterns/design-patterns/README.md)
+
+### Not yet implemented
+
 - [2D Game Kit](https://assetstore.unity.com/packages/templates/tutorials/2d-game-kit-107098) + [教學](https://learn.unity.com/project/2d-you-xi-tao-jian)
-- [2D Roguelike | Complete Project](https://assetstore.unity.com/packages/templates/tutorials/2d-roguelike-complete-project-299017)
 - [Unity Learn | Playground | URP](https://assetstore.unity.com/packages/templates/tutorials/unity-learn-playground-urp-109917#content)
-- [Level up your code with design patterns and SOLID](https://assetstore.unity.com/packages/essentials/tutorial-projects/level-up-your-code-with-design-patterns-and-solid-289616#content)
 - [Endless Runner - Sample Game](https://assetstore.unity.com/packages/templates/tutorials/endless-runner-sample-game-87901#content) + [教學](https://learn.unity.com/tutorial/mobile-development-techniques#5c7f8528edbc2a002053b4ab)
 - [Unity Learn | 3D Game Kit](https://assetstore.unity.com/packages/templates/tutorials/unity-learn-3d-game-kit-115747#content)
-- Dragon Crashers - UI Toolkit Sample project
 - Happy Harvest - 2D Sample Project
 - Fantasy Kingdom in Unity 6 | URP
-- Starter Assets - ThirdPerson | Updates in new 
+- Starter Assets - ThirdPerson | Updates in new
 
 ## 遊戲模板 & 引擎
 
@@ -48,7 +52,7 @@
 - Tanks! Tutorial
 - POLYGON Prototype - Low Poly 3D Art by Synty
 - Book Of The Dead: Environment | HDRP
-- Viking Village URP 
+- Viking Village URP
 
 ## 3D
 
