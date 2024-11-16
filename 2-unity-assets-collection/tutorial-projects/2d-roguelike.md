@@ -19,7 +19,7 @@
     * [UIToolkit](#uitoolkit)
     * [Update the Label using code](#update-the-label-using-code)
     * [Objects in cell and food refill](#objects-in-cell-and-food-refill)
-    * [Challenges](#challenges)
+      * [`BoardManager.cs`](#boardmanagercs)
     * [Collect food](#collect-food)
     * [Increasing the food count](#increasing-the-food-count)
     * [Challenge](#challenge)
@@ -207,7 +207,7 @@ void OnTurnHappen()
 - Actions
   1. `UIDocument` GameObject: Hierarchy > UI Toolkit > UI Document
   2. `UI/GameUI` UXML (Visual Tree Asset): Assets > UI folder > Create UI Toolkit > UI Document
-  3. Attach `GameUI` to `UIDocument`'s "Source Asset"
+  3. Assign `GameUI` to `UIDocument`'s "Source Asset"
   4. Double click `GameUI` > UI Builder Window > Label > Name: `FoodLabel`. Font, size, color, position
 
 ### Update the Label using code
@@ -235,14 +235,31 @@ public class GameManager : MonoBehaviour
        m_FoodAmount -= 1;
        m_FoodLabel.text = "Food : " + m_FoodAmount; // update UI
     }
+}
 ```
 
 ### Objects in cell and food refill
 
 - Goal: add a collectible object that refills 10 units of food
+- `PlayerController.cs` moves and checks `CellData` if `isCollectible` then `remove()` and `addFood()`
+- Drag `SmallFoodGameObject` from Hierarchy window to `Prefabs` folder, delete `SmallFoodGameObject` from the scene
 
+#### `BoardManager.cs`
 
-### Challenges
+- `public FoodObject FoodPrefab`. FoodObject : CellObject : GameObject
+- `GenerateFood()` in `Init()`
+- Assign `SmallFood prefab` to `FoodPrefab` slot on `BoardManager` in the Inspector window
+- Keep track of empty cells for pick by `m_EmptyCellsList = new List<Vector2Int>();`
+
+```csharp
+// BoardManager.cs
+
+public class CellData
+{
+    public bool Passable;
+    public CellObject ContainedObject;
+}
+```
 
 ### Collect food
 

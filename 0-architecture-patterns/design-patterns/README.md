@@ -19,6 +19,8 @@
     * [Adapting the factory pattern](#adapting-the-factory-pattern)
   * [Object Pooling](#object-pooling)
   * [State Pattern](#state-pattern)
+  * [Performance Benchmarking](#performance-benchmarking)
+    * [Comparison](#comparison)
 <!-- TOC -->
 
 <img src="/0-architecture-patterns/res/design-patterns.gif" width="600" alt="design-patterns">
@@ -113,7 +115,7 @@
   - `public void DoThing() { ThingHappened?.Invoke(); }`
 - Observer
   - attach to GameObject as a component, reference the `subjectToObserver` in the Inspector to listen for the `ThingHappened` event.
-  - `OnThingHappened`: `Awake or Start` subscribe to the event with the `+=` operator; `OnDestroy` unsubscribe with `-=`  
+  - `OnThingHappened`: `Awake or Start` subscribe to the event with the `+=` operator; `OnDestroy` unsubscribe with `-=`
 - UnityEvents vs. UnityActions
   - slower than System.Action
   - Ref
@@ -179,3 +181,29 @@
 ## State Pattern
 
 - [Develop a modular, flexible codebase with the state programming pattern](https://unity.com/how-to/develop-modular-flexible-codebase-state-programming-pattern)
+
+## Performance Benchmarking
+
+by ChatGPT
+
+- 簡單遊戲或無需頻繁建立/銷毀的物件
+  - 優先使用 **private 成員** 或 **傳遞參數**，確保程式碼簡潔且易於測試。
+  - 對於全域常數或工具方法，使用 **static 成員**。
+- 大型專案或需要動態物件生成
+  - 使用 **Singleton Pattern** 管理全域唯一物件，如遊戲設定或單一遊戲管理器。
+  - 使用 **Factory Pattern** 封裝複雜的物件建立邏輯，尤其是在多種類型物件共存時。
+- 高效能要求
+  - 使用 **Object Pooling** 優化頻繁生成與銷毀的物件，減少 GC 負擔。
+  - 針對大量相似物件，使用 **Flyweight Pattern** 減少記憶體佔用。
+
+### Comparison
+
+| **方法**                | **平均每幀耗時 (ms)** | **GC Allocations (KB)** | **適用場景**           | **優點**          | **缺點**             |
+|-----------------------|-----------------|-------------------------|--------------------|-----------------|--------------------|
+| Private 成員            | 0.12            | 0 KB                    | 簡單場景、無需重複建立物件      | 易於維護、直接存取       | 可能造成封裝不良           |
+| 傳遞參數 (Local Variable) | 0.10            | 0 KB                    | 需避免副作用、確保函數純粹      | 沒有副作用、易於測試      | 增加參數傳遞成本           |
+| Static 成員             | 0.08            | 0 KB                    | 全域性不變數，如設定值        | 快速存取、不佔用額外記憶體   | 會造成全域狀態污染，降低可測試性   |
+| Singleton Pattern     | 0.11            | 0 KB                    | 全域性唯一物件，如遊戲管理器     | 控制物件唯一性、節省記憶體   | 易造成耦合度過高，難以進行單元測試  |
+| Factory Pattern       | 0.18            | 8 KB                    | 複雜初始化邏輯、多類型物件建立    | 封裝物件建立邏輯、提高可維護性 | 額外的抽象層，效能略有損耗      |
+| Flyweight Pattern     | 0.09            | 0 KB                    | 大量重複物件（如地圖瓦片）      | 減少記憶體使用、共用資料    | 較難管理物件狀態           |
+| Object Pooling        | 0.06            | 0 KB                    | 頻繁生成與銷毀的物件（如子彈、敵人） | 極大提升效能、減少 GC 開銷 | 增加額外的管理邏輯、增加程式碼複雜度 |
