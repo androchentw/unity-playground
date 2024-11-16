@@ -40,7 +40,10 @@
     * [Finishing a level](#finishing-a-level)
     * [Game over](#game-over)
   * [Improve Graphics](#improve-graphics)
+    * [Smooth movement](#smooth-movement)
   * [Animation](#animation)
+    * [Idle animation](#idle-animation)
+    * [Walking animation](#walking-animation)
   * [Enemy](#enemy)
   * [Improvement Ideas](#improvement-ideas)
 <!-- TOC -->
@@ -583,9 +586,78 @@ void Start()
 
 ## Improve Graphics
 
+### Smooth movement
+
+- `PlayerController.cs`
+  - `IsMoving`
+  - `MoveTo()`
+  - `Update()` Vector3.MoveTowards
+
+```csharp
+// PlayerController.cs
+public class PlayerController : MonoBehaviour
+{
+   public float MoveSpeed = 5.0f;
+
+   private bool m_IsMoving;
+   private Vector3 m_MoveTarget;
+
+   public void MoveTo(Vector2Int cell, bool immediate)
+   {
+       m_CellPosition = cell;
+    
+       if (immediate)
+       {
+           m_IsMoving = false;
+           transform.position = m_Board.CellToWorld(m_CellPosition);
+       }
+       else
+       {
+           m_IsMoving = true;
+           m_MoveTarget = m_Board.CellToWorld(m_CellPosition);
+       }
+   }
+    
+   public void Init()
+   {
+       m_IsMoving = false;
+       m_IsGameOver = false;
+   }
+```
+
 ## Animation
+
+- Add an **Animator component** to PlayerCharacter GameObject
+- Use the **Animation window** to create keyframes for the animation using sprites from the Sprite Sheet
+- Use the **Animator window** to link the Animation states for the player character so that each animation flows fluidly from one to another
+
+### Idle animation
+
+1. Hierarchy window > PlayerCharacter GameObject > Inspector > Add Component: Animator
+2. Project window > Assets create folder: Animation > Create Animation: AnimatorController `PlayerAnimator`
+3. Hierarchy window > PlayerCharacter GameObject > Inspector > Animator > Controller > Assign `PlayerAnimator`
+4. Window > Animation > Animation > Create Animation Clip: `Idle.anim` > save to `Animation` folder
+5. From Sprites folder (Project window > Roguelike2D > TutorialAssets > Sprites), drag and drop all the sprites into the timeline of the Animation window
+6. Place the sprites at the same interval from each other to keep a constant speed
+7. Open More (⋮) menu next to the timeline and select **Show Sample Rate**, change the **Samples** property to 3
+8. re-arrange the sprites on timeline
+
+### Walking animation
+
+1. Animation window > PlayerCharacter GameObject > Create Animation Clip: `Walk.anim` > save to `Animation` folder
+2. From Sprites folder (Project window > Roguelike2D > TutorialAssets > Sprites), drag and drop the walking sprites into the timeline of the Animation window
+3. Window > Animation > Animator > Parameters > Add `Bool Moving`
+4. Right-click the Idle state and select Make Transition. Select the Walk state to create a transition between the Idle and Walk states.
+5. Has Exit Time, Transition Duration: 0
+6. `PlayerController.cs`: control `Animator m_Animator.SetBool("Moving", m_IsMoving);`
 
 ## Enemy
 
 ## Improvement Ideas
 
+- Change board generation based on level
+- Wait for a turn
+- Items and stats (Strength, Defense, Speed)
+- Speed and timing (energy system)
+- Menus
+- Saving
