@@ -1,5 +1,7 @@
 # Unity Best Practices
 
+- Ref: [3-unity-folder-structure.md](3-unity-folder-structure.md)
+
 <!-- TOC -->
 * [Unity Best Practices](#unity-best-practices)
   * [C# General](#c-general)
@@ -9,8 +11,6 @@
   * [Unity DOTS 提升效能](#unity-dots-提升效能)
   * [LiveOps](#liveops)
 <!-- TOC -->
-
-- Ref: [3-unity-folder-structure.md](3-unity-folder-structure.md)
 
 ## C# General
 

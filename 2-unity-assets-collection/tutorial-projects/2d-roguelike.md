@@ -1,5 +1,11 @@
 # 2D Roguelike
 
+- [2D Roguelike | Complete Project](https://assetstore.unity.com/packages/templates/tutorials/2d-roguelike-complete-project-299017)
+- Codebase: [unity-tutorial-projects/2d-roguelike](https://github.com/androchentw/unity-tutorial-projects/tree/main/2d-roguelike/Assets/Roguelike2D/TutorialVersion)
+- Ref
+  - [code-style-guide](/1-unity-basics/4-unity-best-practices.md#code-style-guide)
+  - [design-patterns](/0-architecture-patterns/design-patterns/README.md)
+
 <!-- TOC -->
 * [2D Roguelike](#2d-roguelike)
   * [Architecturing 拆解遊戲實作架構](#architecturing-拆解遊戲實作架構)
@@ -17,6 +23,8 @@
     * [Moving the player character](#moving-the-player-character)
     * [Refactoring](#refactoring)
   * [Turn System](#turn-system)
+    * [Turn Manager](#turn-manager)
+    * [Ticking Turn](#ticking-turn)
   * [Food Resource](#food-resource)
     * [UIToolkit](#uitoolkit)
     * [Update the Label using code](#update-the-label-using-code)
@@ -24,20 +32,16 @@
       * [`BoardManager.cs`](#boardmanagercs)
     * [Collect food](#collect-food)
     * [Increasing the food count](#increasing-the-food-count)
-    * [Challenge](#challenge)
   * [Obstacles](#obstacles)
+    * [Add obstacles](#add-obstacles)
+    * [Refactoring](#refactoring-1)
+    * [Damaging walls](#damaging-walls)
   * [Win and Lose Conditions](#win-and-lose-conditions)
   * [Improve Graphics](#improve-graphics)
   * [Animation](#animation)
   * [Enemy](#enemy)
   * [Improvement Ideas](#improvement-ideas)
 <!-- TOC -->
-
-- [2D Roguelike | Complete Project](https://assetstore.unity.com/packages/templates/tutorials/2d-roguelike-complete-project-299017)
-- Codebase: [unity-tutorial-projects/2d-roguelike](https://github.com/androchentw/unity-tutorial-projects/tree/main/2d-roguelike/Assets/Roguelike2D/TutorialVersion)
-- Ref
-  - [code-style-guide](/1-unity-basics/4-unity-best-practices.md#code-style-guide)
-  - [design-patterns](/0-architecture-patterns/design-patterns/README.md)
 
 ## Architecturing 拆解遊戲實作架構
 
@@ -234,6 +238,85 @@ public Vector3 CellToWorld(Vector2Int cellIndex)
 
 ## Turn System
 
+### Turn Manager
+
+- `GameManager.cs: MonoBehaviour` GameObject
+  - init `TurnManager`
+  - trigger `BoardGeneration`
+  - spawn `Player`
+
+```csharp
+// GameManager.cs
+public class GameManager : MonoBehaviour
+{
+    // Singleton
+    public static GameManager Instance { get; private set; }
+  
+    // Remember to assign references in the Inspector window
+    public BoardManager BoardManager;
+    public PlayerController PlayerController;
+
+    public TurnManager TurnManager { get; private set;}
+  
+    // Singleton. Awake is called before Start when the GameObject is created
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+       
+        Instance = this;
+    }
+   
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        m_TurnManager = new TurnManager();
+
+        BoardManager.Init();
+        PlayerController.Spawn(BoardManager, new Vector2Int(1,1));
+    }
+}
+```
+
+### Ticking Turn
+
+```csharp
+// TurnManager.cs
+public class TurnManager
+{
+   private int m_TurnCount;
+
+   public TurnManager()
+   {
+       m_TurnCount = 1;
+   }
+
+   public void Tick()
+   {
+       m_TurnCount += 1;
+       Debug.Log("Current turn count : " + m_TurnCount);
+   }
+}
+```
+
+```csharp
+// PlayerController.cs
+if (hasMoved)
+{
+   //check if the new position is passable, then move there if it is.
+   BoardManager.CellData cellData = m_Board.GetCellData(newCellTarget);
+
+   if (cellData != null && cellData.Passable)
+   {
+       GameManager.Instance.TurnManager.Tick();
+       MoveTo(newCellTarget);
+   }
+}
+```
+
 ## Food Resource
 
 - `GameManager.cs` + `TurnManager.cs` callback system (when turn events happen)
@@ -375,9 +458,13 @@ public class FoodObject : CellObject
 - `GameManager.cs`: update `OnTurnHappen()`
 - `FoodObject.cs`: `GameManager.Instance.ChangeFood(AmountGranted);` singleton
 
-### Challenge
-
 ## Obstacles
+
+### Add obstacles
+
+### Refactoring
+
+### Damaging walls
 
 ## Win and Lose Conditions
 

@@ -1,12 +1,12 @@
 # Readme
 
+- [/0-architecture-patterns/](/0-architecture-patterns/README.md)
+
 <!-- TOC -->
 * [Readme](#readme)
   * [Learning Path](#learning-path)
     * [Ref: Books Catalog](#ref-books-catalog)
 <!-- TOC -->
-
-- [/0-architecture-patterns/](/0-architecture-patterns/README.md)
 
 ```text
 1-unity-basics/
