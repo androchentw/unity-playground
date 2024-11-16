@@ -9,13 +9,13 @@
   </sup></sub>
 </div>
 
-[//]: # (TODO)
+[//]: # (2024-11-11 ~ 24 TODO)
 
 - [ ] [Unity Tutorial implementation](2-unity-assets-collection/2-unity-assets-templates.md)
-  - [ ] [unity-tutorial-projects](https://github.com/androchentw/unity-tutorial-projects)
+  - [ ] [2d-roguelike](2-unity-assets-collection/tutorial-projects/2d-roguelike.md)
+  - [ ] [dragon-crashers](2-unity-assets-collection/tutorial-projects/dragon-crashers.md)
+  - [ ] [Level up your code with design patterns and SOLID](0-architecture-patterns/design-patterns/README.md)
   - [ ] 2d-game-kit
-  - [ ] 2d-roguelike
-  - [ ] Unity - Level up your code with design patterns and SOLID
 - [ ] Rigidbody2D Collision Detection
 
 ## Overview

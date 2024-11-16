@@ -16,6 +16,14 @@
     * [Scripts `PlayerController.cs`](#scripts-playercontrollercs)
   * [Turn System](#turn-system)
   * [Food Resource](#food-resource)
+    * [Add a food resource](#add-a-food-resource)
+    * [UI](#ui)
+    * [Update the Label using code](#update-the-label-using-code)
+    * [Objects in cell and food refill](#objects-in-cell-and-food-refill)
+    * [Challenges](#challenges)
+    * [Collect food](#collect-food)
+    * [Increasing the food count](#increasing-the-food-count)
+    * [Challenge](#challenge)
   * [Obstacles](#obstacles)
   * [Win and Lose Conditions](#win-and-lose-conditions)
   * [Improve Graphics](#improve-graphics)
@@ -157,7 +165,23 @@ public class LevelLoader : MonoBehaviour
 
 ## Food Resource
 
-[//]: # (TODO)
+### Add a food resource
+
+
+
+### UI
+
+### Update the Label using code
+
+### Objects in cell and food refill
+
+### Challenges
+
+### Collect food
+
+### Increasing the food count
+
+### Challenge
 
 ## Obstacles
 
