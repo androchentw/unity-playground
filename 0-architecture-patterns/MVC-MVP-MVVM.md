@@ -9,8 +9,8 @@
 
 ## MVP
 
-- [5-unity-ui-toolkits.md](../1-unity-basics/5-unity-ui-toolkits.md)
-- [design-patterns/README.md](../0-architecture-patterns/design-patterns/README.md)
+- [5-unity-ui-toolkits.md](/1-unity-basics/5-unity-ui-toolkits.md)
+- [design-patterns/README.md](/0-architecture-patterns/design-patterns/README.md)
 - [從Clean Architecture 的角度來看看MVP與MVVM](https://hung-yanbin.medium.com/從clean-architecture-的角度來看看mvp與mvvm-84b4883b0dde)
 - [UnitySimpleCleanArchitecturePlane](https://github.com/genki-tx/UnitySimpleCleanArchitecturePlane)
 

@@ -11,14 +11,14 @@
 ## Sample Project Structure Template
 
 - [UnityBaseTemplate2DURP](https://github.com/androchentw/UnityBaseTemplate2DURP)
-- [Sample Game Projects on Unity Asset Store](../2-unity-assets-collection/2-unity-assets-templates.md)
+- [Sample Game Projects on Unity Asset Store](/2-unity-assets-collection/2-unity-assets-templates.md)
 - Ref
   - [4-unity-best-practices.md](4-unity-best-practices.md)
   - [5-unity-ui-toolkits.md](5-unity-ui-toolkits.md)
   - [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
   - [7-unity-custom-package.md](7-unity-custom-package.md)
-  - [MVC-MVP-MVVM.md](../0-architecture-patterns/MVC-MVP-MVVM.md)
-  - [DDD-Domain-Driven-Design.md](../0-architecture-patterns/DDD-Domain-Driven-Design.md)
+  - [MVC-MVP-MVVM.md](/0-architecture-patterns/MVC-MVP-MVVM.md)
+  - [DDD-Domain-Driven-Design.md](/0-architecture-patterns/DDD-Domain-Driven-Design.md)
 
 <img width="500px" src="https://github.com/androchentw/UnityBaseTemplate2DURP/blob/main/Assets/Docs/res/unity-sample-project-structure-markmap.png?raw=true" alt="UnityBaseTemplate2DURP-project-structure-markmap">
 

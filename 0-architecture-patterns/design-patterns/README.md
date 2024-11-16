@@ -21,7 +21,7 @@
   * [State Pattern](#state-pattern)
 <!-- TOC -->
 
-<img src="../res/design-patterns.gif" width="600" alt="design-patterns">
+<img src="/0-architecture-patterns/res/design-patterns.gif" width="600" alt="design-patterns">
 
 ```text
 │   ├── design-patterns-cs/

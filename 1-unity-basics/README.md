@@ -6,7 +6,7 @@
     * [Ref: Books Catalog](#ref-books-catalog)
 <!-- TOC -->
 
-- [../0-architecture-patterns/](../0-architecture-patterns/README.md)
+- [/0-architecture-patterns/](/0-architecture-patterns/README.md)
 
 ```text
 1-unity-basics/

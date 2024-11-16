@@ -80,7 +80,7 @@
 
 ## Design patterns
 
-- Ref: [Design Patterns](../0-architecture-patterns/design-patterns/README.md)
+- Ref: [Design Patterns](/0-architecture-patterns/design-patterns/README.md)
 - The **state pattern** allows an object to alter its behavior when its internal state changes. The QuizU project uses a `SequenceManager` and `UIManager` that show different types of state machines.
 - The **model-view-presenter (MVP) pattern** maintains a strict separation between the app's data (Model), UI (View), and the controlling intermediary that binds the two (Presenter).
 - The **observer pattern** can help decouple objects to reduce their interdependencies. QuizU uses `System.Action` delegates as well as the `UI Toolkit event system`.
