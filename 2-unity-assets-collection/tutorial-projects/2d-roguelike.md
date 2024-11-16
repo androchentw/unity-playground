@@ -36,7 +36,7 @@
 
 ## Architecturing 拆解遊戲實作架構
 
-- break down your ideas into chunks of **actionable tasks**
+- Goal: break down your ideas into chunks of **actionable tasks**
 
 ### Features
 
@@ -155,7 +155,7 @@ public class LevelLoader : MonoBehaviour
 
 ### Scripts `PlayerController.cs`
 
-- attach it to the PlayerCharacter GameObject
+- Goal: attach it to the PlayerCharacter GameObject
 - 拆解 Breakdowns
   - 隨機起始位置: `Spawn()` 生成 + `Vector2Int` 位置 + `Move()` 移動
   - 移動 + 障礙判斷: `BoardManager`
@@ -174,8 +174,7 @@ public event System.Action OnTick;
 
 public void Tick()
 {
-    // `?`, C# null checker
-    OnTick?.Invoke();
+    OnTick?.Invoke();   // `?`, C# null checker
 }
 ```
 
@@ -186,7 +185,7 @@ private int m_FoodAmount = 100;     // initial value
 // Introduces the dependecy of TurnManager, BoardManager, PlayerController
 void Start()
 {
-    // Register the OnTurnHappen method to your TurnManager.OnTurn callback.
+    // Register the OnTurnHappen method to your TurnManager.OnTick callback.
     // Unregister OnDestroy with -=
     TurnManager = new TurnManager();
     TurnManager.OnTick += OnTurnHappen;
@@ -205,10 +204,43 @@ void OnTurnHappen()
 ### UIToolkit
 
 - Ref: [Unity UI Toolkit](/1-unity-basics/5-unity-ui-toolkits.md)
+- Actions
+  1. `UIDocument` GameObject: Hierarchy > UI Toolkit > UI Document
+  2. `UI/GameUI` UXML (Visual Tree Asset): Assets > UI folder > Create UI Toolkit > UI Document
+  3. Attach `GameUI` to `UIDocument`'s "Source Asset"
+  4. Double click `GameUI` > UI Builder Window > Label > Name: `FoodLabel`. Font, size, color, position
 
 ### Update the Label using code
 
+- Goal: `GameManager` Display the amount of food the player has on each turn.
+
+```csharp
+using UnityEngine.UIElements;
+
+public class GameManager : MonoBehaviour
+{
+    public UIDocument UIDoc;    // select GameObject "UIDocument" in inspector
+    private Label m_FoodLabel;
+
+    void Start()
+    {
+        // Q looks from root for element of type <Label> with name "FoodLabel"
+        m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
+        m_FoodLabel.text = "Food : " + m_FoodAmount;
+    }
+    
+    // update counter in TurnManager.OnTick event callback 
+    void OnTurnHappen()
+    {
+       m_FoodAmount -= 1;
+       m_FoodLabel.text = "Food : " + m_FoodAmount; // update UI
+    }
+```
+
 ### Objects in cell and food refill
+
+- Goal: add a collectible object that refills 10 units of food
+
 
 ### Challenges
 

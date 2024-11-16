@@ -3,29 +3,31 @@
 <!-- TOC -->
 * [Unity Assets - Templates](#unity-assets---templates)
   * [Unity 範例遊戲](#unity-範例遊戲)
-    * [Not yet implemented](#not-yet-implemented)
+    * [3D](#3d)
   * [遊戲模板 & 引擎](#遊戲模板--引擎)
   * [特殊系統](#特殊系統)
   * [多人連線](#多人連線)
   * [其他](#其他)
-  * [3D](#3d)
+  * [3D](#3d-1)
 <!-- TOC -->
 
 ## Unity 範例遊戲
 
-- [2D Roguelike](tutorial-projects/2d-roguelike.md)
-- [Dragon Crashers - UI Toolkit Sample project](tutorial-projects/dragon-crashers.md)
-- [Level up your code with design patterns and SOLID](/0-architecture-patterns/design-patterns/README.md)
+- [2D Roguelike](tutorial-projects/2d-roguelike.md): 俯視 棋盤 隨機
+- [2D Game Kit](tutorial-projects/2d-game-kit.md): 橫向捲軸 平台 
+- [2D Beginner Adventure Game](tutorial-projects/2d-beginner-adventure-game.md): RPG, 基礎
+- [Dragon Crashers](tutorial-projects/dragon-crashers.md): UI Toolkit 
+- [Level up your code with design patterns and SOLID](/0-architecture-patterns/design-patterns/README.md): 架構 模式
+- [Endless Runner](tutorial-projects/endless-runner.md) 
+- 素材演示
+  - [Unity Learn | Playground | URP](https://assetstore.unity.com/packages/templates/tutorials/unity-learn-playground-urp-109917#content)
+  - [Happy Harvest - 2D Sample Project](https://assetstore.unity.com/packages/essentials/tutorial-projects/happy-harvest-2d-sample-project-259218?srsltid=AfmBOoqBW-cSzfhka79W5enzi27oCHJ9eETML9wGYjDrIpU_RwYjyldk)
 
-### Not yet implemented
+### 3D
 
-- [2D Game Kit](https://assetstore.unity.com/packages/templates/tutorials/2d-game-kit-107098) + [教學](https://learn.unity.com/project/2d-you-xi-tao-jian)
-- [Unity Learn | Playground | URP](https://assetstore.unity.com/packages/templates/tutorials/unity-learn-playground-urp-109917#content)
-- [Endless Runner - Sample Game](https://assetstore.unity.com/packages/templates/tutorials/endless-runner-sample-game-87901#content) + [教學](https://learn.unity.com/tutorial/mobile-development-techniques#5c7f8528edbc2a002053b4ab)
+- [Fantasy Kingdom in Unity 6 | URP](https://assetstore.unity.com/packages/essentials/tutorial-projects/fantasy-kingdom-in-unity-6-urp-298128)
 - [Unity Learn | 3D Game Kit](https://assetstore.unity.com/packages/templates/tutorials/unity-learn-3d-game-kit-115747#content)
-- Happy Harvest - 2D Sample Project
-- Fantasy Kingdom in Unity 6 | URP
-- Starter Assets - ThirdPerson | Updates in new
+- [Starter Assets - ThirdPerson](https://assetstore.unity.com/packages/essentials/starter-assets-thirdperson-updates-in-new-charactercontroller-pa-196526)
 
 ## 遊戲模板 & 引擎
 
