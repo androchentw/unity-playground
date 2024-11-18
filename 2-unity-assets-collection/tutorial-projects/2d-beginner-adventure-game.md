@@ -1,14 +1,15 @@
 # 2D Beginner Adventure Game
 
-- [Asset Store: 2D Beginner: Adventure Game](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-2d-beginner-adventure-game-complete-project-urp-271239)
-- [教學 Unity Learn](https://learn.unity.com/course/2d-beginner-adventure-game)
+- [Codebase](https://github.com/androchentw/unity-tutorial-projects/tree/main/2d-beginner-adventure-game/Assets/UnityTechnologies/Final)
+- [Asset Store](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-2d-beginner-adventure-game-complete-project-urp-271239)
+- [Unity Learn](https://learn.unity.com/course/2d-beginner-adventure-game)
 
 <!-- TOC -->
 * [2D Beginner Adventure Game](#2d-beginner-adventure-game)
   * [Overview](#overview)
   * [Player character and movement](#player-character-and-movement)
   * [Game environment and physics](#game-environment-and-physics)
-  * [## Health system](#-health-system)
+  * [Health system](#health-system)
   * [Heads-up UI display](#heads-up-ui-display)
   * [Characters and interaction mechanics](#characters-and-interaction-mechanics)
   * [Enhance and polish](#enhance-and-polish)
@@ -31,7 +32,7 @@
 - Goal: develop the environment for your game and implement basic physics so the player character can interact with it.
 
 ## Health system
-- 
+
 - Goal: create a health system and objects that will increase or decrease the player character’s health on collision.
 
 ## Heads-up UI display

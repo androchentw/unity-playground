@@ -15,6 +15,7 @@
 
 - [5-unity-ui-toolkits-QuizU.md](5-unity-ui-toolkits-QuizU.md)
 - [Dragon Crashers](/2-unity-assets-collection/tutorial-projects/dragon-crashers.md)
+- [ui-toolkit-manual-code-examples](https://github.com/Unity-Technologies/ui-toolkit-manual-code-examples)
 
 ## Others
 

@@ -1,7 +1,8 @@
 # 2D Game Kit
 
+- [Codebase](https://github.com/androchentw/unity-tutorial-projects/tree/main/2d-game-kit/Assets/2DGamekit)
 - [Asset Store: 2D Game Kit](https://assetstore.unity.com/packages/templates/tutorials/2d-game-kit-107098)
-- [教學 Unity Learn](https://learn.unity.com/project/2d-game-kit)
+- [Unity Learn](https://learn.unity.com/project/2d-game-kit)
 
 <!-- TOC -->
 * [2D Game Kit](#2d-game-kit)
