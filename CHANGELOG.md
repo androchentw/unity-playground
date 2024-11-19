@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.2.0-alpha] - 2024-11-24
+## [1.2.0] - 2024-11-24
 
 - feat: Implement [Unity Tutorial](/2-unity-assets-collection/2-unity-assets-templates.md)
   - [x] [2d Roguelike](/2-unity-assets-collection/tutorial-projects/2d-roguelike.md)
