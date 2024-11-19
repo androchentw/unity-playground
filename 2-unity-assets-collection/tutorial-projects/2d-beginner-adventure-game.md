@@ -17,11 +17,11 @@
 
 ## Overview
 
-<img width="500px" src="res/unity-ui-ruby-1.png" alt="unity-ui-ruby-1">
+<img width="600px" src="res/unity-ui-ruby-1.png" alt="unity-ui-ruby-1">
 
-<img width="500px" src="res/unity-ui-ruby-2.png" alt="unity-ui-ruby-2">
+<img width="600px" src="res/unity-ui-ruby-2.png" alt="unity-ui-ruby-2">
 
-<img width="500px" src="res/unity-ui-ruby-3.png" alt="unity-ui-ruby-3">
+<img width="600px" src="res/unity-ui-ruby-3.png" alt="unity-ui-ruby-3">
 
 ## Player character and movement
 

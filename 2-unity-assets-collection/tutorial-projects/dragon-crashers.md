@@ -46,17 +46,26 @@
 
 ## Dragon Crashers Code Breakdown
 
-<img src="res/dragon-crasher-breakdown.png" width="600" alt="dragon-crasher-breakdown">
+<img src="res/dragon-crashers-breakdown.png" width="800px" alt="dragon-crashers-breakdown">
+
+<img src="res/dragon-crashers-1.png" width="800px" alt="dragon-crashers-1">
+
+<img src="res/dragon-crashers-2.png" width="800px" alt="dragon-crashers-2">
+
+<img src="res/dragon-crashers-3.png" width="800px" alt="dragon-crashers-3">
+
+<img src="res/dragon-crashers-4.png" width="800px" alt="dragon-crashers-4">
 
 ### Overview
 
 - Scene
   - MainMenu.unity, GameHome.unity
 - View
-  - UI Toolkit (Uxml + Uss) + Scripts/UI/UIViews/*.cs
-  - Screen > Panel > Modal
-  - CharacterScreen, SettingsScreen, MailScreen, ShopScreen
-  - MenuBar, Inventory
+  - UI Toolkit (Uxml + Uss)
+  - Screen
+    - CharacterScreen, SettingsScreen, MailScreen, ShopScreen
+  - Component: Panel, Modal, Widget, ...
+    - MenuBar, Inventory
 - Model
   - 1-1 mapping of `Resources/GameData/*GameObject.asset` + `Scripts/GameDataSO/*.cs`
   - CharacterSO, SkillSO, ShopItemSO
