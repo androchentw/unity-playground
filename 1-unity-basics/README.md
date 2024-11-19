@@ -1,7 +1,5 @@
 # Readme
 
-- [/0-architecture-patterns/](/0-architecture-patterns/README.md)
-
 <!-- TOC -->
 * [Readme](#readme)
   * [Learning Path](#learning-path)
@@ -29,6 +27,10 @@
 
 ## Learning Path
 
+- [0-architecture-patterns/](/0-architecture-patterns/README.md)
+- [1-unity-basics/](/1-unity-basics/README.md)
+- [2-unity-assets-collection/](/2-unity-assets-collection/README.md)
+
 ### Ref: Books Catalog
 
 - [Unity 遊戲設計：程式基礎、操作祕訣、製作流程、關卡設計全攻略](https://www.tenlong.com.tw/products/9789863127413)
@@ -50,3 +52,6 @@
 - Detailed
   - [Unity游戲開發入門經典](https://www.tenlong.com.tw/products/9787115602442)
   - [Unity 2D 游戲開發](https://www.tenlong.com.tw/products/9787302634072)
+- YouTube
+  - [Unity Tutorial 2024 - Build a 2D RPG](https://www.youtube.com/playlist?list=PLy1Xj-4F5G_cytIH8by-bZ9TVj5qKMlZn)
+  - [Unity: 2D Farming RPG](https://www.youtube.com/playlist?list=PL4PNgDjMajPN51E5WzEi7cXzJ16BCHZXl)

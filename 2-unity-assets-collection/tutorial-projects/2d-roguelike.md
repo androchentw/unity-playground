@@ -50,6 +50,7 @@
 
 ## Architecturing 拆解遊戲實作架構
 
+- [Unity YouTube Tutorial Series](https://www.youtube.com/playlist?list=PLX2vGYjWbI0SKsNH5Rkpxvxr1dPE0Lw8F)
 - Goal: break down your ideas into chunks of **actionable tasks**
 
 ### Features
@@ -96,6 +97,7 @@
 ### 比較: Tilemap, Tile Palette, Sprites
 
 - Tilemap 由 tiles (瓦, 地形單元) 組成, 是場景裡的特殊 asset (2D Object)
+  - [使用 Unity Tilemap 优化 2D 游戏的性能](https://unity.com/cn/how-to/optimize-performance-2d-games-unity-tilemap)
 - Tile Palette 是編輯器工具, 方便管理 tiles
 
 | **特性**     | **Tilemap**                   | **Tile Palette**                 | **Sprites**                     |

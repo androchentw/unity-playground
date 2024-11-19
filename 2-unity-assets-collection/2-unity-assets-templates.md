@@ -23,7 +23,13 @@ Codebase: [unity-tutorial-projects](https://github.com/androchentw/unity-tutoria
 - [Endless Runner](tutorial-projects/endless-runner.md) 
 - 素材演示
   - [Unity Learn | Playground | URP](https://assetstore.unity.com/packages/templates/tutorials/unity-learn-playground-urp-109917#content)
-  - [Happy Harvest - 2D Sample Project](https://assetstore.unity.com/packages/essentials/tutorial-projects/happy-harvest-2d-sample-project-259218?srsltid=AfmBOoqBW-cSzfhka79W5enzi27oCHJ9eETML9wGYjDrIpU_RwYjyldk)
+  - [Happy Harvest - 2D Sample Project](https://assetstore.unity.com/packages/essentials/tutorial-projects/happy-harvest-2d-sample-project-259218?srsltid=AfmBOoqBW-cSzfhka79W5enzi27oCHJ9eETML9wGYjDrIpU_RwYjyldk), [Blog](https://unity.com/cn/how-to/create-art-and-gameplay-2d-tilemaps-unity)
+- Unity Sample projects > UGS use cases project > Use cases
+  - [Battle Passes](https://docs.unity.com/ugs/en-us/solutions/manual/BattlePasses) 
+  - Daily rewards
+  - Idle clicker game
+  - Virtual shops
+  - Cloud Code 
 
 ### 3D
 

@@ -46,6 +46,8 @@
 
 ## Dragon Crashers Code Breakdown
 
+<img src="res/dragon-crasher-breakdown.png" width="600" alt="dragon-crasher-breakdown">
+
 ### Overview
 
 - Scene
